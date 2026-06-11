@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   title: "Upbring | Raising Curious Minds",
   description:
     "Helping families nurture curiosity, character and a lifelong love of learning.",
+
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
