@@ -22,6 +22,32 @@ export const metadata: Metadata = {
     shortcut: "/logo.jpg",
     apple: "/logo.jpg",
   },
+
+  openGraph: {
+    title: "Upbring | Raising Curious Minds",
+    description:
+      "Helping families nurture curiosity, character and a lifelong love of learning.",
+    url: "https://upbringapp.com",
+    siteName: "Upbring",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Upbring",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Upbring | Raising Curious Minds",
+    description:
+      "Helping families nurture curiosity, character and a lifelong love of learning.",
+    images: ["/logo.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -30,11 +56,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
