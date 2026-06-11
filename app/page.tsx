@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 import Image from "next/image";
+import Script from "next/script";
 import {
   Telescope,
   Shield,
@@ -35,6 +36,25 @@ async function joinWaitlist() {
   }
 }
   return (
+    <>
+<Script
+id="schema-org"
+type="application/ld+json"
+dangerouslySetInnerHTML={{
+__html: JSON.stringify({
+"@context": "https://schema.org",
+"@type": "Organization",
+name: "Upbring",
+url: "https://upbringapp.com",
+logo: "https://upbringapp.com/logo.jpg",
+description:
+"Helping families nurture curiosity, character and a lifelong love of learning.",
+sameAs: [],
+}),
+}}
+/>
+
+<main className="min-h-screen bg-[#fafaf8] text-gray-900"></main>
     <main className="min-h-screen bg-[#fafaf8] text-gray-900">
 
       {/* Navbar */}
@@ -333,5 +353,6 @@ More confidence.
   </p>
 </footer>
     </main>
+    </>
   );
 }
