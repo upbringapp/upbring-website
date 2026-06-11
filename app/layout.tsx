@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     "Helping families nurture curiosity, character and a lifelong love of learning.",
 
   icons: {
-    icon: "/logo.jpg",
-    shortcut: "/logo.jpg",
-    apple: "/logo.jpg",
-  },
+  icon: "/favicon.ico",
+  shortcut: "/favicon.ico",
+  apple: "/apple-touch-icon.png",
+},
 
   openGraph: {
     title: "Upbring | Raising Curious Minds",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Upbring",
     images: [
       {
-        url: "/logo.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Upbring",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Upbring | Raising Curious Minds",
     description:
       "Helping families nurture curiosity, character and a lifelong love of learning.",
-    images: ["/logo.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 
