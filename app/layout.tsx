@@ -64,15 +64,20 @@ export default function RootLayout({
   strategy="afterInteractive"
 />
 
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<Script
+  id="google-analytics"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-ZJEPH34628');
-  `}
-</Script>
+      gtag('config', 'G-ZJEPH34628');
+    `,
+  }}
+/>
+
         {children}
       </body>
     </html>
