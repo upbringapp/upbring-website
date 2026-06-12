@@ -132,7 +132,17 @@ url: "https://upbringapp.com",
 logo: "https://upbringapp.com/logo.jpg",
 description:
 "Helping families nurture curiosity, character and a lifelong of learning.",
-sameAs: [],
+sameAs: [
+  "https://instagram.com/officialupbring",
+  "https://youtube.com/@officialupbring"
+],
+
+contactPoint: {
+  "@type": "ContactPoint",
+  email: "hello@upbringapp.com",
+  contactType: "customer support"
+},
+
 }),
 }}
 />
