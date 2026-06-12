@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://upbringapp.com"),
   title: "Upbring | Raising Curious Minds",
   description:
     "Helping families nurture curiosity, character and a lifelong love of learning.",
