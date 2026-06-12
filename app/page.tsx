@@ -4,6 +4,7 @@ import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 import Image from "next/image";
 import Script from "next/script";
+import toast, { Toaster } from "react-hot-toast";
 import {
   Telescope,
   Shield,
@@ -17,27 +18,60 @@ export default function Home() {
   const [email, setEmail] = useState("");
 
 async function joinWaitlist() {
-  if (!email) {
-    alert("Please enter your email");
-    return;
-  }
+  const cleanEmail = email.trim().toLowerCase();
+ if (!email) {
+  alert("Please enter your email");
+  return;
+}
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailRegex.test(email)) {
+  alert("Please enter a valid email address");
+  return;
+}
 
   const { error } = await supabase
     .from("waitlist")
-    .insert([{ email }]);
-
+    .insert([{ email: cleanEmail }]);
   if (error) {
   console.log(error);
-  alert(error.message);
+  if (error.message.includes("duplicate")) {
+  toast(
+  "❤️ You're already part of the Upbring community. We'll let you know when we launch.",
+  {
+    duration: 4000,
+  }
+);
+} else {
+  alert("Something went wrong. Please try again.");
+}
 }
    else {
-    alert("You're on the waitlist 🎉");
-    setEmail("");
+    toast.success(
+  "🌱 Welcome to Upbring! Thank you for joining our early community.",
+  {
+    duration: 5000,
+  }
+);
+await fetch("/api/send", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    email: cleanEmail,
+  }),
+});
+setEmail("");
+    
   }
 }
   return (
-    <>
-<Script
+  <>
+    <Toaster position="top-center" />
+
+    <Script
 id="schema-org"
 type="application/ld+json"
 dangerouslySetInnerHTML={{
@@ -92,19 +126,13 @@ sameAs: [],
 
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
 
-       <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full bg-white border border-orange-100 shadow-sm">
-
-  <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center">
-    ✨
-  </div>
-
-  <div className="w-px h-8 bg-gray-200"></div>
-
-  <span className="text-xl font-medium tracking-[0.2em] text-gray-900">
-    Coming Soon
+       <div className="inline-flex items-center px-8 py-4 rounded-full border border-gray-200 bg-white shadow-sm">
+  <span className="text-lg md:text-xl font-medium text-gray-900">
+    Welcome to Upbring | Coming Soon
   </span>
-
 </div>
+
+
         
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight">
