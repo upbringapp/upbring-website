@@ -48,24 +48,24 @@ name: "Upbring",
 url: "https://upbringapp.com",
 logo: "https://upbringapp.com/logo.jpg",
 description:
-"Helping families nurture curiosity, character and a lifelong love of learning.",
+"Helping families nurture curiosity, character and a lifelong of learning.",
 sameAs: [],
 }),
 }}
 />
 
-<main className="min-h-screen bg-[#fafaf8] text-gray-900"></main>
-    <main className="min-h-screen bg-[#fafaf8] text-gray-900">
+
+    <main className=" bg-[#fafaf8] text-gray-900">
 
       {/* Navbar */}
-      <nav className="sticky top-0 bg-[#fafaf8]/80 backdrop-blur z-50 border-b">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <nav className="bg-[#fafaf8]/80 backdrop-blur z-50 border-b">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
           <div className="flex items-center">
   <img
   src="/logo.jpg"
   alt="Upbring"
-  className="h-24 w-auto"
+  className="h-12 w-auto"
 />
 </div>
 
