@@ -15,7 +15,50 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Upbring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upbring helps families nurture curiosity, character and lifelong learning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Upbring for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upbring is for parents, children and educators seeking meaningful growth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Upbring free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Early access to Upbring is currently free."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I join Upbring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply enter your email address and join the early access waitlist."
+        }
+      }
+    ]
+  };
+
   const [email, setEmail] = useState("");
+
+  
 
 async function joinWaitlist() {
   const cleanEmail = email.trim().toLowerCase();
@@ -70,7 +113,13 @@ setEmail("");
   return (
   <>
     <Toaster position="top-center" />
-
+<Script
+  id="faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(faqSchema),
+  }}
+/>
     <Script
 id="schema-org"
 type="application/ld+json"
@@ -369,16 +418,53 @@ More confidence.
     Raising Curious Minds. Growing Strong Values.
   </p>
 
-  <div className="flex justify-center gap-8 mt-8">
-    <a href="#">Home</a>
-    <a href="#canopy">Canopy</a>
-    <a href="#parents">Parents</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <div className="flex flex-wrap justify-center gap-8 mt-8">
 
-  <p className="mt-8 text-sm">
-    © 2026 Upbring. Built for curious families.
+  <a href="/about">About</a>
+
+  <a href="/privacy">Privacy Policy</a>
+
+  <a href="/terms">Terms</a>
+
+  <a href="/contact">Contact</a>
+
+  <a
+    href="https://instagram.com/officialupbring"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Instagram
+  </a>
+
+  <a
+    href="https://youtube.com/@officialupbring"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    YouTube
+  </a>
+
+</div>
+
+  <div className="mt-8 text-sm space-y-3">
+
+  <p>
+    hello@upbringapp.com
   </p>
+
+  <p>
+    Helping families nurture curiosity, character and a lifelong love of learning.
+  </p>
+
+  <p>
+    © 2026 Upbring
+  </p>
+
+  <p>
+    Raising Curious Minds. Growing Strong Values.
+  </p>
+
+</div>
 </footer>
     </main>
     </>
