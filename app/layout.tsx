@@ -15,18 +15,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://upbringapp.com"),
-  title: "Upbring | Raising Curious Minds",
+
+  title: "Upbring — A quiet companion for growing up",
+
   description:
-    "Helping families nurture curiosity, character and a lifelong love of learning.",
+    "Stories, learning and parenting for curious families. A quiet companion for growing up. Quietly understood.",
 
   icons: {
-  icon: "/favicon.ico",
-  shortcut: "/favicon.ico",
-  apple: "/apple-touch-icon.png",
-},
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
 
   openGraph: {
-    title: "Upbring | Raising Curious Minds",
+    title: "Upbring — A quiet companion for growing up",
     description:
       "Helping families nurture curiosity, character and a lifelong love of learning.",
     url: "https://upbringapp.com",
@@ -47,8 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Upbring | Raising Curious Minds",
     description:
-      "Helping families nurture curiosity, character and a lifelong love of learning.",
-    images: ["/og-image.jpg"],
+"Stories, learning and parenting for curious families. A quiet companion for growing up. Quietly understood.",
   },
 };
 
