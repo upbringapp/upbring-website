@@ -1,26 +1,156 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Founder-confirmed visual tokens */
+  --canvas: #ffffff;
+  --surface: #ffffff;
+  --text-primary: #111111;
+  --text-secondary: #5f6368;
+  --text-tertiary: #9ca3af;
+  --border: #e5e7eb;
+  --divider-warm: #dad7d0;
+  --focus: #111111;
+  --border-width: 1px;
+  --shadow-default: none;
+
+  /* Provisional web translations; refine centrally after visual review. */
+  --page-gutter: 24px;
+  --content-max-width: 1200px;
+  --editorial-max-width: 680px;
+  --section-spacing: 80px;
+  --card-radius: 24px;
+  --card-padding: 24px;
+  --transition-duration: 180ms;
+  --transition-easing: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Compatibility aliases for existing Tailwind utilities. */
+  --background: var(--canvas);
+  --foreground: var(--text-primary);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 48rem) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --page-gutter: 36px;
+    --card-padding: 28px;
   }
 }
 
+@media (min-width: 64rem) {
+  :root {
+    --page-gutter: 56px;
+    --section-spacing: 128px;
+    --card-padding: 32px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--canvas);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  color: var(--text-primary);
+  font-family: var(--font-poppins), Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+p {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.page-container {
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--content-max-width)
+  );
+  margin-inline: auto;
+}
+
+.editorial-width {
+  width: 100%;
+  max-width: var(--editorial-max-width);
+}
+
+.section-spacing {
+  padding-block: var(--section-spacing);
+}
+
+.quiet-surface {
+  padding: var(--card-padding);
+  background: var(--surface);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-default);
+}
+
+.subtle-divider {
+  border: 0;
+  border-top: var(--border-width) solid var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration: 0.01ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

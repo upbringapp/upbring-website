@@ -155,9 +155,11 @@ contactPoint: {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
           <div className="flex items-center">
-  <img
+  <Image
   src="/logo.jpg"
   alt="Upbring"
+  width={1536}
+  height={1024}
   className="h-12 w-auto"
 />
 </div>
@@ -304,7 +306,7 @@ More confidence.
     </div>
 
     <div className="bg-white p-8 rounded-3xl border shadow-sm">
-       • If you had to teach me just one question from today's paper, which one would it be?
+       • If you had to teach me just one question from today&apos;s paper, which one would it be?
     </div>
 
   </div>
