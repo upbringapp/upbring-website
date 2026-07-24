@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { HeroSection } from "@/components/sections/hero-section";
 import { TrustSequence } from "@/components/sections/trust-sequence";
+import { HomeSection } from "@/components/sections/home-section";
 
 export default function Home() {
   const faqSchema = {
@@ -90,84 +91,7 @@ contactPoint: {
     <main className="text-gray-900">
       <HeroSection />
       <TrustSequence />
-{/* What is Upbring */}
-
-<section className="max-w-5xl mx-auto px-6 py-24">
-
-  <div className="text-center">
-
-    <h2 className="text-4xl md:text-5xl font-bold mb-8">
-      What is Upbring?
-    </h2>
-
-    <p className="text-gray-600 text-lg leading-8 max-w-3xl mx-auto">
-
-      Upbring is an AI-powered learning companion for curious families.
-
-      <br /><br />
-
-      Helping parents and children learn together through conversations,
-      curiosity and meaningful guidance.
-
-      <br /><br />
-
-     Less pressure.
-<br />
-More conversations.
-
-<br /><br />
-
-Less comparison.
-<br />
-More curiosity.
-
-<br /><br />
-
-Less fear.
-<br />
-More confidence.
-    </p>
-
-  </div>
-
-</section>
-{/* Parent Companion */}
-
-<section className="max-w-5xl mx-auto px-6 py-24">
-
-  <div className="text-center mb-16">
-
-    <h2 className="text-4xl md:text-5xl font-bold mb-6">
-      Parent Companion
-    </h2>
-
-    <p className="text-gray-500 text-lg">
-      Small questions. Big conversations.
-    </p>
-
-  </div>
-
-  <div className="grid md:grid-cols-2 gap-8">
-
-    <div className="bg-white p-8 rounded-3xl border shadow-sm">
-       • Sabse tough question kaun sa laga aaj?
-    </div>
-
-    <div className="bg-white p-8 rounded-3xl border shadow-sm">
-      • Galti se aaj tumhe kya seekh mili?
-    </div>
-
-    <div className="bg-white p-8 rounded-3xl border shadow-sm">
-       • What made you smile today?
-    </div>
-
-    <div className="bg-white p-8 rounded-3xl border shadow-sm">
-       • If you had to teach me just one question from today&apos;s paper, which one would it be?
-    </div>
-
-  </div>
-
-</section>
+      <HomeSection />
       {/* Canopy Community */}
 
       <section
