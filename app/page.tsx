@@ -1,9 +1,4 @@
-"use client";
-
-import { useState } from "react";
-import { supabase } from "@/lib/supabase";
 import Script from "next/script";
-import toast, { Toaster } from "react-hot-toast";
 import {
   Telescope,
   Shield,
@@ -12,10 +7,10 @@ import {
   Infinity,
   Pencil,
 } from "lucide-react";
+import { HeroSection } from "@/components/sections/hero-section";
+import { TrustSequence } from "@/components/sections/trust-sequence";
 
 export default function Home() {
-  
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -55,63 +50,8 @@ export default function Home() {
     ]
   };
 
-  const [email, setEmail] = useState("");
-
-  
-
-async function joinWaitlist() {
-  const cleanEmail = email.trim().toLowerCase();
- if (!email) {
-  alert("Please enter your email");
-  return;
-}
-
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if (!emailRegex.test(email)) {
-  alert("Please enter a valid email address");
-  return;
-}
-
-  const { error } = await supabase
-    .from("waitlist")
-    .insert([{ email: cleanEmail }]);
-  if (error) {
-  console.log(error);
-  if (error.message.includes("duplicate")) {
-  toast(
-  "❤️ You're already part of the Upbring community. We'll let you know when we launch.",
-  {
-    duration: 4000,
-  }
-);
-} else {
-  alert("Something went wrong. Please try again.");
-}
-}
-   else {
-    toast.success(
-  "🌱 Welcome to Upbring! Thank you for joining our early community.",
-  {
-    duration: 5000,
-  }
-);
-await fetch("/api/send", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    email: cleanEmail,
-  }),
-});
-setEmail("");
-    
-  }
-}
   return (
   <>
-    <Toaster position="top-center" />
 <Script
   id="faq-schema"
   type="application/ld+json"
@@ -148,60 +88,8 @@ contactPoint: {
 
 
     <main className="text-gray-900">
-      {/* Hero */}
-
-      <section
-        id="waitlist"
-        className="max-w-6xl mx-auto scroll-mt-24 px-6 py-16 text-center"
-      >
-
-       <div className="inline-flex items-center px-8 py-4 rounded-full border border-gray-200 bg-white shadow-sm">
-  <span className="text-lg md:text-xl font-medium text-gray-900">
-    Welcome to Upbring | Coming Soon
-  </span>
-</div>
-
-
-        
-
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-          Raising Curious Minds.
-        </h1>
-
-        <h2 className="text-3xl md:text-6xl text-gray-400 mt-5">
-          Growing Strong Values.
-        </h2>
-
-        <p className="max-w-2xl mx-auto mt-8 text-gray-500 text-lg">
-         Helping families nurture curiosity, character and a lifelong love of learning.
-          </p> 
-         <div className="mt-8 flex justify-center">
-  <input type="email"
-    placeholder="Enter your email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    className="border px-5 py-4 rounded-2xl w-80 text-center"
-  />
-  </div>
-       
-
-        <div className="flex flex-wrap justify-center gap-4 mt-12">
-
-          <button
-  onClick={joinWaitlist}
-  className="bg-black text-white px-8 py-4 rounded-2xl"
->
-  Join Early Access
-</button>
-
-
-          <button className="border px-8 py-4 rounded-2xl">
-            Explore Upbring →
-          </button>
-
-        </div>
-
-      </section>
+      <HeroSection />
+      <TrustSequence />
 {/* What is Upbring */}
 
 <section className="max-w-5xl mx-auto px-6 py-24">
