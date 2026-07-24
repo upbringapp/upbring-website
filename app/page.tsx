@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { TrustSequence } from "@/components/sections/trust-sequence";
 import { HomeSection } from "@/components/sections/home-section";
 import { CanopySection } from "@/components/sections/canopy-section";
+import { WithinSection } from "@/components/sections/within-section";
 
 export default function Home() {
   const faqSchema = {
@@ -86,46 +87,7 @@ contactPoint: {
       <TrustSequence />
       <HomeSection />
       <CanopySection />
-
-      <section
-        id="within"
-        aria-labelledby="within-heading"
-        className="page-container section-spacing scroll-mt-24"
-      >
-        <div className="editorial-width">
-          <h2 id="within-heading" className="text-4xl md:text-5xl">
-            Within
-          </h2>
-          <p className="mt-5 text-lg text-[var(--text-secondary)] md:text-xl">
-            What we’ve noticed so far — without rushing to conclusions.
-          </p>
-
-          <ol className="mt-10 overflow-hidden rounded-[var(--card-radius)] border border-[var(--border)] bg-white">
-            {[
-              "Patterns Over Time",
-              "Pause",
-              "Just Arjun",
-              "Moments",
-              "Arjun’s Story So Far",
-            ].map((label, index) => (
-              <li
-                key={label}
-                className="flex min-h-16 items-center gap-4 border-b border-[var(--border)] px-6 py-4 last:border-b-0"
-              >
-                <span
-                  aria-hidden="true"
-                  className="text-sm tabular-nums text-[var(--text-tertiary)]"
-                >
-                  {index + 1}
-                </span>
-                <span className="font-heading text-lg text-[var(--text-primary)]">
-                  {label}
-                </span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+      <WithinSection />
     </main>
     </>
   );
