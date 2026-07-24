@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import Script from "next/script";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
 import "./globals.css";
 
 const inter = Inter({
@@ -87,7 +89,14 @@ export default function RootLayout({
   }}
 />
 
-        {children}
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        <SiteHeader />
+        <div id="main-content" tabIndex={-1}>
+          {children}
+        </div>
+        <SiteFooter />
       </body>
     </html>
   );

@@ -63,7 +63,6 @@
 }
 
 html {
-  min-width: 320px;
   background: var(--canvas);
   color: var(--text-primary);
   text-rendering: optimizeLegibility;
@@ -138,6 +137,25 @@ a {
 .subtle-divider {
   border: 0;
   border-top: var(--border-width) solid var(--border);
+}
+
+.skip-link {
+  position: fixed;
+  top: var(--page-gutter);
+  left: var(--page-gutter);
+  z-index: 100;
+  transform: translateY(calc(-100% - var(--page-gutter)));
+  border-radius: 999px;
+  background: var(--text-primary);
+  color: var(--surface);
+  padding: 0.75rem 1rem;
+  transition:
+    transform var(--transition-duration) var(--transition-easing),
+    opacity var(--transition-duration) var(--transition-easing);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {

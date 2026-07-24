@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
-import Image from "next/image";
 import Script from "next/script";
 import toast, { Toaster } from "react-hot-toast";
 import {
@@ -148,44 +147,13 @@ contactPoint: {
 />
 
 
-    <main className=" bg-[#fafaf8] text-gray-900">
-
-      {/* Navbar */}
-      <nav className="bg-[#fafaf8]/80 backdrop-blur z-50 border-b">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-
-          <div className="flex items-center">
-  <Image
-  src="/logo.jpg"
-  alt="Upbring"
-  width={1536}
-  height={1024}
-  className="h-12 w-auto"
-/>
-</div>
-
-          <div className="hidden md:flex items-center gap-8 text-gray-600">
-            <a href="#">Home</a>
-            <a href="#canopy">Canopy</a>
-            <a href="#">Parents</a>
-            <a href="#">Contact</a>
-          </div>
-
-          <button
-  
-  
-  onClick={joinWaitlist}
-  className="bg-black text-white px-8 py-4 rounded-2xl"
->
-  Join Early Access
-</button>
-
-        </div>
-      </nav>
-
+    <main className="text-gray-900">
       {/* Hero */}
 
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
+      <section
+        id="waitlist"
+        className="max-w-6xl mx-auto scroll-mt-24 px-6 py-16 text-center"
+      >
 
        <div className="inline-flex items-center px-8 py-4 rounded-full border border-gray-200 bg-white shadow-sm">
   <span className="text-lg md:text-xl font-medium text-gray-900">
@@ -315,8 +283,8 @@ More confidence.
       {/* Canopy Community */}
 
       <section
-        id="features"
-        className="max-w-6xl mx-auto px-6 pb-28"
+        id="canopy"
+        className="max-w-6xl mx-auto scroll-mt-24 px-6 pb-28"
       >
 
         <div className="text-center mb-16">
@@ -419,65 +387,45 @@ More confidence.
 
       </section>
 
-     
-{/* Footer */}
-<footer className="border-t mt-24 py-12 text-center text-gray-500">
-  <h3 className="text-2xl font-semibold text-gray-900">
-    Upbring
-  </h3>
+      <section
+        id="within"
+        aria-labelledby="within-heading"
+        className="page-container section-spacing scroll-mt-24"
+      >
+        <div className="editorial-width">
+          <h2 id="within-heading" className="text-4xl md:text-5xl">
+            Within
+          </h2>
+          <p className="mt-5 text-lg text-[var(--text-secondary)] md:text-xl">
+            What we’ve noticed so far — without rushing to conclusions.
+          </p>
 
-  <p className="mt-3">
-    Raising Curious Minds. Growing Strong Values.
-  </p>
-
-  <div className="flex flex-wrap justify-center gap-8 mt-8">
-
-  <a href="/about">About</a>
-
-  <a href="/privacy">Privacy Policy</a>
-
-  <a href="/terms">Terms</a>
-
-  <a href="/contact">Contact</a>
-
-  <a
-    href="https://instagram.com/officialupbring"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Instagram
-  </a>
-
-  <a
-    href="https://youtube.com/@officialupbring"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    YouTube
-  </a>
-
-</div>
-
-  <div className="mt-8 text-sm space-y-3">
-
-  <p>
-    hello@upbringapp.com
-  </p>
-
-  <p>
-    Helping families nurture curiosity, character and a lifelong love of learning.
-  </p>
-
-  <p>
-    © 2026 Upbring
-  </p>
-
-  <p>
-    Raising Curious Minds. Growing Strong Values.
-  </p>
-
-</div>
-</footer>
+          <ol className="mt-10 overflow-hidden rounded-[var(--card-radius)] border border-[var(--border)] bg-white">
+            {[
+              "Patterns Over Time",
+              "Pause",
+              "Just Arjun",
+              "Moments",
+              "Arjun’s Story So Far",
+            ].map((label, index) => (
+              <li
+                key={label}
+                className="flex min-h-16 items-center gap-4 border-b border-[var(--border)] px-6 py-4 last:border-b-0"
+              >
+                <span
+                  aria-hidden="true"
+                  className="text-sm tabular-nums text-[var(--text-tertiary)]"
+                >
+                  {index + 1}
+                </span>
+                <span className="font-heading text-lg text-[var(--text-primary)]">
+                  {label}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
     </main>
     </>
   );
