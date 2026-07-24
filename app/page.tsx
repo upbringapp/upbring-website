@@ -1,15 +1,8 @@
 import Script from "next/script";
-import {
-  Telescope,
-  Shield,
-  Heart,
-  Tent,
-  Infinity,
-  Pencil,
-} from "lucide-react";
 import { HeroSection } from "@/components/sections/hero-section";
 import { TrustSequence } from "@/components/sections/trust-sequence";
 import { HomeSection } from "@/components/sections/home-section";
+import { CanopySection } from "@/components/sections/canopy-section";
 
 export default function Home() {
   const faqSchema = {
@@ -92,112 +85,7 @@ contactPoint: {
       <HeroSection />
       <TrustSequence />
       <HomeSection />
-      {/* Canopy Community */}
-
-      <section
-        id="canopy"
-        className="max-w-6xl mx-auto scroll-mt-24 px-6 pb-28"
-      >
-
-        <div className="text-center mb-16">
-
-          <h2 className="text-4xl md:text-5xl font-bold">
-  Canopy Community
-</h2>
-
-          <p className="text-gray-500 mt-5">
-  Parenting is better when families learn and grow together.
-</p>
-
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-
-          {/* Curiosity */}
-
-          <div className="bg-white p-10 rounded-3xl border shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <Telescope className="w-8 h-8 text-blue-500 mb-6" />
-
-            <h3 className="text-3xl font-bold mb-4">
-              Curiosity
-            </h3>
-
-            <p className="text-gray-600">
-              Looking further and discovering the unknown.
-              Every child is born curious—we nurture that spark.
-            </p>
-
-          </div>
-
-
-          {/* Character */}
-
-          <div className="bg-white p-10 rounded-3xl border shadow-sm">
-
-            <div className="relative w-10 h-10 mb-6">
-
-              <Shield className="w-10 h-10 text-rose-500" />
-
-              <Heart className="absolute w-3 h-3 text-rose-500 fill-rose-500 top-[13px] left-[13px]" />
-
-            </div>
-
-            <h3 className="text-3xl font-bold mb-4">
-              Character
-            </h3>
-
-            <p className="text-gray-600">
-              Strong values with a caring heart.
-              Empathy and integrity matter more than marks.
-            </p>
-
-          </div>
-
-
-          {/* Canopy */}
-
-          <div className="bg-white p-10 rounded-3xl border shadow-sm">
-
-            <Tent className="w-8 h-8 text-green-600 mb-6" />
-
-            <h3 className="text-3xl font-bold mb-4">
-              Canopy
-            </h3>
-
-            <p className="text-gray-600">
-              A safe ecosystem where families support,
-              connect and grow together.
-            </p>
-
-          </div>
-
-
-          {/* Lifelong Learning */}
-
-          <div className="bg-white p-10 rounded-3xl border shadow-sm">
-
-            <div className="flex gap-2 mb-6">
-
-              <Infinity className="w-7 h-7 text-purple-500" />
-
-              <Pencil className="w-5 h-5 text-amber-500" />
-
-            </div>
-
-            <h3 className="text-3xl font-bold mb-4">
-              Lifelong Learning
-            </h3>
-
-            <p className="text-gray-600">
-              Learning never ends. Growth and reflection continue for life.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
+      <CanopySection />
 
       <section
         id="within"
