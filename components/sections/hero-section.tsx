@@ -1,15 +1,7 @@
-"use client";
-
 import { HeroProductPreview } from "@/components/product/hero-product-preview";
 import { WaitlistForm } from "@/components/forms/waitlist-form";
 
 export function HeroSection() {
-  function focusWaitlistForm() {
-    document
-      .querySelector<HTMLInputElement>("#waitlist-form input[type='email']")
-      ?.focus();
-  }
-
   return (
     <section
       id="waitlist"
@@ -32,14 +24,6 @@ export function HeroSection() {
           <p className="mt-7 max-w-xl text-lg text-[var(--text-secondary)] md:text-xl">
             Every parent wants to understand their child. Not just know them.
           </p>
-
-          <button
-            type="button"
-            onClick={focusWaitlistForm}
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--text-primary)] px-6 text-sm font-medium text-[var(--text-primary)] transition-colors duration-[var(--transition-duration)] ease-[var(--transition-easing)] hover:bg-[var(--text-primary)] hover:text-white"
-          >
-            Start quietly.
-          </button>
 
           <WaitlistForm />
         </div>

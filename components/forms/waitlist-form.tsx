@@ -122,12 +122,12 @@ export function WaitlistForm() {
                 setStatus("default");
               }
             }}
-            className="min-h-12 min-w-0 flex-1 rounded-full border border-[var(--border)] bg-white px-5 text-base text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] disabled:cursor-wait disabled:opacity-60"
+            className="h-12 min-h-12 min-w-0 flex-1 rounded-2xl border border-[var(--border)] bg-white px-5 text-base text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] disabled:cursor-wait disabled:bg-[#f3f4f6] disabled:text-[var(--text-secondary)]"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--text-primary)] px-6 text-sm font-medium text-white transition-colors duration-[var(--transition-duration)] ease-[var(--transition-easing)] hover:bg-[var(--text-secondary)] disabled:cursor-wait disabled:opacity-60"
+            className="inline-flex h-12 appearance-none items-center justify-center rounded-2xl border border-[#111111] bg-[#111111] px-6 text-sm font-medium text-white shadow-none transition-colors duration-[var(--transition-duration)] ease-[var(--transition-easing)] hover:border-[#2f2f2f] hover:bg-[#2f2f2f] active:border-[#111111] active:bg-[#111111] disabled:cursor-wait disabled:border-[#e5e7eb] disabled:bg-[#e5e7eb] disabled:text-[#5f6368]"
           >
             {status === "loading" ? "Joining…" : "Start quietly."}
           </button>

@@ -79,7 +79,7 @@ export function MobileNavigation() {
           <div className="page-container pb-5">
             <Link
               href="/#waitlist"
-              className="inline-flex min-h-11 w-full items-center justify-center rounded-full bg-[var(--text-primary)] px-5 text-sm text-white"
+              className="inline-flex min-h-11 w-full appearance-none items-center justify-center rounded-2xl border border-[#111111] bg-[#111111] px-5 text-sm !text-white shadow-none transition-colors duration-[var(--transition-duration)] ease-[var(--transition-easing)] hover:border-[#2f2f2f] hover:bg-[#2f2f2f] active:border-[#111111] active:bg-[#111111]"
               onClick={() => setIsOpen(false)}
             >
               Start quietly.
