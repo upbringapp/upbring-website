@@ -4,6 +4,8 @@ import { TrustSequence } from "@/components/sections/trust-sequence";
 import { HomeSection } from "@/components/sections/home-section";
 import { CanopySection } from "@/components/sections/canopy-section";
 import { WithinSection } from "@/components/sections/within-section";
+import { PrivacyTrustSection } from "@/components/sections/privacy-trust-section";
+import { ClosingConversionSection } from "@/components/sections/closing-conversion-section";
 
 export default function Home() {
   const faqSchema = {
@@ -88,6 +90,8 @@ contactPoint: {
       <HomeSection />
       <CanopySection />
       <WithinSection />
+      <PrivacyTrustSection />
+      <ClosingConversionSection />
     </main>
     </>
   );
