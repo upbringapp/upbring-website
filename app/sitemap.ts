@@ -1,11 +1,9 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://upbringapp.com",
-      lastModified: new Date(),
-      priority: 1,
-    },
-  ];
+  const routes = ["/", "/about", "/blog", "/contact", "/privacy", "/terms"];
+
+  return routes.map((route) => ({
+    url: new URL(route, "https://upbringapp.com").toString(),
+  }));
 }

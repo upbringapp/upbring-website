@@ -1,8 +1,13 @@
-export const metadata = {
-  title: "Upbring Blog | Parenting, Learning and Character Development",
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Blog — Upbring",
   description:
-    "Insights on parenting, curiosity, storytelling, growth mindset and character development for children.",
-};
+    "Read Upbring articles about parenting, curiosity, learning, stories, and character development.",
+  path: "/blog",
+});
+
 export default function Blog() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-20">

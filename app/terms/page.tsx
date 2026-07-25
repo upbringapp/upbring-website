@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Terms of Service — Upbring",
+  description: "Read the Upbring Terms of Service.",
+  path: "/terms",
+});
+
 export default function TermsPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 text-gray-800">

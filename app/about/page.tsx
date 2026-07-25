@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "About — Upbring",
+  description:
+    "Learn about Upbring and its focus on curiosity, character, and lifelong learning for families.",
+  path: "/about",
+});
+
 export default function AboutPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-20 text-gray-800">

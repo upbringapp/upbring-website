@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact — Upbring",
+  description:
+    "Contact Upbring by email and find its official Instagram and YouTube profiles.",
+  path: "/contact",
+});
+
 export default function ContactPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 text-gray-800">

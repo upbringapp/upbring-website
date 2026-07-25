@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Privacy Policy — Upbring",
+  description:
+    "Read the Upbring Privacy Policy, including information about waitlist email collection and how information is used.",
+  path: "/privacy",
+});
+
 export default function PrivacyPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 text-gray-800">
