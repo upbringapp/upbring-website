@@ -1,4 +1,5 @@
 import { HomeOutputCard } from "@/components/product/home-output-card";
+import { homeContent } from "@/content/editorial";
 
 const homeOutputs = [
   { label: "Aaj Kya Seekha", variant: "standard" },
@@ -26,6 +27,7 @@ export function HomeSection() {
             key={output.label}
             index={index + 1}
             label={output.label}
+            content={homeContent[index]}
             variant={output.variant}
           />
         ))}

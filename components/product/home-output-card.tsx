@@ -1,12 +1,16 @@
+import type { EditorialContentRecord } from "@/content/editorial";
+
 type HomeOutputCardProps = {
   index: number;
   label: string;
+  content: EditorialContentRecord;
   variant?: "standard" | "conversation" | "revisiting";
 };
 
 export function HomeOutputCard({
   index,
   label,
+  content,
   variant = "standard",
 }: HomeOutputCardProps) {
   const layoutClasses = {
@@ -31,22 +35,12 @@ export function HomeOutputCard({
         <h3 className="text-xl md:text-2xl">{label}</h3>
       </div>
 
-      {variant === "conversation" ? (
-        <div
-          aria-hidden="true"
-          className="ml-8 mt-10 space-y-3 border-l border-[var(--border)] pl-5"
-        >
-          <span className="block h-px w-full max-w-xs bg-[var(--border)]" />
-          <span className="block h-px w-4/5 max-w-64 bg-[var(--border)]" />
-        </div>
-      ) : null}
-
-      {variant === "revisiting" ? (
-        <div aria-hidden="true" className="ml-8 mt-7 grid gap-3">
-          <span className="block min-h-11 rounded-2xl border border-[var(--border)] bg-white" />
-          <span className="block min-h-11 rounded-2xl border border-[var(--border)] bg-white" />
-        </div>
-      ) : null}
+      <div className={`ml-8 mt-7 ${variant === "conversation" ? "border-l border-[var(--border)] pl-5" : ""}`}>
+        <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+          {content.approvalStatus === "approved" ? "Illustrative example" : "Requires editorial approval"}
+        </p>
+        <p className="mt-3 max-w-xl text-[var(--text-secondary)]">{content.exactText}</p>
+      </div>
     </li>
   );
 }

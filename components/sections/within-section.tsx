@@ -1,4 +1,5 @@
 import { WithinReflectionCard } from "@/components/product/within-reflection-card";
+import { withinContent } from "@/content/editorial";
 
 const withinAreas = [
   { label: "Patterns Over Time", variant: "patterns" },
@@ -25,10 +26,12 @@ export function WithinSection() {
       </div>
 
       <ol className="mt-12 grid gap-5 lg:grid-cols-2">
-        {withinAreas.map((area) => (
+        {withinAreas.map((area, index) => (
           <WithinReflectionCard
             key={area.label}
             label={area.label}
+            content={withinContent[index]}
+            closingContent={area.variant === "story" ? withinContent[5] : undefined}
             variant={area.variant}
           />
         ))}

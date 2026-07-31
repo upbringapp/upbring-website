@@ -1,4 +1,5 @@
 import { CanopyEditorialCard } from "@/components/product/canopy-editorial-card";
+import { canopyContent } from "@/content/editorial";
 
 export function CanopySection() {
   return (
@@ -21,8 +22,8 @@ export function CanopySection() {
           For your family
         </p>
         <div className="mt-5 grid gap-5 lg:grid-cols-3">
-          <CanopyEditorialCard label="Weekly Letter" variant="anchor" />
-          <CanopyEditorialCard label="Family Rhythms" />
+          <CanopyEditorialCard label="Weekly Letter" content={canopyContent[0]} variant="anchor" />
+          <CanopyEditorialCard label="Family Rhythms" content={canopyContent[1]} />
         </div>
       </div>
 
@@ -33,15 +34,15 @@ export function CanopySection() {
         <div className="mt-5 grid gap-5 md:grid-cols-3">
           <CanopyEditorialCard
             label="Curiosities"
-            supportingLine="The world becomes more interesting when we keep asking why."
+            content={canopyContent[2]}
           />
           <CanopyEditorialCard
             label="Thinkers"
-            supportingLine="Questions bigger than answers."
+            content={canopyContent[3]}
           />
           <CanopyEditorialCard
             label="Create"
-            supportingLine="Build it. Break it. Understand it."
+            content={canopyContent[4]}
           />
         </div>
       </div>
@@ -49,11 +50,13 @@ export function CanopySection() {
       <div className="mt-16 grid gap-5 lg:grid-cols-2">
         <CanopyEditorialCard
           label="Dinner Table Conversation"
+          content={canopyContent[5]}
           variant="conversation"
         />
-        <CanopyEditorialCard label="Do This Together" variant="activity" />
+        <CanopyEditorialCard label="Do This Together" content={canopyContent[6]} variant="activity" />
         <CanopyEditorialCard
           label="One Thing Worth Talking About"
+          content={canopyContent[7]}
           variant="reflection"
         />
       </div>

@@ -1,10 +1,16 @@
+import type { EditorialContentRecord } from "@/content/editorial";
+
 type WithinReflectionCardProps = {
   label: string;
+  content: EditorialContentRecord;
+  closingContent?: EditorialContentRecord;
   variant: "patterns" | "pause" | "personal" | "moments" | "story";
 };
 
 export function WithinReflectionCard({
   label,
+  content,
+  closingContent,
   variant,
 }: WithinReflectionCardProps) {
   const layoutClasses = {
@@ -21,47 +27,16 @@ export function WithinReflectionCard({
     >
       <h3 className="text-xl md:text-2xl">{label}</h3>
 
-      <div aria-hidden="true" className="mt-auto pt-12">
-        {variant === "patterns" ? (
-          <div className="grid gap-5 md:grid-cols-3">
-            <span className="block min-h-20 rounded-2xl border border-[var(--border)]" />
-            <span className="block min-h-20 rounded-2xl border border-[var(--border)]" />
-            <span className="block min-h-20 rounded-2xl border border-[var(--border)]" />
-          </div>
-        ) : null}
-
-        {variant === "pause" ? (
-          <div className="space-y-4">
-            <span className="block h-px w-full bg-[var(--border)]" />
-            <span className="block h-px w-2/3 bg-[var(--border)]" />
-          </div>
-        ) : null}
-
-        {variant === "personal" ? (
-          <div className="rounded-2xl border border-[var(--border)] p-5">
-            <span className="block h-px w-1/2 bg-[var(--border)]" />
-          </div>
-        ) : null}
-
-        {variant === "moments" ? (
-          <div className="flex gap-3">
-            <span className="block size-14 rounded-2xl border border-[var(--border)]" />
-            <span className="block size-14 rounded-2xl border border-[var(--border)]" />
-          </div>
-        ) : null}
-
-        {variant === "story" ? (
-          <div className="space-y-4">
-            <span className="block h-px w-full bg-[var(--border)]" />
-            <span className="block h-px w-5/6 bg-[var(--border)]" />
-            <span className="block h-px w-2/3 bg-[var(--border)]" />
-          </div>
-        ) : null}
+      <div className="mt-auto pt-10">
+        <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+          {content.approvalStatus === "approved" ? "Illustrative example" : "Requires editorial approval"}
+        </p>
+        <p className="mt-3 max-w-2xl text-[var(--text-secondary)]">{content.exactText}</p>
       </div>
 
-      {variant === "story" ? (
+      {variant === "story" && closingContent ? (
         <p className="mt-12 max-w-xl text-lg text-[var(--text-secondary)] md:text-xl">
-          Thank you for noticing what often goes unseen.
+          {closingContent.exactText}
         </p>
       ) : null}
     </li>

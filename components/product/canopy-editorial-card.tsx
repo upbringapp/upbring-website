@@ -1,12 +1,14 @@
+import type { EditorialContentRecord } from "@/content/editorial";
+
 type CanopyEditorialCardProps = {
   label: string;
-  supportingLine?: string;
+  content: EditorialContentRecord;
   variant?: "anchor" | "standard" | "conversation" | "activity" | "reflection";
 };
 
 export function CanopyEditorialCard({
   label,
-  supportingLine,
+  content,
   variant = "standard",
 }: CanopyEditorialCardProps) {
   const variantClasses = {
@@ -23,18 +25,11 @@ export function CanopyEditorialCard({
     >
       <h3 className="text-xl md:text-2xl">{label}</h3>
 
-      {supportingLine ? (
-        <p className="mt-4 max-w-xl text-[var(--text-secondary)]">
-          {supportingLine}
+      <div className="mt-auto pt-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
+          {content.approvalStatus === "approved" ? "Illustrative example" : "Requires editorial approval"}
         </p>
-      ) : null}
-
-      <div
-        aria-hidden="true"
-        className="mt-auto space-y-3 pt-10 text-[var(--border)]"
-      >
-        <span className="block h-px w-full bg-current" />
-        <span className="block h-px w-3/4 bg-current" />
+        <p className="mt-3 max-w-xl text-[var(--text-secondary)]">{content.exactText}</p>
       </div>
     </article>
   );
