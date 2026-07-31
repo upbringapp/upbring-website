@@ -36,10 +36,11 @@ export function HomeOutputCard({
       </div>
 
       <div className={`ml-8 mt-7 ${variant === "conversation" ? "border-l border-[var(--border)] pl-5" : ""}`}>
-        <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
-          {content.approvalStatus === "approved" ? "Illustrative example" : "Requires editorial approval"}
-        </p>
-        <p className="mt-3 max-w-xl text-[var(--text-secondary)]">{content.exactText}</p>
+        {content.approvalStatus === "approved" ? (
+          <p className="max-w-xl whitespace-pre-line text-[var(--text-secondary)]">
+            {content.exactText}
+          </p>
+        ) : null}
       </div>
     </li>
   );

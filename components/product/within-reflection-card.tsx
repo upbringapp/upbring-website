@@ -28,10 +28,11 @@ export function WithinReflectionCard({
       <h3 className="text-xl md:text-2xl">{label}</h3>
 
       <div className="mt-auto pt-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">
-          {content.approvalStatus === "approved" ? "Illustrative example" : "Requires editorial approval"}
-        </p>
-        <p className="mt-3 max-w-2xl text-[var(--text-secondary)]">{content.exactText}</p>
+        {content.approvalStatus === "approved" ? (
+          <p className="max-w-2xl whitespace-pre-line text-[var(--text-secondary)]">
+            {content.exactText}
+          </p>
+        ) : null}
       </div>
 
       {variant === "story" && closingContent ? (
