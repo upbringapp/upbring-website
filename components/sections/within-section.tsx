@@ -23,6 +23,10 @@ export function WithinSection() {
         <p className="mt-5 text-lg text-[var(--text-secondary)] md:text-xl">
           What we’ve noticed so far — without rushing to conclusions.
         </p>
+        <p className="mt-6 max-w-2xl text-sm text-[var(--text-secondary)]">
+          The name Arjun is used only to help demonstrate the experience. In
+          practice, every family sees reflections written for their own child.
+        </p>
       </div>
 
       <ol className="mt-12 grid items-start gap-5 lg:grid-cols-2">
