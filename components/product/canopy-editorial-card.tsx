@@ -12,11 +12,11 @@ export function CanopyEditorialCard({
   variant = "standard",
 }: CanopyEditorialCardProps) {
   const variantClasses = {
-    anchor: "min-h-72 md:min-h-80 lg:col-span-2",
-    standard: "min-h-48",
-    conversation: "min-h-64 lg:col-span-2",
-    activity: "min-h-56",
-    reflection: "min-h-56",
+    anchor: "lg:col-span-2",
+    standard: "",
+    conversation: "lg:col-span-2",
+    activity: "",
+    reflection: "",
   } as const;
 
   return (

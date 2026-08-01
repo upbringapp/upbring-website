@@ -14,11 +14,11 @@ export function WithinReflectionCard({
   variant,
 }: WithinReflectionCardProps) {
   const layoutClasses = {
-    patterns: "min-h-80 lg:col-span-2",
-    pause: "min-h-64",
-    personal: "min-h-72",
-    moments: "min-h-64",
-    story: "min-h-80 lg:col-span-2",
+    patterns: "lg:col-span-2",
+    pause: "",
+    personal: "",
+    moments: "",
+    story: "lg:col-span-2",
   } as const;
 
   return (

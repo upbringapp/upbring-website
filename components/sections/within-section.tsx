@@ -25,7 +25,7 @@ export function WithinSection() {
         </p>
       </div>
 
-      <ol className="mt-12 grid gap-5 lg:grid-cols-2">
+      <ol className="mt-12 grid items-start gap-5 lg:grid-cols-2">
         {withinAreas.map((area, index) => (
           <WithinReflectionCard
             key={area.label}

@@ -21,7 +21,7 @@ export function CanopySection() {
         <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
           For your family
         </p>
-        <div className="mt-5 grid gap-5 lg:grid-cols-3">
+        <div className="mt-5 grid items-start gap-5 lg:grid-cols-3">
           <CanopyEditorialCard label="Weekly Letter" content={canopyContent[0]} variant="anchor" />
           <CanopyEditorialCard label="Family Rhythms" content={canopyContent[1]} />
         </div>
@@ -31,7 +31,7 @@ export function CanopySection() {
         <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
           For Arjun
         </p>
-        <div className="mt-5 grid gap-5 md:grid-cols-3">
+        <div className="mt-5 grid items-start gap-5 md:grid-cols-3">
           <CanopyEditorialCard
             label="Curiosities"
             content={canopyContent[2]}
@@ -47,7 +47,7 @@ export function CanopySection() {
         </div>
       </div>
 
-      <div className="mt-16 grid gap-5 lg:grid-cols-2">
+      <div className="mt-16 grid items-start gap-5 lg:grid-cols-2">
         <CanopyEditorialCard
           label="Dinner Table Conversation"
           content={canopyContent[5]}
