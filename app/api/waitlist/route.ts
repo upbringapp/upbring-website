@@ -75,19 +75,22 @@ const handleWaitlist = createWaitlistHandler({
     const { error } = await resend.emails.send({
       from: "Upbring <hello@updates.upbringapp.com>",
       to: [email],
-      subject: "Welcome to Upbring 🌱",
-      text: `Hi,
+      subject: "Welcome to Upbring",
+      text: `Hi there,
 
-Thank you for joining the Upbring early community.
+Thank you for joining the Upbring waitlist.
 
-We're building a place where curiosity grows and strong values flourish.
+We're glad you're here.
 
-We're excited to share this journey with you and will keep you updated as we grow.
+Upbring is being built for parents who want to stay close to their child's world—not through marks or comparisons, but through the small moments that often go unnoticed.
+
+Over the coming weeks, we'll occasionally share updates as we move closer to opening early access.
+
+Until then, thank you for believing in what we're building.
 
 Warmly,
 
-Upbring
-https://upbringapp.com`,
+Upbring`,
     });
 
     return !error;
