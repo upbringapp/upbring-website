@@ -29,7 +29,7 @@ export function CanopySection() {
 
       <div className="mt-16">
         <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
-          For Arjun
+          For Arjun*
         </p>
         <div className="mt-5 grid items-start gap-5 md:grid-cols-3">
           <CanopyEditorialCard

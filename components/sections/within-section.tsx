@@ -24,8 +24,8 @@ export function WithinSection() {
           What we’ve noticed so far — without rushing to conclusions.
         </p>
         <p className="mt-6 max-w-2xl text-sm text-[var(--text-secondary)]">
-          The name Arjun is used only to help demonstrate the experience. In
-          practice, every family sees reflections written for their own child.
+          * Arjun is used only to demonstrate the experience. Every family sees
+          reflections written for their own child.
         </p>
       </div>
 
