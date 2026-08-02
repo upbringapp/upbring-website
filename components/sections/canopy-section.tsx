@@ -47,6 +47,13 @@ export function CanopySection() {
         </div>
       </div>
 
+      {/*
+        Content-governance boundary: these three cards are the detail view of
+        the single Family Rhythms weekly edition above. A future publishing
+        integration must resolve one approved edition and replace indices 5-7
+        atomically, at most once per week. Never connect any other Canopy card
+        to that feed or rotate these records independently.
+      */}
       <div className="mt-16 grid items-start gap-5 lg:grid-cols-2">
         <CanopyEditorialCard
           label="Dinner Table Conversation"

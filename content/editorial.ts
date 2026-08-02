@@ -15,6 +15,21 @@ export type EditorialContentRecord = {
   illustrative: boolean;
 };
 
+/**
+ * Founder-approved website content governance:
+ *
+ * This library explains the product; it does not mirror personalised app
+ * output. Home, the Canopy introduction and Weekly Letter, Curiosities,
+ * Thinkers, Create, all of Within (including Pause), and Privacy & Trust are
+ * intentionally static. Do not connect those records to app assignments,
+ * generated observations, or any other live editorial feed.
+ *
+ * Family Rhythms is the sole weekly editorial surface. Its Dinner Table
+ * Conversation, Do This Together, and One Thing Worth Talking About records
+ * form one indivisible published edition: they may update once per week only,
+ * always together, and never through independent or partial rotation.
+ */
+
 export const homeContent = [
   { id: "home-aaj-kya-seekha", exactText: "A short reflection on what your child explored today — not only the topic, but the way they approached it.\n\nInstead of repeating textbook points, this section helps you understand the larger idea behind the day’s learning.", sourceType: "founder-approved-explanatory-copy", sourceReference: "Group 11 founder correction", approvalStatus: "approved", placement: "Home / Aaj Kya Seekha", illustrative: false },
   { id: "home-parent-summary", exactText: "A calm explanation written for parents.\n\nIt connects the day’s learning with everyday life, helping you understand why it may matter beyond homework.", sourceType: "founder-approved-explanatory-copy", sourceReference: "Group 11 founder correction", approvalStatus: "approved", placement: "Home / Parent Summary", illustrative: false },
