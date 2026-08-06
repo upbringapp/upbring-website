@@ -12,13 +12,15 @@ export const homepageDescription =
 // the single integration point for future Open Graph and Twitter/X imagery.
 export const socialPreviewImagePath: string | undefined = undefined;
 
-export function createSocialPreviewImageMetadata() {
-  if (!socialPreviewImagePath) {
+export function createSocialPreviewImageMetadata(
+  imagePath: string | undefined = socialPreviewImagePath,
+) {
+  if (!imagePath) {
     return {};
   }
 
   return {
-    images: [new URL(socialPreviewImagePath, siteOrigin).toString()],
+    images: [new URL(imagePath, siteOrigin).toString()],
   };
 }
 
