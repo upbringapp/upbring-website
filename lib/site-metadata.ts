@@ -8,6 +8,20 @@ export const homepageTitle =
 export const homepageDescription =
   "Upbring is a quiet companion for parents, bringing together everyday learning, thoughtful questions, family conversations, and patterns noticed over time.";
 
+// Keep this unset until the final renamed social artwork is approved. This is
+// the single integration point for future Open Graph and Twitter/X imagery.
+export const socialPreviewImagePath: string | undefined = undefined;
+
+export function createSocialPreviewImageMetadata() {
+  if (!socialPreviewImagePath) {
+    return {};
+  }
+
+  return {
+    images: [new URL(socialPreviewImagePath, siteOrigin).toString()],
+  };
+}
+
 type PageMetadata = {
   title: string;
   description: string;
@@ -36,11 +50,13 @@ export function createPageMetadata({
       siteName: "Upbring",
       locale: "en_US",
       type: "website",
+      ...createSocialPreviewImageMetadata(),
     },
     twitter: {
       card: "summary",
       title,
       description,
+      ...createSocialPreviewImageMetadata(),
     },
   };
 }

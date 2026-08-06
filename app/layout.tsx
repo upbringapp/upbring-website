@@ -4,6 +4,7 @@ import Script from "next/script";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import {
+  createSocialPreviewImageMetadata,
   homepageDescription,
   homepageTitle,
   siteOrigin,
@@ -45,11 +46,13 @@ export const metadata: Metadata = {
     siteName: "Upbring",
     locale: "en_US",
     type: "website",
+    ...createSocialPreviewImageMetadata(),
   },
   twitter: {
     card: "summary",
     title: homepageTitle,
     description: homepageDescription,
+    ...createSocialPreviewImageMetadata(),
   },
 };
 
