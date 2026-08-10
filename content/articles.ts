@@ -388,6 +388,130 @@ const articleRecords = [
     socialImage: null,
     canonicalPath: "/blog/learning-beyond-the-notebook",
   },
+  {
+    slug: "conversation-before-correctness",
+    title: "Conversation before correctness",
+    description:
+      "A reflection on continuing a child’s learning through open conversation without turning the exchange into a test or revision session.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "After school, a familiar question often arrives easily: “What did you learn today?” It is a natural way for a parent to reach towards the part of the day they did not see. The question can begin with interest. Yet, depending on what follows, it can also begin to feel like a request for a report.",
+      },
+      {
+        type: "paragraph",
+        text: "A child may give a short answer, remember one detail, change the subject, or offer something that sounds incomplete. In that moment, the conversation can move in two directions. It can become a check on what was understood, or it can remain an invitation to keep thinking together.",
+      },
+      {
+        type: "heading",
+        text: "When interest starts to sound like checking",
+      },
+      {
+        type: "paragraph",
+        text: "The difference is not always in the first question. It often appears in the expectation underneath it. “Can you explain photosynthesis?” asks for something already learned to be produced correctly. “What are the raw materials?” asks for recall. Even without marks or a worksheet, the exchange has the shape of an assessment: the parent asks, the child answers, and the answer is judged against something known in advance.",
+      },
+      {
+        type: "paragraph",
+        text: "This can happen quietly. A follow-up such as “Are you sure?” may be intended to help, but it tells the child that the conversation has moved towards correctness. Another question follows, then a clue, then the answer. What began as curiosity now has somewhere specific to arrive.",
+      },
+      {
+        type: "paragraph",
+        text: "A conversation stays open when the answer is not being used as evidence. The parent is not trying to find out how much the child remembers. They are making room for an idea to continue beyond the page. The question matters because of what it might open, not because of what it can verify.",
+      },
+      {
+        type: "heading",
+        text: "Understanding without examining",
+      },
+      {
+        type: "paragraph",
+        text: "Parents do not need every detail of a chapter in order to join a thoughtful exchange. A calm summary of the central idea can be enough. It offers a sense of what today’s learning meant without turning the parent into a second teacher or the conversation into revision.",
+      },
+      {
+        type: "paragraph",
+        text: "From there, a question can move away from the textbook and towards imagination. If people could make food using sunlight, how might an ordinary day change? There is no definition to retrieve and no single correct response. A child can begin with something improbable, reconsider it, or ask a different question in return. The conversation remains close to the idea while leaving the outcome unsettled.",
+      },
+      {
+        type: "paragraph",
+        text: "This is asking to understand rather than asking to test. The parent is listening for where the thought goes, not measuring it against an answer. They can take part as another person in the conversation—wondering, adding a possibility, or admitting that they do not know.",
+      },
+      {
+        type: "heading",
+        text: "The unfinished answer",
+      },
+      {
+        type: "paragraph",
+        text: "An answer does not have to be complete to keep a conversation alive. “Maybe everything would be different” is not yet a detailed thought, but it contains somewhere to go. “What might be different?” continues the idea without turning it into a correction. The next response may bring greater clarity, or it may move the conversation somewhere unexpected.",
+      },
+      {
+        type: "paragraph",
+        text: "Uncertainty can remain part of the exchange. A child may say “I don’t know,” and the conversation may pause there. A parent may say the same. Neither response has to be repaired immediately. Not knowing can be an honest position rather than a gap that someone must quickly fill.",
+      },
+      {
+        type: "paragraph",
+        text: "There is also room for silence, for changing one’s mind, and for an idea that is still taking shape. Conversation does not require a polished answer. Its rhythm is different from a classroom response: people can circle back, interrupt themselves, notice a contradiction, or leave a thought unfinished without losing credit.",
+      },
+      {
+        type: "heading",
+        text: "Before correcting",
+      },
+      {
+        type: "paragraph",
+        text: "Sometimes a child will say something that does not fit the parent’s understanding of the idea. Correcting it immediately may feel useful. But not every family conversation needs to carry the full responsibility of explanation. The moment can first be understood on its own terms: what was the child trying to say, and what connection were they making?",
+      },
+      {
+        type: "paragraph",
+        text: "Listening a little longer does not mean that accuracy never matters. It means that the purpose of this particular exchange is kept clear. If the question was offered to begin a conversation, the first task is not to grade the response. A factual point can be returned to when it genuinely needs attention; the child’s thought does not have to be interrupted before it has been heard.",
+      },
+      {
+        type: "paragraph",
+        text: "The parent can stay curious about the path rather than rushing towards the destination. “What made you think of that?” leaves the child’s idea in view. It does not promise agreement, and it does not require the parent to disguise a quiz as a friendly question. It simply allows the meaning behind the answer to become clearer.",
+      },
+      {
+        type: "heading",
+        text: "What is worth revisiting",
+      },
+      {
+        type: "paragraph",
+        text: "Some ideas deserve another encounter, but revisiting is not the same as immediate revision. An idea can return because it connects with something seen later, because another chapter gives it new context, or because a family conversation happens to touch it again. The return does not need to be scheduled or formal.",
+      },
+      {
+        type: "paragraph",
+        text: "Worth Revisiting identifies a small number of ideas that may continue to matter. It does not add explanations, rank them, or turn them into a list of instructions for the parent. There is no demand to cover them again that evening. They can remain in the background until a natural context brings one forward.",
+      },
+      {
+        type: "paragraph",
+        text: "That restraint protects the difference between keeping an idea available and placing pressure around it. If something returns, the parent may recognise it. If it does not, family life does not need to be reorganised to make it appear. A doorway can remain open without anyone being required to walk through it.",
+      },
+      {
+        type: "heading",
+        text: "A thought shared, not assessed",
+      },
+      {
+        type: "paragraph",
+        text: "Conversation before correctness is not a rule against facts, explanations, or answers. It is a way of recognising what a family conversation is for. There are times to look something up and times to return to a difficult idea. But the parent’s interest does not have to become an examination simply because learning is present.",
+      },
+      {
+        type: "paragraph",
+        text: "One thoughtful question can be enough. It can offer a child the freedom to answer without worrying about being right, and it can give the parent a chance to hear how the idea is moving rather than how accurately it can be repeated. If the first answer leads to another thought, the learning has continued without the conversation becoming a test.",
+      },
+      {
+        type: "paragraph",
+        text: "A conversation can stay close to learning without becoming an assessment. Sometimes that means leaving an answer unfinished. Sometimes it means waiting before correcting. And sometimes it means allowing an idea to return in its own time, carried not by pressure, but by the simple fact that it was worth talking about.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: home-parent-summary, home-dinner-table-conversation, home-worth-revisiting, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/04_parent_summary.md, 05_worth_revisiting.md, and 06_dinner_table_conversation.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/conversation-before-correctness",
+  },
 ] as const satisfies readonly ArticleRecord[];
 
 export const articles = validateArticleRecords(articleRecords);
