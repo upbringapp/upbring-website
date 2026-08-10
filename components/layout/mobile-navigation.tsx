@@ -31,7 +31,7 @@ export function MobileNavigation() {
   }, [isOpen]);
 
   return (
-    <div className="lg:hidden">
+    <div className="ml-auto lg:hidden">
       <button
         ref={buttonRef}
         type="button"

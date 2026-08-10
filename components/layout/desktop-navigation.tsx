@@ -19,7 +19,7 @@ export function DesktopNavigation() {
                 href={item.href}
                 aria-current={isCurrent ? "page" : undefined}
                 className={[
-                  "inline-flex min-h-11 items-center rounded-full px-4 text-sm transition-colors",
+                  "inline-flex min-h-11 items-center rounded-full px-4 text-base transition-colors",
                   "duration-[var(--transition-duration)] ease-[var(--transition-easing)]",
                   isCurrent
                     ? "bg-gray-100 text-[var(--text-primary)]"
