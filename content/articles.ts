@@ -322,7 +322,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "Sometimes the child will continue the thought. Sometimes they will notice something else. Sometimes the moment will pass without conversation. None of these responses needs to be corrected. The observation was an invitation, not a test hidden inside everyday life.",
+        text: "The child may continue the thought, notice something else, or let the moment pass without conversation. None of these responses needs to be corrected. The observation was an invitation, not a test hidden inside everyday life.",
       },
       {
         type: "heading",
@@ -594,7 +594,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "Completion often arrives as an adult expectation. Once materials are out and time has been spent, leaving something unfinished can seem wasteful. Yet an open invitation has no required endpoint. The child may have reached the part they wanted to make, or their attention may simply have moved elsewhere.",
+        text: "Completion can become an expectation once an activity has begun. Once materials are out and time has been spent, leaving something unfinished can seem wasteful. Yet an open invitation has no required endpoint. The child may have reached the part they wanted to make, or their attention may simply have moved elsewhere.",
       },
       {
         type: "paragraph",
@@ -682,7 +682,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "This selectiveness is different from surveillance. Daily surveillance tries to preserve each movement so that nothing is missed. Weekly perspective accepts that a useful reflection does not need a complete account. It pays attention without building a minute-by-minute record of the child.",
+        text: "This selectiveness differs from recording every event as it happens. A daily record can try to preserve each movement so that nothing is missed. Weekly perspective accepts that a useful reflection does not need a complete account. It pays attention without building a minute-by-minute record of the child.",
       },
       {
         type: "heading",
