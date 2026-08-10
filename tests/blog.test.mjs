@@ -42,7 +42,7 @@ function articleFixture(overrides = {}) {
   };
 }
 
-test("production contains ten traceable drafts and no public articles", () => {
+test("production contains fifteen traceable drafts and no public articles", () => {
   assert.deepEqual(
     articles.map((article) => article.slug),
     [
@@ -56,6 +56,11 @@ test("production contains ten traceable drafts and no public articles", () => {
       "small-rituals-deep-roots",
       "worth-revisiting",
       "keeping-the-small-moments",
+      "before-we-decide-what-it-means",
+      "more-than-a-pattern",
+      "a-story-still-being-written",
+      "one-thing-worth-talking-about",
+      "what-a-summary-should-leave-out",
     ],
   );
 

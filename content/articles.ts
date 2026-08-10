@@ -1488,6 +1488,834 @@ const articleRecords = [
     socialImage: null,
     canonicalPath: "/blog/keeping-the-small-moments",
   },
+  {
+    slug: "before-we-decide-what-it-means",
+    title: "Before we decide what it means",
+    description:
+      "A reflection on allowing time between an observation and its explanation so that context can arrive without urgency.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "An observation can be written in one line. They returned to the same page twice. They spoke less than usual. They kept one question nearby for several days. The sentence is short; the possible meanings around it are not.",
+      },
+      {
+        type: "paragraph",
+        text: "Explanation often arrives quickly because an unexplained detail feels unfinished. A pause allows the sentence to remain exactly what it is for a little longer.",
+      },
+      {
+        type: "heading",
+        text: "The urge to complete the thought",
+      },
+      {
+        type: "paragraph",
+        text: "A parent notices something and naturally wonders why. The mind offers possibilities: interest, reluctance, confidence, tiredness, difficulty, preference. Each possibility turns the observation towards a different account.",
+      },
+      {
+        type: "paragraph",
+        text: "Choosing one account can bring a sense of order. The moment has a place, and the parent knows what to call it. Yet the speed of that order may come from the wish to finish the thought rather than from anything the moment itself has supplied.",
+      },
+      {
+        type: "paragraph",
+        text: "Pause interrupts that speed without demanding a better explanation. It leaves the observation incomplete on purpose. Nothing has to be decided before the next part of the day begins.",
+      },
+      {
+        type: "heading",
+        text: "A little time around the detail",
+      },
+      {
+        type: "paragraph",
+        text: "Time does not automatically reveal meaning. It does, however, change what surrounds the observation. Another setting appears. The same detail returns, changes, or disappears. What seemed unusual may begin to look ordinary within the week.",
+      },
+      {
+        type: "paragraph",
+        text: "The first observation remains valid even when later context alters how it is understood. The child did return to the page twice. The parent can keep that detail without requiring the first explanation to survive.",
+      },
+      {
+        type: "paragraph",
+        text: "Waiting therefore has a modest purpose. It gives context the chance to exist before meaning is fixed. There is no promise that a clear answer will eventually arrive.",
+      },
+      {
+        type: "heading",
+        text: "Silence without instruction",
+      },
+      {
+        type: "paragraph",
+        text: "Pause is designed as a thought rather than an instruction. It does not tell the parent to stop, breathe, reflect, or search inward. The writing slows because explanation has been removed.",
+      },
+      {
+        type: "paragraph",
+        text: "This matters because an instruction would create another task. The parent would be expected to perform reflection correctly and emerge with a useful insight. Silence would become a method with an outcome.",
+      },
+      {
+        type: "paragraph",
+        text: "A quiet line can remain beside the observation instead. It may be read and left alone. The pause belongs to the space after the words, not to a prescribed exercise.",
+      },
+      {
+        type: "heading",
+        text: "Urgency can be separate from importance",
+      },
+      {
+        type: "paragraph",
+        text: "An observation may feel important without requiring an immediate interpretation. Importance describes the attention it has received. Urgency adds a deadline to understanding.",
+      },
+      {
+        type: "paragraph",
+        text: "The deadline is often invisible. A parent may feel that failing to explain the moment means missing something about the child. That pressure can make the first available meaning seem more necessary than it is.",
+      },
+      {
+        type: "paragraph",
+        text: "Removing the deadline does not dismiss the observation. The detail can be carried into another day without being turned into a problem that must be solved.",
+      },
+      {
+        type: "heading",
+        text: "Questions that do not demand replies",
+      },
+      {
+        type: "paragraph",
+        text: "A quiet question may accompany the pause: will this appear elsewhere, what changes around it, what stays the same? These questions are different from a checklist because no reply is required now.",
+      },
+      {
+        type: "paragraph",
+        text: "They can also be forgotten. If the observation never returns, the parent does not owe the earlier question an answer. The pause has not failed because it produced no conclusion.",
+      },
+      {
+        type: "paragraph",
+        text: "If context does arrive, it may complicate the original thought rather than clarify it. The same child can respond differently in another setting. More information may widen the possible meanings.",
+      },
+      {
+        type: "heading",
+        text: "Meaning can remain provisional",
+      },
+      {
+        type: "paragraph",
+        text: "Pause does not promise that waiting will make the parent wiser or the observation easier to understand. The later view may be just as uncertain as the first.",
+      },
+      {
+        type: "paragraph",
+        text: "It also does not make every unexplained detail significant. Many moments pass without returning. Giving them time means they are not forced into meaning, not that meaning is waiting to be uncovered.",
+      },
+      {
+        type: "paragraph",
+        text: "The absence of a conclusion can feel less satisfying than a clear account. Pause makes space for that dissatisfaction without resolving it through motivational language or reassurance.",
+      },
+      {
+        type: "paragraph",
+        text: "A parent may eventually decide that an explanation is useful. The time before that decision remains part of the process. It allowed the explanation to arrive as a choice rather than an urgent reflex.",
+      },
+      {
+        type: "paragraph",
+        text: "Another person may understand the same observation differently. Pausing leaves that possibility available because the first interpretation has not already become the official version.",
+      },
+      {
+        type: "paragraph",
+        text: "The purpose is not permanent hesitation. It is a brief interval in which the observation can exist without carrying a settled meaning.",
+      },
+      {
+        type: "paragraph",
+        text: "The interval may be almost invisible from the outside. No action is required, and the parent does not have to announce that a judgement has been postponed.",
+      },
+      {
+        type: "paragraph",
+        text: "What changes is the status of the first explanation. It remains one possibility among others rather than becoming the lens through which every later moment is read.",
+      },
+      {
+        type: "paragraph",
+        text: "That small restraint is the full work of Pause here. The observation is kept company by time, with no demand that time produce an answer.",
+      },
+      {
+        type: "paragraph",
+        text: "Pausing does not forbid interpretation. A parent may still form an impression and hold it lightly. The impression can change without requiring the earlier view to be defended.",
+      },
+      {
+        type: "paragraph",
+        text: "Language can preserve that lightness: perhaps, for now, on this occasion. These words do not weaken the observation. They mark the distance between what happened and what it might mean.",
+      },
+      {
+        type: "paragraph",
+        text: "Before we decide what it means, the moment is allowed to stay close to its original size. It happened, it was noticed, and the explanation can wait without leaving the observation behind.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: within-pause; upbring-lite/docs/02_editorial_bible/14_pause.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/before-we-decide-what-it-means",
+  },
+  {
+    slug: "more-than-a-pattern",
+    title: "More than a pattern",
+    description:
+      "A reflection on keeping a child larger than any pattern, portrait, or summary adults may form from what they have noticed.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "Two descriptions of the same child can both be true. They may spend a long time with one difficult idea and leave another quickly. They may speak freely in one room and listen quietly in the next.",
+      },
+      {
+        type: "paragraph",
+        text: "A neat summary tends to choose one side. The child continues to contain both, along with many parts that have not been seen or recorded.",
+      },
+      {
+        type: "heading",
+        text: "The appeal of a clear portrait",
+      },
+      {
+        type: "paragraph",
+        text: "Patterns help separate recurring details from isolated moments. Once a pattern has been named, it can begin to organise everything that follows. New observations are read as confirmation, while details that do not fit are treated as exceptions.",
+      },
+      {
+        type: "paragraph",
+        text: "The resulting portrait may feel coherent. It gives the parent language for what has been noticed and makes a complicated history easier to remember. Coherence, however, belongs to the portrait. The child has not agreed to become consistent for the sake of the description.",
+      },
+      {
+        type: "paragraph",
+        text: "Just Arjun holds a deliberate boundary here. The space is centred on one child, free from comparison and fixed labels, while remaining careful not to turn what has been seen so far into a complete identity.",
+      },
+      {
+        type: "heading",
+        text: "Contradictions belong in the record",
+      },
+      {
+        type: "paragraph",
+        text: "A contradiction does not always need to be resolved. A child can enjoy explaining one idea and avoid speaking about another. They can return patiently to a task on Tuesday and abandon a similar one on Friday.",
+      },
+      {
+        type: "paragraph",
+        text: "Both moments can remain visible. Choosing the more flattering or more frequent detail would make the account smoother, but smoothness is not required for recognition.",
+      },
+      {
+        type: "paragraph",
+        text: "Contradictions also protect the record from sounding like a personality profile. They show that behaviour changes with subject, setting, company, timing, and circumstances that may not be known.",
+      },
+      {
+        type: "heading",
+        text: "Interests can move",
+      },
+      {
+        type: "paragraph",
+        text: "An interest that appeared repeatedly for several months may later become quiet. Another subject may take its place, or the earlier interest may return in a different form. None of these changes requires a story about losing or gaining part of the child.",
+      },
+      {
+        type: "paragraph",
+        text: "A portrait built around one interest can make change look like inconsistency. A more modest account says what was present during a particular period and leaves later periods free to differ.",
+      },
+      {
+        type: "paragraph",
+        text: "The phrase “so far” is useful for this reason. It places a boundary around the time observed without implying that the next part should resemble the last.",
+      },
+      {
+        type: "heading",
+        text: "Context changes what is visible",
+      },
+      {
+        type: "paragraph",
+        text: "Adults rarely see every side of a child at once. Home, school, a conversation with one person, and a group activity each make different responses possible.",
+      },
+      {
+        type: "paragraph",
+        text: "An account written from one setting should not pretend to contain the others. It can describe what appeared here, among these people, around this kind of work.",
+      },
+      {
+        type: "paragraph",
+        text: "Context is not an excuse added after the observation. It is part of the observation. Removing it can make a temporary response sound like a stable quality.",
+      },
+      {
+        type: "heading",
+        text: "A name is not a category",
+      },
+      {
+        type: "paragraph",
+        text: "Centred on one child means the record can use the child’s name without turning the name into shorthand for a type. “Arjun” refers to this person, not to an analytical learner, a quiet child, or any other category.",
+      },
+      {
+        type: "paragraph",
+        text: "The distinction also removes comparison. A moment does not need to be early, advanced, unusual, or better than another child’s moment to belong in the account.",
+      },
+      {
+        type: "paragraph",
+        text: "Individuality appears through the particular details that have accumulated, including details that resist a theme. It does not need a trait label to become visible.",
+      },
+      {
+        type: "heading",
+        text: "A summary with edges",
+      },
+      {
+        type: "paragraph",
+        text: "Much of the child remains outside any written record. Private thoughts, experiences away from the adult, ordinary changes of mind, and moments nobody noticed do not become available simply because a summary is careful.",
+      },
+      {
+        type: "paragraph",
+        text: "That unseen space should not be filled with assumptions. The account can stop at the edge of what was observed and acknowledge that the child continues beyond it.",
+      },
+      {
+        type: "paragraph",
+        text: "The child may also disagree with the portrait. A description that feels recognisable to the parent may feel incomplete or misplaced to the person being described. Their response belongs beside the adult’s account.",
+      },
+      {
+        type: "paragraph",
+        text: "A living portrait can change when new material appears. Earlier wording may be revised, not because it was dishonest, but because the child’s complexity has become visible in another way.",
+      },
+      {
+        type: "paragraph",
+        text: "No version needs to become definitive. Several careful descriptions can sit beside one another, each attached to its period and context.",
+      },
+      {
+        type: "paragraph",
+        text: "This makes recognition different from possession. The adult can recognise a recurring part of the child without claiming to have captured the whole person.",
+      },
+      {
+        type: "paragraph",
+        text: "Warmth does not require certainty. An account can feel close and specific while using language that admits change, contradiction, and the limits of the observer.",
+      },
+      {
+        type: "paragraph",
+        text: "The details that do not fit may be especially useful to keep. They prevent the portrait from becoming a repeated statement of what the adult already expects to see.",
+      },
+      {
+        type: "paragraph",
+        text: "The result is not a deliberately vague child. It is a precise account with enough humility to remain smaller than its subject.",
+      },
+      {
+        type: "paragraph",
+        text: "Any portrait leaves something outside it. The writer chooses which observations to include, which period to cover, and which language can hold them. Acknowledging those edges keeps the summary from presenting itself as the child.",
+      },
+      {
+        type: "paragraph",
+        text: "The account can be warm and recognisable while remaining incomplete. A parent may see their child in the words without needing every sentence to apply in every setting.",
+      },
+      {
+        type: "paragraph",
+        text: "More than a pattern is not a rejection of what has been noticed. It is a reminder of scale. The pattern belongs inside the child’s story; the child does not belong inside the pattern.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: within-just-arjun, within-story-so-far; upbring-lite/docs/02_editorial_bible/22_this_is_child.md and 26_his_story_so_far.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/more-than-a-pattern",
+  },
+  {
+    slug: "a-story-still-being-written",
+    title: "A story still being written",
+    description:
+      "A reflection on arranging fragments across time into a continuous account without forcing the child’s story towards closure.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "“So far” is a small phrase with an exact job. It gathers what has already happened and places an edge around the present. The words do not say what the next page should contain.",
+      },
+      {
+        type: "paragraph",
+        text: "A child’s story can be held in the same way: enough continuity to recognise what has been lived, with no requirement to complete the account.",
+      },
+      {
+        type: "heading",
+        text: "From fragments to sequence",
+      },
+      {
+        type: "paragraph",
+        text: "Individual moments are separate when they are recorded. One belongs to a conversation, another to a week of questions, another to a quiet return that appeared months later.",
+      },
+      {
+        type: "paragraph",
+        text: "Placing them together creates sequence. The reader can see what came before and after, where something recurred, and where the record went silent. Sequence does not automatically create a single theme.",
+      },
+      {
+        type: "paragraph",
+        text: "The fragments may support several accounts. One arrangement brings curiosity forward; another notices changes in attention; a third simply shows the variety of the period. The material does not dictate one final version.",
+      },
+      {
+        type: "heading",
+        text: "Continuity without a straight line",
+      },
+      {
+        type: "paragraph",
+        text: "A continuous story need not move steadily in one direction. Interests return and recede. A question appears across several subjects, then disappears. Something difficult becomes easier while another part becomes less certain.",
+      },
+      {
+        type: "paragraph",
+        text: "These changes can remain beside one another without being organised into progress or decline. Continuity comes from keeping the periods connected, not from making each period an improvement on the last.",
+      },
+      {
+        type: "paragraph",
+        text: "A story that permits reversals and quiet stretches can stay closer to the record. Nothing has to be removed merely because it interrupts a cleaner account.",
+      },
+      {
+        type: "heading",
+        text: "The narrator’s limits",
+      },
+      {
+        type: "paragraph",
+        text: "A parent or editor arranging the story has access to observations, letters, moments, and reflections. That material is substantial, but it is still a selection from the child’s life.",
+      },
+      {
+        type: "paragraph",
+        text: "The narrator decides what sits together and which details receive emphasis. Humility begins with recognising that choice. The story is assembled from what was available; it is not the only account that could be written.",
+      },
+      {
+        type: "paragraph",
+        text: "The child may remember a different part, understand an event differently, or give no importance to something the adult preserved. Those differences do not have to be corrected into one official version.",
+      },
+      {
+        type: "heading",
+        text: "Change without rewriting the past",
+      },
+      {
+        type: "paragraph",
+        text: "Later context can alter how an earlier fragment is read. A question that once seemed isolated may turn out to have returned often. An apparent pattern may become less clear when different behaviour appears.",
+      },
+      {
+        type: "paragraph",
+        text: "The earlier record need not be edited to make it predict the later one. It can remain a truthful account of what was visible then. The new material changes the larger arrangement.",
+      },
+      {
+        type: "paragraph",
+        text: "This allows the story to develop without claiming that every change was already present in hidden form. What came later can genuinely add something new.",
+      },
+      {
+        type: "heading",
+        text: "No required ending",
+      },
+      {
+        type: "paragraph",
+        text: "Stories often create expectations about resolution. A difficulty is overcome, an interest finds its purpose, or a repeated question points towards a future. A child’s account does not owe the reader that shape.",
+      },
+      {
+        type: "paragraph",
+        text: "A period can end with uncertainty. The question may still be present, the interest may be changing, and the significance of several moments may remain unknown.",
+      },
+      {
+        type: "paragraph",
+        text: "Refusing a forced ending also avoids prediction. The existing pages describe what has happened. They do not need to announce what the child will become.",
+      },
+      {
+        type: "heading",
+        text: "What the title can hold",
+      },
+      {
+        type: "paragraph",
+        text: "Reading the story later may bring different details forward. A parent who once noticed a recurring question may later pay more attention to the changes around it. The text has not changed, but the reader has another context.",
+      },
+      {
+        type: "paragraph",
+        text: "A later edition can include new fragments without making the earlier edition obsolete. Each version describes the material available at that point.",
+      },
+      {
+        type: "paragraph",
+        text: "This allows the record to retain its history. Sentences do not have to be rewritten into a seamless account every time something new occurs.",
+      },
+      {
+        type: "paragraph",
+        text: "Some themes may fade from later versions. Their earlier presence remains true to that period, even if they no longer organise the current story.",
+      },
+      {
+        type: "paragraph",
+        text: "The account can also contain sections with no clear relation yet. Their place beside one another is enough until time provides more context—or never does.",
+      },
+      {
+        type: "paragraph",
+        text: "Reading without closure means allowing those uneven parts to remain. The story offers continuity through sequence and memory, not through a final explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "The phrase “still being written” refers to time, not destiny. More life will occur; the record does not claim to know what that life will mean.",
+      },
+      {
+        type: "paragraph",
+        text: "The present version can still be read with care. Incompleteness does not make it temporary or disposable; it describes the honest condition of an account that continues.",
+      },
+      {
+        type: "paragraph",
+        text: "A parent may recognise connections that were difficult to see day by day. Recognition can remain attached to what has happened without becoming a forecast.",
+      },
+      {
+        type: "paragraph",
+        text: "When the record is closed for now, no final sentence needs to gather every theme. The date and the words “so far” provide enough of an ending.",
+      },
+      {
+        type: "paragraph",
+        text: "Story So Far offers a title broad enough for patterns, curiosities, moments, and quiet changes to appear together. No single category has to define the account.",
+      },
+      {
+        type: "paragraph",
+        text: "The title also remains accurate each time the record is revisited. More has happened, the arrangement may change, and the words “so far” continue to mark the same honest limit.",
+      },
+      {
+        type: "paragraph",
+        text: "A story still being written can be read without guessing its ending. The pages already present are enough to recognise, while the next part remains unwritten. The account can stop at the present without turning that stopping point into a conclusion about what follows. More remains possible.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: within-story-so-far, within-moments; upbring-lite/docs/02_editorial_bible/26_his_story_so_far.md and 22_this_is_child.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/a-story-still-being-written",
+  },
+  {
+    slug: "one-thing-worth-talking-about",
+    title: "One thing worth talking about",
+    description:
+      "A reflection on choosing one worthwhile idea for family conversation while leaving everything else free from discussion.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "A chapter may contain definitions, examples, processes, exceptions, and several ideas that could continue beyond the page. Carrying all of them into family conversation would recreate the chapter in another setting.",
+      },
+      {
+        type: "paragraph",
+        text: "Choosing one thing changes the scale. The rest can remain where it was learned. One idea is given a little space without becoming a programme for the evening.",
+      },
+      {
+        type: "heading",
+        text: "Selection is editorial work",
+      },
+      {
+        type: "paragraph",
+        text: "Selecting one idea requires leaving useful material out. The chosen thought is not necessarily the most difficult concept, the most examinable point, or the detail most likely to be forgotten.",
+      },
+      {
+        type: "paragraph",
+        text: "One Thing Worth Talking About looks instead for the human idea within the learning: something people of different ages could consider without reopening the textbook.",
+      },
+      {
+        type: "paragraph",
+        text: "That choice is editorial because it considers the life of the idea outside its original format. A fact may be important within the lesson and still make a poor family conversation. Another detail may connect naturally with experience and possibility.",
+      },
+      {
+        type: "heading",
+        text: "Why not everything needs discussion",
+      },
+      {
+        type: "paragraph",
+        text: "Turning every concept into conversation would make family attention another extension of the curriculum. The parent would carry a list of topics, and the child would meet the day’s work again through a different set of questions.",
+      },
+      {
+        type: "paragraph",
+        text: "Most learning can be allowed to end with the work itself. The family does not need to discuss each chapter in order to remain close to what the child encountered.",
+      },
+      {
+        type: "paragraph",
+        text: "Omission protects the selected idea from crowding as well. One question can be remembered in ordinary conversation; six topics begin to require order, coverage, and time.",
+      },
+      {
+        type: "heading",
+        text: "The idea beneath the fact",
+      },
+      {
+        type: "paragraph",
+        text: "A factual prompt asks people to retrieve or explain information. A worthwhile conversation starter carries the subject towards a question that can be entered without specialist knowledge.",
+      },
+      {
+        type: "paragraph",
+        text: "Nature solving a problem, for example, can be considered through things people have seen. The conversation remains connected to an idea from learning while making no demand for a definition.",
+      },
+      {
+        type: "paragraph",
+        text: "The selected thought should not hide a moral lesson. A question framed to produce the correct value or behaviour has already decided where the exchange should end.",
+      },
+      {
+        type: "heading",
+        text: "One clear invitation",
+      },
+      {
+        type: "paragraph",
+        text: "A conversation starter can be short because it does not need to contain the whole context. Enough information is present to make the thought understandable, and the rest is left to the people who take it up.",
+      },
+      {
+        type: "paragraph",
+        text: "Additional prompts can make the invitation feel managed. Follow-up questions, instructions to compare answers, or a request to reach agreement change one thought into a structured activity.",
+      },
+      {
+        type: "paragraph",
+        text: "Keeping one clear invitation allows the conversation to find its own length. It may last five minutes, move to another subject, or stop after a single reply.",
+      },
+      {
+        type: "heading",
+        text: "Light enough to leave alone",
+      },
+      {
+        type: "paragraph",
+        text: "Editorial selection does not create an obligation for the family. The idea can be offered and receive no attention that evening. A tired child, a busy table, or a different conversation may take priority.",
+      },
+      {
+        type: "paragraph",
+        text: "The unused prompt has not failed. It was prepared as a possibility, not assigned as a task. It can be left behind without being rescheduled.",
+      },
+      {
+        type: "paragraph",
+        text: "This lightness is part of choosing only one thing. The family can recognise the invitation without having to manage a collection of missed conversations.",
+      },
+      {
+        type: "heading",
+        text: "A place within family rhythm",
+      },
+      {
+        type: "paragraph",
+        text: "Family Rhythms gives the invitation a recurring place without requiring the same topic to return. The practice is familiar; the selected thought changes.",
+      },
+      {
+        type: "paragraph",
+        text: "Because the question is only one part of the rhythm, it does not have to carry the whole purpose of family time. Dinner, a walk, or a quiet evening remains what it already was.",
+      },
+      {
+        type: "paragraph",
+        text: "The regularity belongs to making a little room, not to measuring whether the room was used well.",
+      },
+      {
+        type: "heading",
+        text: "Enough for one conversation",
+      },
+      {
+        type: "paragraph",
+        text: "The selected idea may change during editing. A thought that first seemed promising can require too much background, sound like a lesson, or narrow towards an expected response.",
+      },
+      {
+        type: "paragraph",
+        text: "Choosing again is part of the work. The editor can return to the chapter and look for an idea that remains understandable after unnecessary detail is removed.",
+      },
+      {
+        type: "paragraph",
+        text: "Selection also depends on the family setting. A question suitable for specialists may not welcome different ages. One that depends on remembering the chapter asks too much of anyone who was not there.",
+      },
+      {
+        type: "paragraph",
+        text: "A broadly accessible question need not become generic. Its connection to the original concept should remain visible, even when the technical language has been left behind.",
+      },
+      {
+        type: "paragraph",
+        text: "The final prompt carries evidence of many decisions, but the family should not have to see that editorial work. They receive one clear thought rather than the list of alternatives that was considered.",
+      },
+      {
+        type: "paragraph",
+        text: "One thing is enough because the invitation is intentionally small. Its size leaves the rest of family conversation free to become whatever the evening already holds.",
+      },
+      {
+        type: "paragraph",
+        text: "The chosen idea does not become more important than everything omitted. It has simply been selected for this setting, on this occasion, from the material available.",
+      },
+      {
+        type: "paragraph",
+        text: "Another editor might choose differently. That possibility is consistent with the form: the purpose is to offer one worthwhile thought, not to identify the only worthwhile thought.",
+      },
+      {
+        type: "paragraph",
+        text: "The selection is complete when the prompt can stand alone and remain light. The family receives the question without inheriting the work that produced it.",
+      },
+      {
+        type: "paragraph",
+        text: "One thing worth talking about is a decision about attention. Among many possible ideas, this one may be welcome in family conversation.",
+      },
+      {
+        type: "paragraph",
+        text: "It can be offered plainly and then released. The family may carry it for a while or let the evening continue without it. Nothing else needs to be added.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: canopy-one-thing-worth-talking-about, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/15_one_thing_worth_talking_about.md and 06_dinner_table_conversation.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/one-thing-worth-talking-about",
+  },
+  {
+    slug: "what-a-summary-should-leave-out",
+    title: "What a summary should leave out",
+    description:
+      "A reflection on selective summarisation that offers useful context without claiming to contain the whole lesson, week, or child.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "To write a short summary, someone must decide what will disappear. Examples are removed, details are combined, and several possible threads are set aside so that one central flow can remain.",
+      },
+      {
+        type: "paragraph",
+        text: "A useful summary is shaped as much by those omissions as by the sentences that survive. The question is not how to fit everything in, but what the reader needs from this particular account.",
+      },
+      {
+        type: "heading",
+        text: "Compression changes the material",
+      },
+      {
+        type: "paragraph",
+        text: "A chapter, day, or week contains more detail than a short paragraph can hold. Reducing it is not a neutral transfer from a long form to a small one. The writer chooses emphasis and sequence.",
+      },
+      {
+        type: "paragraph",
+        text: "Two accurate summaries can therefore feel different. One gives the central concept priority; another foregrounds why the idea matters beyond the work. Both may be truthful while leaving out different parts.",
+      },
+      {
+        type: "paragraph",
+        text: "Acknowledging that choice prevents the summary from sounding like the only possible account. It is an editorial view prepared for a specific reader and purpose.",
+      },
+      {
+        type: "heading",
+        text: "What the parent needs",
+      },
+      {
+        type: "paragraph",
+        text: "The Parent Summary is designed to help an adult understand the central idea quickly. The parent does not need every term, exercise, or piece of chapter structure to feel connected to what was learned.",
+      },
+      {
+        type: "paragraph",
+        text: "Leaving those details out is different from hiding complexity. The details remain available in the original material. The summary simply does not ask the parent to become a second student of the chapter.",
+      },
+      {
+        type: "paragraph",
+        text: "Parent-first language also changes what receives space. Relevance and context may matter more than the order in which definitions appeared on the page.",
+      },
+      {
+        type: "heading",
+        text: "A central flow, not a catalogue",
+      },
+      {
+        type: "paragraph",
+        text: "A catalogue preserves many items by listing them. A summary creates relation between selected details. The reader can follow one thought from the beginning of the paragraph to the end.",
+      },
+      {
+        type: "paragraph",
+        text: "Adding every important concept can break that flow. The result begins to resemble revision notes: complete enough to study, but less clear about what the learning meant as a whole.",
+      },
+      {
+        type: "paragraph",
+        text: "Selection may leave a concept unnamed even when it mattered during the lesson. Its absence from the summary does not make it unimportant. It means another idea was carrying the central account.",
+      },
+      {
+        type: "heading",
+        text: "Context has limits too",
+      },
+      {
+        type: "paragraph",
+        text: "Context helps a parent understand why an idea belongs within a larger subject or everyday setting. Too much context can create another kind of completeness, surrounding the summary with explanations until little has actually been left out.",
+      },
+      {
+        type: "paragraph",
+        text: "The writer can include only the context that changes how the central idea is understood. Background that is merely interesting may belong elsewhere.",
+      },
+      {
+        type: "paragraph",
+        text: "This boundary keeps the summary short without making it abrupt. The parent receives a coherent account and can stop reading without feeling that a set of instructions will follow.",
+      },
+      {
+        type: "heading",
+        text: "Leaving the child out of evaluation",
+      },
+      {
+        type: "paragraph",
+        text: "A summary of learning can drift into a summary of the learner. A sentence about the chapter is followed by a statement about how well the child understood it, how engaged they appeared, or what they should do next.",
+      },
+      {
+        type: "paragraph",
+        text: "Those judgements are not required to explain the central idea to the parent. Removing them keeps the account focused on the learning rather than presenting a compressed verdict on the child.",
+      },
+      {
+        type: "paragraph",
+        text: "Even a weekly summary should not pretend to contain the whole child. It can reflect one theme from a defined period while leaving personality, future behaviour, and unobserved parts outside the frame.",
+      },
+      {
+        type: "heading",
+        text: "Useful without false completeness",
+      },
+      {
+        type: "paragraph",
+        text: "A summary can be complete for its purpose without being complete in every sense. It may give the parent what is needed to understand the main idea while openly remaining smaller than the source.",
+      },
+      {
+        type: "paragraph",
+        text: "That limit becomes clearer when the writing avoids phrases such as “everything you need to know” or “the full picture.” The summary offers orientation, not total coverage.",
+      },
+      {
+        type: "paragraph",
+        text: "The same principle applies across a week. One selected theme can help the parent read the period without claiming that every lesson, response, or family context has been represented.",
+      },
+      {
+        type: "heading",
+        text: "The discipline of stopping",
+      },
+      {
+        type: "paragraph",
+        text: "Leaving material out also creates responsibility. The omitted detail should not change the meaning of what remains or make a limited statement sound universal.",
+      },
+      {
+        type: "paragraph",
+        text: "A qualifier may therefore deserve space even when another example does not. Words such as “today,” “in this chapter,” or “during the week” keep the summary attached to its actual scope.",
+      },
+      {
+        type: "paragraph",
+        text: "The writer can check each sentence against that scope. A claim about the idea belongs; a claim about the whole child or an undefined future does not.",
+      },
+      {
+        type: "paragraph",
+        text: "Good omission is visible in the calmness of the result. The summary does not rush through a compressed list or apologise for what it cannot contain.",
+      },
+      {
+        type: "paragraph",
+        text: "The reader receives one usable account with clear limits. Everything beyond those limits remains available for another format, another time, or no summary at all.",
+      },
+      {
+        type: "paragraph",
+        text: "A summary can also leave silence around what was uncertain. Filling every gap with a likely explanation would make the paragraph smoother while making its limits less truthful.",
+      },
+      {
+        type: "paragraph",
+        text: "What remains should be able to carry its own weight. If a sentence depends on several missing qualifications, it may not belong in the short account.",
+      },
+      {
+        type: "paragraph",
+        text: "The final paragraph is useful because it is selective, not despite that selectivity. Its honesty lies in knowing where the account ends.",
+      },
+      {
+        type: "paragraph",
+        text: "Summarising ends when the central flow is clear, not when the source has been exhausted. Continuing to add detail can make the writer feel more accurate while making the account less useful.",
+      },
+      {
+        type: "paragraph",
+        text: "Stopping leaves visible edges. The reader can understand what the summary covers and avoid mistaking it for the chapter, the week, or the child.",
+      },
+      {
+        type: "paragraph",
+        text: "What a summary leaves out is therefore part of its honesty. The omitted material still exists; this account has chosen the part its reader needs now.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: home-parent-summary, canopy-weekly-letter, within-patterns-over-time; upbring-lite/docs/02_editorial_bible/04_parent_summary.md, 23_weekly_letter.md, and 25_patterns_over_time.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/what-a-summary-should-leave-out",
+  },
 ] as const satisfies readonly ArticleRecord[];
 
 export const articles = validateArticleRecords(articleRecords);
