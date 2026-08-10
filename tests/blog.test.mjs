@@ -42,8 +42,14 @@ function articleFixture(overrides = {}) {
   };
 }
 
-test("production contains no fabricated article records", () => {
-  assert.deepEqual(articles, []);
+test("production contains one traceable draft and no public articles", () => {
+  assert.equal(articles.length, 1);
+  assert.equal(articles[0].slug, "noticing-without-concluding");
+  assert.equal(articles[0].status, "draft");
+  assert.equal(articles[0].approvalStatus, "requires-editorial-approval");
+  assert.equal(articles[0].publishedAt, null);
+  assert.equal(articles[0].socialImage, null);
+  assert.deepEqual(getPublishedArticles(), []);
 });
 
 test("only published approved articles are publicly selectable", () => {
