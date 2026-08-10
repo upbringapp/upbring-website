@@ -234,7 +234,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "Not every observation needs an immediate conclusion. Sometimes the most faithful response is to let a thought remain unfinished. Pause creates that space: not another explanation, but a moment in which the parent does not have to decide what the observation means.",
+        text: "Not every observation needs an immediate conclusion. Sometimes a thought can remain unfinished. Pause creates that space: not another explanation, but a moment in which the parent does not have to decide what the observation means.",
       },
       {
         type: "paragraph",
@@ -326,23 +326,15 @@ const articleRecords = [
       },
       {
         type: "heading",
-        text: "Conversation without a correct answer",
+        text: "A thought can continue",
       },
       {
         type: "paragraph",
-        text: "A question can also carry learning beyond the notebook, but its tone changes what follows. “What did you learn?” can sound like a request to report back. “Can you explain the chapter?” can turn a family conversation into a memory check. Even when asked warmly, these questions have an expected kind of answer.",
+        text: "A question can be one way an idea returns in family life. It may arise at dinner or while something ordinary is happening, without asking the child to repeat the chapter. A comment can do the same. The idea may simply be recognised, shared for a moment, and allowed to sit beside whatever the family is already doing.",
       },
       {
         type: "paragraph",
-        text: "A dinner-table conversation makes room for something less settled. It starts from an idea, then opens it towards imagination or everyday life. If people could make food using sunlight, what might an ordinary day look like? The question is connected to learning, yet nobody needs to recall a definition before joining in. Different answers can sit at the same table.",
-      },
-      {
-        type: "paragraph",
-        text: "The purpose is not to discover whether the child understood enough. It is to hear where the idea goes when correctness is not the centre of the exchange. A parent can answer too. Another family member can see the question differently. The conversation continues because there is more than one place it might lead.",
-      },
-      {
-        type: "paragraph",
-        text: "This is conversation rather than questioning. One is shared; the other can easily become something one person does to another. Conversation allows a thought to change as it moves between people. It does not need to finish with a conclusion, and the first answer does not need to be improved.",
+        text: "Here, conversation is simply another shared encounter with an idea. It may move somewhere unexpected or end after one exchange. Another family member may add something, or the subject may change. It does not need to become another piece of work. The learning has entered another part of the day without asking the evening to carry a lesson. Its place in family life can remain light.",
       },
       {
         type: "heading",
@@ -370,11 +362,11 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "This also means that not every lesson needs a life beyond the notebook. Some evenings are full. Some ideas do not reappear. Some conversations go elsewhere. Nothing has been missed. The distinction between an invitation and an obligation depends partly on whether there is genuine room for the invitation to be declined.",
+        text: "This also means that not every lesson needs a life beyond the notebook. Some evenings are full. Some ideas do not reappear. Some conversations go elsewhere. Nothing has been missed. Not every invitation needs to be taken up.",
       },
       {
         type: "paragraph",
-        text: "Learning beyond the notebook is therefore less about adding and more about recognising. Notice an idea when ordinary life happens to hold it. Begin a conversation that has no answer to reach. Share one simple experience because it feels worth doing together. Then allow the moment to be complete.",
+        text: "Learning beyond the notebook is therefore less about adding and more about recognising. An idea may reappear in ordinary life, become a brief conversation, or lead to one simple experience together. The moment does not need to become more than that.",
       },
       {
         type: "paragraph",
@@ -418,7 +410,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "This can happen quietly. A follow-up such as “Are you sure?” may be intended to help, but it tells the child that the conversation has moved towards correctness. Another question follows, then a clue, then the answer. What began as curiosity now has somewhere specific to arrive.",
+        text: "This can happen quietly. A follow-up such as “Are you sure?” may be intended to help, but it shifts the conversation towards correctness. Another question follows, then a clue, then the answer. What began as curiosity now has somewhere specific to arrive.",
       },
       {
         type: "paragraph",
@@ -470,7 +462,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "The parent can stay curious about the path rather than rushing towards the destination. “What made you think of that?” leaves the child’s idea in view. It does not promise agreement, and it does not require the parent to disguise a quiz as a friendly question. It simply allows the meaning behind the answer to become clearer.",
+        text: "“What made you think of that?” leaves the child’s idea in view. It does not promise agreement, and it does not require the parent to disguise a quiz as a friendly question. It simply allows the meaning behind the answer to become clearer.",
       },
       {
         type: "heading",
@@ -486,7 +478,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "That restraint protects the difference between keeping an idea available and placing pressure around it. If something returns, the parent may recognise it. If it does not, family life does not need to be reorganised to make it appear. A doorway can remain open without anyone being required to walk through it.",
+        text: "That restraint protects the difference between keeping an idea available and placing pressure around it. If something returns, the parent may recognise it. If it does not, family life does not need to be reorganised to make it appear.",
       },
       {
         type: "heading",
@@ -502,7 +494,7 @@ const articleRecords = [
       },
       {
         type: "paragraph",
-        text: "A conversation can stay close to learning without becoming an assessment. Sometimes that means leaving an answer unfinished. Sometimes it means waiting before correcting. And sometimes it means allowing an idea to return in its own time, carried not by pressure, but by the simple fact that it was worth talking about.",
+        text: "A conversation can stay close to learning without becoming an assessment. An answer may remain unfinished, a correction can wait, and an idea may return in its own time. What carries it forward is not pressure, but the simple fact that it was worth talking about.",
       },
     ],
     sourceType: "approved-editorial-library",
