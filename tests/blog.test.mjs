@@ -42,7 +42,7 @@ function articleFixture(overrides = {}) {
   };
 }
 
-test("production contains four traceable drafts and no public articles", () => {
+test("production contains five traceable drafts and no public articles", () => {
   assert.deepEqual(
     articles.map((article) => article.slug),
     [
@@ -50,6 +50,7 @@ test("production contains four traceable drafts and no public articles", () => {
       "learning-beyond-the-notebook",
       "conversation-before-correctness",
       "making-as-a-form-of-understanding",
+      "a-weekly-letter-not-a-report",
     ],
   );
 

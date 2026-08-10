@@ -632,6 +632,142 @@ const articleRecords = [
     socialImage: null,
     canonicalPath: "/blog/making-as-a-form-of-understanding",
   },
+  {
+    slug: "a-weekly-letter-not-a-report",
+    title: "A weekly letter, not a report",
+    description:
+      "A reflection on how a weekly record can preserve context and continuity without turning a child’s week into scores, rankings, or conclusions.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "A week can be recorded in many ways. Pages completed, chapters covered, questions answered, attendance marked. These details are clear and countable. They show what happened within a particular system, but they do not describe the days around them.",
+      },
+      {
+        type: "paragraph",
+        text: "A parent may want a different kind of record: something that brings the week into view without turning it into a judgement. A letter can do that by staying with what unfolded rather than calculating what was achieved.",
+      },
+      {
+        type: "heading",
+        text: "What a report is built to show",
+      },
+      {
+        type: "paragraph",
+        text: "Reports arrange information so that it can be read quickly. A mark places performance on a scale. A ranking places one result beside others. A dashboard displays movement through categories over time. Each format answers the questions it was designed to answer.",
+      },
+      {
+        type: "paragraph",
+        text: "The structure also decides what becomes prominent. What can be counted fits easily into a row, a percentage, or a chart. The context around it is harder to place: an idea that returned in different subjects, a question that stayed after the work was complete, or a week in which nothing dramatic changed.",
+      },
+      {
+        type: "paragraph",
+        text: "When those details are forced into a performance format, they can begin to sound like evidence for a verdict. A quiet return to a question becomes progress. A difficult day becomes decline. A short period is asked to show direction before enough time has passed.",
+      },
+      {
+        type: "heading",
+        text: "The week as one piece",
+      },
+      {
+        type: "paragraph",
+        text: "A weekly reflection waits until the week can be read together. Monday does not have to carry the meaning of Tuesday, and one unusually easy or difficult session does not have to define the whole. The distance is modest—only several days—but it is enough to stop every event from demanding its own interpretation.",
+      },
+      {
+        type: "paragraph",
+        text: "Reading the week as one piece does not mean collecting everything that happened. A thoughtful letter can leave most details where they occurred. It may hold one central theme and one observation that remained present after the rest was set aside.",
+      },
+      {
+        type: "paragraph",
+        text: "This selectiveness is different from surveillance. Daily surveillance tries to preserve each movement so that nothing is missed. Weekly perspective accepts that a useful reflection does not need a complete account. It pays attention without building a minute-by-minute record of the child.",
+      },
+      {
+        type: "heading",
+        text: "Context before judgement",
+      },
+      {
+        type: "paragraph",
+        text: "A mark can state a result without describing the circumstances around it. A letter has room for those circumstances, though it need not explain them away. It can acknowledge that the week moved across different subjects, questions, and pieces of work. It can notice what appeared within that setting and remain careful about what the appearance means.",
+      },
+      {
+        type: "paragraph",
+        text: "The language matters. “This returned more than once this week” stays with the record. “This is now a strength” changes the observation into a judgement. “This seemed to hold their attention” leaves room for another week. “This is how they learn” closes that room before longer evidence exists.",
+      },
+      {
+        type: "paragraph",
+        text: "A weekly letter therefore does not need to evaluate the child in order to be useful to the parent. It can offer enough context to understand what the week felt like as a whole, without translating that understanding into a score, profile, or recommendation.",
+      },
+      {
+        type: "heading",
+        text: "What deserves a place",
+      },
+      {
+        type: "paragraph",
+        text: "Not every completed task belongs in a weekly reflection. Completion already has its own record. The letter can attend to something quieter: an idea revisited in more than one setting, a question that changed as the week continued, or an observation that seems worth carrying into the next week without resolving it.",
+      },
+      {
+        type: "paragraph",
+        text: "The detail needs support from the week itself. A single isolated event may be vivid, but vividness does not make it representative. If nothing recurred, the reflection does not have to manufacture a theme. A week can be described honestly without being presented as a turning point.",
+      },
+      {
+        type: "paragraph",
+        text: "Nor does the letter require academic progress to justify its existence. A quiet week may still contain continuity, hesitation, return, or simply the ordinary movement from one day to the next. The record can remain modest because the week itself may have been modest.",
+      },
+      {
+        type: "heading",
+        text: "One week is not a pattern",
+      },
+      {
+        type: "paragraph",
+        text: "Weekly perspective creates distance from the individual day, but it does not create long-term certainty. Recurring patterns belong to a longer view. They require history across months, attention to consistency, and the willingness to ignore short-term fluctuations.",
+      },
+      {
+        type: "paragraph",
+        text: "A letter can name what appeared during the week without promoting it into a lasting trait. The next letter may hold a similar observation, a different one, or no continuation at all. Each week contributes context; no week has to settle the child’s story.",
+      },
+      {
+        type: "paragraph",
+        text: "This boundary keeps continuity from becoming a premature conclusion. The record can grow while its language remains provisional. Weeks can sit beside one another before anyone decides whether they form a pattern.",
+      },
+      {
+        type: "heading",
+        text: "Continuity without a dashboard",
+      },
+      {
+        type: "paragraph",
+        text: "Placed together over time, weekly letters can preserve a sequence that isolated updates cannot. A parent can look back and recognise what was present, what changed, and what did not return. The sequence remains narrative rather than numerical; it does not need an upward line to make the history worth keeping.",
+      },
+      {
+        type: "paragraph",
+        text: "Some weeks will resist comparison. Their subjects, circumstances, and pace will differ. A letter can keep those differences visible instead of standardising every week against the same measures. Continuity comes from the regular act of reflecting, not from making each entry comparable.",
+      },
+      {
+        type: "paragraph",
+        text: "There is also a place for pause within that continuity. A letter may end with an observation still open, without advice about what the parent should do next. The absence of a recommendation is not an omission. It allows the week to be received before it is acted upon.",
+      },
+      {
+        type: "heading",
+        text: "A record that stays close",
+      },
+      {
+        type: "paragraph",
+        text: "A weekly letter does not need to replace the records that already serve practical purposes. Its work is quieter. It brings selected parts of the week together in language that offers context without judgement and continuity without prediction.",
+      },
+      {
+        type: "paragraph",
+        text: "The parent is left with a view of what has been unfolding, not a verdict on where the child stands. The week remains one part of a longer history—noticed carefully, written down, and allowed to remain incomplete.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: canopy-weekly-letter, within-patterns-over-time, within-pause, home-parent-summary; upbring-lite/docs/02_editorial_bible/23_weekly_letter.md, 25_patterns_over_time.md, 04_parent_summary.md, and 14_pause.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/a-weekly-letter-not-a-report",
+  },
 ] as const satisfies readonly ArticleRecord[];
 
 export const articles = validateArticleRecords(articleRecords);
