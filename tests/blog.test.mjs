@@ -42,13 +42,19 @@ function articleFixture(overrides = {}) {
   };
 }
 
-test("production contains one traceable draft and no public articles", () => {
-  assert.equal(articles.length, 1);
-  assert.equal(articles[0].slug, "noticing-without-concluding");
-  assert.equal(articles[0].status, "draft");
-  assert.equal(articles[0].approvalStatus, "requires-editorial-approval");
-  assert.equal(articles[0].publishedAt, null);
-  assert.equal(articles[0].socialImage, null);
+test("production contains two traceable drafts and no public articles", () => {
+  assert.deepEqual(
+    articles.map((article) => article.slug),
+    ["noticing-without-concluding", "learning-beyond-the-notebook"],
+  );
+
+  for (const article of articles) {
+    assert.equal(article.status, "draft");
+    assert.equal(article.approvalStatus, "requires-editorial-approval");
+    assert.equal(article.publishedAt, null);
+    assert.equal(article.socialImage, null);
+  }
+
   assert.deepEqual(getPublishedArticles(), []);
 });
 
