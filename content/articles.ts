@@ -768,6 +768,726 @@ const articleRecords = [
     socialImage: null,
     canonicalPath: "/blog/a-weekly-letter-not-a-report",
   },
+  {
+    slug: "curiosity-without-an-agenda",
+    title: "Curiosity without an agenda",
+    description:
+      "A reflection on allowing a child’s curiosity to remain interesting without converting every question into research, instruction, or a task.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "A question can arrive in the middle of something else. Why does this leaf have two colours? How did that sound reach the other room? The family may be walking, cooking, waiting, or already talking about another subject. Nothing has been prepared for the question, and nobody has decided what should follow it.",
+      },
+      {
+        type: "paragraph",
+        text: "The question may receive a short reply. It may lead to another question, or be left behind when attention moves on. Its value does not depend on producing a lesson before the moment ends.",
+      },
+      {
+        type: "heading",
+        text: "Before the question becomes a task",
+      },
+      {
+        type: "paragraph",
+        text: "Curiosity is easy to welcome and just as easy to organise. A parent hears a question and begins to gather explanations, suggest a search, plan an experiment, or ask the child to find out more. The original interest is still present, but it now has work attached to it.",
+      },
+      {
+        type: "paragraph",
+        text: "Research can be useful when someone wants to do it. The change occurs when finding the answer becomes the expected response to every question. A passing wonder starts to resemble an assignment: identify the topic, collect information, report back.",
+      },
+      {
+        type: "paragraph",
+        text: "A question need not earn its place by becoming productive. It can briefly alter how an ordinary thing is seen. The leaf, sound, shadow, machine, or word is no longer entirely unnoticed. That shift may be all the moment contains.",
+      },
+      {
+        type: "heading",
+        text: "Wonder before detail",
+      },
+      {
+        type: "paragraph",
+        text: "Curiosities begins with something connected to what is already being explored. The connection matters. A random fact may be surprising, but surprise alone can pull attention away from the idea that made the question possible.",
+      },
+      {
+        type: "paragraph",
+        text: "One carefully chosen detail can extend an idea without surrounding it with information. It offers enough to make the subject feel larger, then stops. A list of facts would change the pace. So would an explanation that closes every route the question might take.",
+      },
+      {
+        type: "paragraph",
+        text: "Restraint keeps the curiosity close to its source. The new detail belongs beside the chapter, object, or conversation that prompted it. It does not need clickbait, exaggeration, or a promise that something extraordinary is about to be discovered.",
+      },
+      {
+        type: "heading",
+        text: "When nobody knows",
+      },
+      {
+        type: "paragraph",
+        text: "A parent does not need to have an answer ready. “I don’t know” can describe the moment plainly. It does not require an immediate search to make the response complete.",
+      },
+      {
+        type: "paragraph",
+        text: "The family may decide to look later, but later is not a debt created by the question. Nobody needs to remember every unanswered thought or keep a list of topics to investigate. Curiosity can be genuine even when it is brief.",
+      },
+      {
+        type: "paragraph",
+        text: "Leaving a question unresolved also avoids replacing the child’s interest with the adult’s plan. The parent may be fascinated by a different part of the subject or ready to go much further. The question that was actually asked can remain small.",
+      },
+      {
+        type: "heading",
+        text: "No teaching opportunity required",
+      },
+      {
+        type: "paragraph",
+        text: "An everyday question can appear to offer a perfect teaching opportunity. The phrase carries a quiet expectation: the adult should use the moment well, explain the concept clearly, and make sure something has been learned.",
+      },
+      {
+        type: "paragraph",
+        text: "That response changes the roles in the room. One person begins delivering the idea while the other is expected to receive it. The original question may still be answered, but the exchange now has a direction and an intended result.",
+      },
+      {
+        type: "paragraph",
+        text: "A lighter response can stay beside the question. The parent might share one thought, notice the same thing, or simply acknowledge that it is interesting. None of these responses asks the child to continue once their attention has moved elsewhere.",
+      },
+      {
+        type: "heading",
+        text: "Interest that changes shape",
+      },
+      {
+        type: "paragraph",
+        text: "A question does not always remain in words. It may reappear when the same object is seen again, when a related detail turns up in another chapter, or when the child mentions it days later. It may also disappear completely.",
+      },
+      {
+        type: "paragraph",
+        text: "There is no need to decide which outcome would be better. A returning question can be noticed when it returns. A forgotten one does not represent an opportunity lost. Both belong to the ordinary movement of attention.",
+      },
+      {
+        type: "paragraph",
+        text: "Curiosity without an agenda makes no demand for continuity. It allows continuity when it occurs. The distinction is quiet, but practical: the question is not assigned a future before it has had time to find one.",
+      },
+      {
+        type: "heading",
+        text: "An interesting question can be enough",
+      },
+      {
+        type: "paragraph",
+        text: "The answer can arrive without becoming the reward for asking. A parent may know one part of it and share that part plainly. The exchange can stop before the subject has been fully explained.",
+      },
+      {
+        type: "paragraph",
+        text: "If the answer is easy to find, choosing not to search immediately is still available. The phone, book, or experiment can wait until someone genuinely wants to continue. Access to information does not create a duty to use it at once.",
+      },
+      {
+        type: "paragraph",
+        text: "An answer may also create another curiosity rather than closure. That new question belongs to the moment in the same way as the first: it can be followed, held briefly, or allowed to pass.",
+      },
+      {
+        type: "paragraph",
+        text: "Some questions lead to answers, experiments, books, or long conversations. Others last for less than a minute. The length of their life does not determine whether the moment was worth noticing.",
+      },
+      {
+        type: "paragraph",
+        text: "The question may never be mentioned again, yet the response to it can remain unhurried. Curiosity was allowed to appear without being enrolled into the rest of the day.",
+      },
+      {
+        type: "paragraph",
+        text: "A child asked because something caught their attention. For that moment, an ordinary part of the world became less ordinary. The family can let the question rest there, without adding a lesson to justify it.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: canopy-curiosities; upbring-lite/docs/02_editorial_bible/18_curiosities.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/curiosity-without-an-agenda",
+  },
+  {
+    slug: "a-question-worth-keeping",
+    title: "A question worth keeping",
+    description:
+      "A reflection on questions that remain valuable because they invite thought in more than one direction rather than requiring a predetermined answer.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "The apple in the Newton story is easy to remember. The question behind it matters more here: why do ordinary things fall? The event did not contain a complete explanation. It gave a question something concrete to stay with.",
+      },
+      {
+        type: "paragraph",
+        text: "A useful question can begin that simply. It directs attention towards something familiar and makes another look possible. Its life need not be measured by how quickly an answer follows.",
+      },
+      {
+        type: "heading",
+        text: "More than a route to an answer",
+      },
+      {
+        type: "paragraph",
+        text: "Many questions have a clear job. They ask for a name, date, definition, or calculation. Once the correct response is given, the exchange is complete. The question has carried someone to a known destination.",
+      },
+      {
+        type: "paragraph",
+        text: "Another kind of question remains useful after the first response. It may ask how an ordinary thing could be understood differently, what might change under another condition, or which possibility deserves attention. The answer does not end the question because another answer could follow.",
+      },
+      {
+        type: "paragraph",
+        text: "This openness need not make the question grand. “What else could this be?” or “Why might it happen that way?” can remain close to a single object or idea. The scale is small; the direction is unsettled.",
+      },
+      {
+        type: "heading",
+        text: "A question with more than one direction",
+      },
+      {
+        type: "paragraph",
+        text: "Predetermined questions narrow as they move forward. Each step removes possibilities until the expected answer remains. An open question can widen for a while. One thought introduces another condition, a different example, or a reason to reconsider the first response.",
+      },
+      {
+        type: "paragraph",
+        text: "Two people may take the same question in separate directions without needing to settle which direction is correct. They can be interested in different parts of it. Agreement is not required for the question to keep its shape.",
+      },
+      {
+        type: "paragraph",
+        text: "The question also survives a change of mind. A response offered today can be revised when a new detail appears. Changing the response does not make the earlier thought worthless; it records where the question led at that time.",
+      },
+      {
+        type: "heading",
+        text: "Keeping the wording light",
+      },
+      {
+        type: "paragraph",
+        text: "A long introduction can tell people how they are supposed to think before the question is asked. So can language that announces a moral, identifies the important lesson, or frames one answer as more thoughtful than another.",
+      },
+      {
+        type: "paragraph",
+        text: "A question worth keeping often needs less preparation. It names the idea clearly and leaves space around it. The person hearing it can enter from their own experience rather than first accepting an explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "Keeping the wording light also makes it easier for the question to travel. It can return at another table, during a walk, or when a related idea appears. The words remain recognisable even as the answers change.",
+      },
+      {
+        type: "heading",
+        text: "Carried without being assigned",
+      },
+      {
+        type: "paragraph",
+        text: "To carry a question does not mean working on it continuously. It can stay at the edge of attention and return without a schedule. Nobody needs to announce that they are still considering it.",
+      },
+      {
+        type: "paragraph",
+        text: "Nor does keeping a question require a final discussion. A family may refer to it once, then leave it alone for weeks. It remains available because it was memorable, not because someone created an obligation to revisit it.",
+      },
+      {
+        type: "paragraph",
+        text: "A question can also be released. Some possibilities stop feeling interesting. Others are replaced by a better question. Keeping is an option offered by the question’s usefulness, not a rule imposed on the people who heard it.",
+      },
+      {
+        type: "heading",
+        text: "The thinker behind the name",
+      },
+      {
+        type: "paragraph",
+        text: "Thinkers are often introduced through achievements, dates, and famous results. Those details can make the person easier to place, while the question that occupied them disappears behind the summary.",
+      },
+      {
+        type: "paragraph",
+        text: "Focusing on how someone thought changes what is remembered. Newton’s name belongs with gravity, but the relevant detail is his continued attention to why ordinary things happen. The famous answer began with a question that was allowed to remain active.",
+      },
+      {
+        type: "paragraph",
+        text: "This does not require turning the thinker into a hero or asking a child to imitate them. The person offers one example of a question being taken seriously over time. The achievement can remain in the background.",
+      },
+      {
+        type: "heading",
+        text: "When the question remains",
+      },
+      {
+        type: "paragraph",
+        text: "Keeping a question does not preserve its first form unchanged. New wording may make the real interest clearer. A question about what happened can become a question about why it matters, or which condition would alter it.",
+      },
+      {
+        type: "paragraph",
+        text: "That movement is part of the question’s life. The earlier wording was not wrong; it made the later version possible. Each form records the direction of thought at a particular point.",
+      },
+      {
+        type: "paragraph",
+        text: "More than one question may emerge, and nobody has to choose the most important one. The original can remain alongside its variations without being replaced by a formal enquiry.",
+      },
+      {
+        type: "paragraph",
+        text: "A question is worth keeping when people still find something in it to consider. Its value is present in that continued use, not in a claim about what the question will eventually produce.",
+      },
+      {
+        type: "paragraph",
+        text: "A correct answer can be useful and complete. A question worth keeping serves another purpose. It can hold several responses, accept revision, and remain recognisable when it returns in a different setting.",
+      },
+      {
+        type: "paragraph",
+        text: "Its usefulness may be shared without becoming a group exercise. One person can mention the question, another can respond briefly, and a third can take it elsewhere. The question does not require equal attention from everyone in order to remain available.",
+      },
+      {
+        type: "paragraph",
+        text: "Nothing needs to be produced from it immediately. The question has already done something modest: it has made an ordinary idea available for another look. It can be taken up again, at another time or in another place, without anyone having assigned it.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: canopy-thinkers; upbring-lite/docs/02_editorial_bible/19_thinkers.md and 15_one_thing_worth_talking_about.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/a-question-worth-keeping",
+  },
+  {
+    slug: "small-rituals-deep-roots",
+    title: "Small rituals, deep roots",
+    description:
+      "A reflection on repeated family moments that provide gentle continuity without becoming schedules, productivity routines, or structured enrichment.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "Five minutes after dinner can look unimportant from the outside. A question is asked, two people step onto a balcony, or everyone names one thing from the day. The moment ends without a record, a result, or a plan for improvement.",
+      },
+      {
+        type: "paragraph",
+        text: "When a small moment returns, it can become familiar without becoming formal. The family recognises its place in the week even if the details change each time.",
+      },
+      {
+        type: "heading",
+        text: "Rhythm rather than timetable",
+      },
+      {
+        type: "paragraph",
+        text: "A schedule is designed to hold time in place. It assigns an activity to a day and hour, then makes completion visible. Rhythm is looser. It can recur around dinner, at the end of a week, or whenever the family naturally meets.",
+      },
+      {
+        type: "paragraph",
+        text: "The distinction matters when family life changes shape. A late evening, a visitor, tiredness, or another commitment may move the moment or remove it entirely. The rhythm can continue later without treating the missed occasion as failure.",
+      },
+      {
+        type: "paragraph",
+        text: "Regularity remains present, but precision does not become the point. The family knows the moment may return. It does not need a reminder that turns the practice into another item to complete.",
+      },
+      {
+        type: "heading",
+        text: "Repetition without optimisation",
+      },
+      {
+        type: "paragraph",
+        text: "Repeated practices are often given a purpose to improve something: attention, communication, organisation, learning, or wellbeing. The activity is then judged by whether that improvement appears.",
+      },
+      {
+        type: "paragraph",
+        text: "A family rhythm can have a simpler reason for returning. People enjoyed the question, the brief walk, or the time spent doing one small thing together. Repeating it does not require a claim about what the practice will produce.",
+      },
+      {
+        type: "paragraph",
+        text: "Without an improvement target, the moment can vary. A question may lead to a long exchange one week and almost no response the next. A shared activity may last five minutes or end sooner. The rhythm remains recognisable without demanding consistency from everyone inside it.",
+      },
+      {
+        type: "heading",
+        text: "The ritual is not the performance",
+      },
+      {
+        type: "paragraph",
+        text: "Ritual can sound ceremonial, but many family rituals are ordinary. Their meaning comes partly from recognition: this is something we have done before. The words, place, or people may change while the basic gesture remains.",
+      },
+      {
+        type: "paragraph",
+        text: "Nothing has to be photographed, recorded, or completed in a particular way. Turning the ritual into evidence of a well-run family would place another audience inside the moment. The practice can belong only to the people present.",
+      },
+      {
+        type: "paragraph",
+        text: "Nor does everyone need to value the ritual equally on every occasion. One person may be distracted; another may carry the conversation. Participation can be quiet without threatening the continuation of the rhythm.",
+      },
+      {
+        type: "heading",
+        text: "A question that returns",
+      },
+      {
+        type: "paragraph",
+        text: "Dinner Table Conversation and One Thing Worth Talking About offer one idea at a time. The question changes, but the family recognises the invitation: there is a little space here to talk about something together.",
+      },
+      {
+        type: "paragraph",
+        text: "The exchange does not need a summary at the end. Different answers can remain different. The recurring element is the act of making time for one question, rather than a requirement to reach agreement.",
+      },
+      {
+        type: "paragraph",
+        text: "On another evening, the rhythm may be an action instead of a conversation. Stepping outside, noticing something nearby, or doing one simple thing together keeps preparation low. The activity fits around family life rather than asking family life to fit around it.",
+      },
+      {
+        type: "heading",
+        text: "When a rhythm becomes an obligation",
+      },
+      {
+        type: "paragraph",
+        text: "A repeated moment changes when missing it creates pressure. The family begins to protect the streak, make up the skipped day, or continue after the practice has stopped feeling welcome. Repetition has become a measure of commitment.",
+      },
+      {
+        type: "paragraph",
+        text: "The rhythm can be allowed to loosen. It may happen less often, take a different form, or end. Its earlier value does not depend on continuing forever.",
+      },
+      {
+        type: "paragraph",
+        text: "This flexibility separates a ritual from a productivity routine. The practice is not maintained to show discipline. It returns while it still belongs naturally within the family’s time.",
+      },
+      {
+        type: "heading",
+        text: "What repetition can hold",
+      },
+      {
+        type: "paragraph",
+        text: "Repeated does not have to mean identical. The dinner question changes, the activity responds to another idea, and the people present bring a different day with them. Recognition comes from the shape of the time together, not from repeating exact words.",
+      },
+      {
+        type: "paragraph",
+        text: "Variation also prevents the rhythm from becoming a script. A family can shorten the moment, move it, or respond in an unexpected way. The practice remains theirs because they are free to alter it.",
+      },
+      {
+        type: "paragraph",
+        text: "A rhythm may be noticed only after it has happened several times. Nobody needs to declare the first occasion the beginning of a tradition. Repetition can accumulate without a launch, a name, or a rule.",
+      },
+      {
+        type: "paragraph",
+        text: "If the practice ends, the earlier moments remain part of family history. Their place does not depend on maintaining the pattern indefinitely or replacing it with another routine.",
+      },
+      {
+        type: "paragraph",
+        text: "A small family ritual may hold familiarity, a shared reference, and the expectation of a little time together. Those are descriptions of the practice, not promises about what it will achieve.",
+      },
+      {
+        type: "paragraph",
+        text: "The people inside the ritual may remember different parts of it. One recalls a question; another recalls the walk outside or the way an answer changed the subject. Repetition gives them a common point of reference without requiring a single account of what the time meant.",
+      },
+      {
+        type: "paragraph",
+        text: "That common reference can remain private and ordinary. It does not need to become a family principle, a public tradition, or proof that the time was used well.",
+      },
+      {
+        type: "paragraph",
+        text: "The question is asked, the brief activity happens, and the evening continues. The ritual does not have to improve anyone to have had a place in the day. Its repetition can remain unmeasured.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: canopy-family-rhythms, canopy-dinner-table-conversation, canopy-do-this-together, canopy-one-thing-worth-talking-about; upbring-lite/docs/02_editorial_bible/06_dinner_table_conversation.md, 15_one_thing_worth_talking_about.md, and 16_one_thing_worth_doing_together.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/small-rituals-deep-roots",
+  },
+  {
+    slug: "worth-revisiting",
+    title: "Worth revisiting",
+    description:
+      "A reflection on returning to an idea after time has passed without treating the return as correction, remediation, or evidence of weakness.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "A chapter can end while one of its ideas remains unfinished. The exercises are complete, the page has turned, and no mistake needs to be corrected. Even so, the idea may deserve another encounter.",
+      },
+      {
+        type: "paragraph",
+        text: "Returning later is different from extending the original work. Time has passed, the setting may have changed, and the idea can be met without recreating the lesson around it.",
+      },
+      {
+        type: "heading",
+        text: "Selection without diagnosis",
+      },
+      {
+        type: "paragraph",
+        text: "Worth Revisiting identifies a small number of concepts from a larger chapter. Selection can easily sound like a judgement: these are the parts the child did not understand, the weak areas, or the material that needs repair.",
+      },
+      {
+        type: "paragraph",
+        text: "The approved form makes no such claim. It names concepts without explanations, rankings, instructions, or performance notes. The list says that an idea may continue to matter, not that something went wrong.",
+      },
+      {
+        type: "paragraph",
+        text: "That boundary is important because the record may contain no evidence of difficulty at all. An idea can deserve another visit because it connects with later material, opens a broader subject, or cannot be exhausted in one chapter.",
+      },
+      {
+        type: "heading",
+        text: "Time between encounters",
+      },
+      {
+        type: "paragraph",
+        text: "Immediate repetition keeps the idea close to its original wording and task. A later encounter brings different surroundings. The child may meet the concept in another subject, in ordinary life, or through a question that was not available the first time.",
+      },
+      {
+        type: "paragraph",
+        text: "The interval is not a technique with a promised result. It simply prevents revisiting from becoming more of the same work on the same day. The return can happen when another context makes the idea relevant.",
+      },
+      {
+        type: "paragraph",
+        text: "Nothing requires the return to follow a timetable. Some ideas reappear quickly. Others remain in the background until much later. A concept can be kept available without placing another appointment on the family calendar.",
+      },
+      {
+        type: "heading",
+        text: "Returning without remediation",
+      },
+      {
+        type: "paragraph",
+        text: "Remediation begins from a gap that has been identified and a plan to address it. Revisiting, in this editorial sense, begins from the continuing value of the idea. The direction is not backwards towards the failed task; it is towards another encounter.",
+      },
+      {
+        type: "paragraph",
+        text: "The difference can be heard in the language around the return. “You need to go over this again” carries a correction. “This idea has appeared here too” recognises a connection. The concept is present without making the child defend an earlier response.",
+      },
+      {
+        type: "paragraph",
+        text: "A revisit also does not require a check at the end. There may be a conversation, an observation, or a new piece of material. The encounter can finish without asking whether mastery has increased.",
+      },
+      {
+        type: "heading",
+        text: "The idea, not the earlier performance",
+      },
+      {
+        type: "paragraph",
+        text: "Returning to the idea while carrying the earlier result can keep the first attempt at the centre. The child is reminded what was missed, where the answer stopped, or which part was incomplete.",
+      },
+      {
+        type: "paragraph",
+        text: "Worth Revisiting leaves those details out. A concept name such as Conservation of Energy or Mechanical Energy does not contain a score or an account of what happened before. It points towards the subject itself.",
+      },
+      {
+        type: "paragraph",
+        text: "This restraint keeps the earlier performance from defining the return. The parent and child can meet the idea that is present now rather than reconstructing the first encounter.",
+      },
+      {
+        type: "heading",
+        text: "What another encounter may hold",
+      },
+      {
+        type: "paragraph",
+        text: "The second encounter does not need to look like the first. A concept first met through written work may later appear in a practical example, a larger question, or another chapter. The connection can be recognised without repeating the original explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "The child may approach it differently, or may show no particular interest. Revisiting does not guarantee a new response. Its purpose is to make another encounter possible, not to produce evidence that the concept has now settled.",
+      },
+      {
+        type: "paragraph",
+        text: "A parent summary can provide enough context for the adult to recognise why the idea matters beyond one task. It need not explain every detail or prepare the parent to teach it. Understanding the place of the idea is enough.",
+      },
+      {
+        type: "heading",
+        text: "A return can remain small",
+      },
+      {
+        type: "paragraph",
+        text: "Revisiting can be brief. The concept is noticed in a new setting, named, and left there. A longer conversation may follow, but length is not required to make the return genuine.",
+      },
+      {
+        type: "paragraph",
+        text: "The idea may return more than once. Each appearance can add context without becoming a progress sequence. There is no need to mark the first, second, and third encounter or compare the child’s response across them.",
+      },
+      {
+        type: "paragraph",
+        text: "The family can also decide that an idea no longer needs attention. Worth revisiting is a selection, not a permanent status. Another concept may become more relevant as learning moves forward.",
+      },
+      {
+        type: "heading",
+        text: "Meeting the idea again",
+      },
+      {
+        type: "paragraph",
+        text: "A concept may also be revisited by the adult alone. The parent can read a short explanation and understand why the idea will matter later, without turning that understanding into a new task for the child.",
+      },
+      {
+        type: "paragraph",
+        text: "This keeps the return proportionate. Not every idea selected for revisiting needs an activity, discussion, or scheduled follow-up. Naming it can be enough until another context appears.",
+      },
+      {
+        type: "paragraph",
+        text: "When that context arrives, the earlier selection helps the parent recognise the connection. Recognition is different from intervention; the idea can be present again without requiring the family to stop and work on it.",
+      },
+      {
+        type: "paragraph",
+        text: "Returning to an idea can preserve what was unfinished without treating unfinished as failure. The earlier encounter remains part of the history, while the new one is allowed to have its own context.",
+      },
+      {
+        type: "paragraph",
+        text: "No correction has to sit at the centre. The concept appears again because it still has something to offer, and the family can meet it without turning back towards a mistake.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: home-worth-revisiting, home-parent-summary; upbring-lite/docs/02_editorial_bible/05_worth_revisiting.md and 04_parent_summary.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/worth-revisiting",
+  },
+  {
+    slug: "keeping-the-small-moments",
+    title: "Keeping the small moments",
+    description:
+      "A reflection on preserving ordinary family moments as fragments of an unfinished story without turning them into milestones, evidence, or conclusions.",
+    status: "draft",
+    publishedAt: null,
+    updatedAt: null,
+    author: "Upbring",
+    category: "Editorial",
+    readingTimeMinutes: 6,
+    body: [
+      {
+        type: "paragraph",
+        text: "Some things are remembered without a date. A phrase repeated at breakfast, a drawing left beside a cup, a question asked from another room. They were not announced as important when they happened, and nobody paused to record them.",
+      },
+      {
+        type: "paragraph",
+        text: "Later, one of those details may return to mind more clearly than an organised occasion. The moment has no certificate, photograph, or finished account. It remains a small part of family life that felt worth keeping.",
+      },
+      {
+        type: "heading",
+        text: "Beyond the milestone",
+      },
+      {
+        type: "paragraph",
+        text: "Milestones arrive with names. Firsts, completions, achievements, and transitions are easy to place in a family record because everyone recognises what happened. They provide dates and headings.",
+      },
+      {
+        type: "paragraph",
+        text: "Ordinary moments are less organised. They may last only a few seconds and carry no obvious change. A child notices something, returns to an old joke, asks for the same story, or sits nearby while someone else works.",
+      },
+      {
+        type: "paragraph",
+        text: "Keeping these moments does not make milestones less meaningful. It broadens what the record can contain. Family life includes the named occasions and the quieter details between them.",
+      },
+      {
+        type: "heading",
+        text: "A fragment can remain a fragment",
+      },
+      {
+        type: "paragraph",
+        text: "A small memory often arrives without an explanation. The words are remembered, but not what prompted them. The gesture remains clear while the rest of the evening has disappeared.",
+      },
+      {
+        type: "paragraph",
+        text: "The missing context does not need to be supplied. A fragment can be written down as it was: one sentence, one detail, one brief exchange. It does not have to become a complete story before it is allowed into the record.",
+      },
+      {
+        type: "paragraph",
+        text: "Nor must the moment represent something larger. It can be kept because it was funny, tender, surprising, or simply recognisable. The record does not need to explain what the fragment says about the child.",
+      },
+      {
+        type: "heading",
+        text: "Memory without evidence",
+      },
+      {
+        type: "paragraph",
+        text: "Once a moment is preserved, it can be tempting to use it. The detail becomes proof that a quality was already present, that a change had begun, or that a later outcome could have been seen in advance.",
+      },
+      {
+        type: "paragraph",
+        text: "That use asks the memory to support more than it contained. The child’s sentence at breakfast was a sentence at breakfast. Its place in the family record need not depend on becoming evidence for a trait or achievement.",
+      },
+      {
+        type: "paragraph",
+        text: "A collection of moments can stay free of scoring for the same reason. Quantity does not create certainty. Several fragments may belong together, or may simply have happened near one another in time.",
+      },
+      {
+        type: "heading",
+        text: "Choosing what to keep",
+      },
+      {
+        type: "paragraph",
+        text: "No family can preserve every detail, and a complete record would change the experience of ordinary life. Choosing is unavoidable. A moment is kept because someone wants to remember it, not because a system has declared it significant.",
+      },
+      {
+        type: "paragraph",
+        text: "The selection can be personal. Another person present may have chosen a different detail. That difference does not make either memory inaccurate; each record holds what stayed with the person who made it.",
+      },
+      {
+        type: "paragraph",
+        text: "There is also no obligation to document a meaningful moment while it is happening. Remembering later is enough. Forgetting is part of family memory too, and does not mean the experience lacked value.",
+      },
+      {
+        type: "heading",
+        text: "Separate moments, placed together",
+      },
+      {
+        type: "paragraph",
+        text: "Over time, fragments begin to sit beside one another. A phrase from one year appears near a question from another. The collection creates continuity because the same family is present across the pages, even when the moments do not form a clear sequence.",
+      },
+      {
+        type: "paragraph",
+        text: "Story So Far brings observations and moments together carefully. The word “so far” matters. It keeps the collection attached to the history already lived without presenting that history as complete.",
+      },
+      {
+        type: "paragraph",
+        text: "A story can hold gaps, changes in tone, and details that never become themes. Continuity does not require every fragment to support one account of who the child is becoming.",
+      },
+      {
+        type: "heading",
+        text: "Centred on one child",
+      },
+      {
+        type: "paragraph",
+        text: "Just Arjun describes a space centred on one child without comparison or fixed labels. For memory, that means a moment does not need to be measured against what other children did at the same age or stage.",
+      },
+      {
+        type: "paragraph",
+        text: "The detail belongs to this family because it happened here. Its meaning is not increased by being early, unusual, advanced, or better than another child’s moment.",
+      },
+      {
+        type: "paragraph",
+        text: "Keeping the record close to the child also keeps real family data private. An illustrative public example can explain the form, while an actual family memory belongs within the family context in which it was created.",
+      },
+      {
+        type: "heading",
+        text: "What remains",
+      },
+      {
+        type: "paragraph",
+        text: "Memory also changes through retelling. One person remembers the words; another remembers where everyone was sitting. These versions can coexist without requiring the family to settle an official account.",
+      },
+      {
+        type: "paragraph",
+        text: "A written fragment fixes only a small part of what happened. Tone, movement, and the ordinary details around it may be lost. The record can acknowledge that limit instead of presenting itself as the whole event.",
+      },
+      {
+        type: "paragraph",
+        text: "Later additions do not have to make the collection more complete. They simply place another moment beside the ones already kept. The gaps remain part of the record.",
+      },
+      {
+        type: "paragraph",
+        text: "Small moments do not need to become milestones after the fact. They can remain ordinary and still have a place in memory.",
+      },
+      {
+        type: "paragraph",
+        text: "The act of keeping one moment does not rank it above all the moments that were forgotten. It gives this fragment a place without claiming that it was the most important part of the day.",
+      },
+      {
+        type: "paragraph",
+        text: "Years later, the record may offer only fragments: a sentence, a drawing, a question, a quiet evening. Together they do not define the child. They show parts of the life the family remembers, with many other parts left unrecorded.",
+      },
+    ],
+    sourceType: "approved-editorial-library",
+    sourceReference:
+      "content/editorial.ts: within-moments, within-story-so-far, within-just-arjun; upbring-lite/docs/02_editorial_bible/22_this_is_child.md and 26_his_story_so_far.md; full article body pending founder/editorial approval",
+    approvalStatus: "requires-editorial-approval",
+    socialImage: null,
+    canonicalPath: "/blog/keeping-the-small-moments",
+  },
 ] as const satisfies readonly ArticleRecord[];
 
 export const articles = validateArticleRecords(articleRecords);
