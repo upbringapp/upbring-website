@@ -10,7 +10,7 @@ export function HeroSection() {
     >
       <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,0.95fr)_minmax(25rem,0.8fr)] lg:gap-20">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium text-[var(--text-tertiary)]">
+          <p className="text-lg font-medium text-[var(--text-tertiary)]">
             nasbring
           </p>
           <p className="mt-3 text-lg text-[var(--text-secondary)]">
