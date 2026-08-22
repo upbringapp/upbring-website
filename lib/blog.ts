@@ -34,7 +34,7 @@ export function createArticleMetadata(article: ArticleRecord): Metadata {
 
   return {
     title: {
-      absolute: `${article.title} — Upbring`,
+      absolute: `${article.title} — Nasbring`,
     },
     description: article.description,
     alternates: {
@@ -44,7 +44,7 @@ export function createArticleMetadata(article: ArticleRecord): Metadata {
       title: article.title,
       description: article.description,
       url,
-      siteName: "Upbring",
+      siteName: "Nasbring",
       locale: "en_US",
       type: "article",
       publishedTime: article.publishedAt ?? undefined,

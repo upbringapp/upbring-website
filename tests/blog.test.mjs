@@ -24,7 +24,7 @@ function articleFixture(overrides = {}) {
     status: "published",
     publishedAt: "2026-08-06",
     updatedAt: null,
-    author: "Upbring Editorial",
+    author: "Nasbring Editorial",
     category: "Families",
     readingTimeMinutes: 5,
     body: [

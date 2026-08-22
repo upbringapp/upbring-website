@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/site-metadata";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact — Upbring",
+  title: "Contact — Nasbring",
   description:
-    "Contact Upbring by email and find its official Instagram and YouTube profiles.",
+    "Contact Nasbring by email and find its official Instagram and YouTube profiles.",
   path: "/contact",
 });
 

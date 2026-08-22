@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/site-metadata";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Terms of Service — Upbring",
-  description: "Read the Upbring Terms of Service.",
+  title: "Terms of Service — Nasbring",
+  description: "Read the Nasbring Terms of Service.",
   path: "/terms",
 });
 
@@ -13,7 +13,7 @@ export default function TermsPage() {
       <h1 className="text-5xl font-bold mb-10">Terms of Service</h1>
 
       <p className="mb-8">
-        By using Upbring, you agree to these terms and conditions.
+        By using Nasbring, you agree to these terms and conditions.
       </p>
 
       <h2 className="text-3xl font-semibold mt-10 mb-4">
@@ -21,7 +21,7 @@ export default function TermsPage() {
       </h2>
 
       <p className="mb-8">
-        Upbring is designed to provide educational and family-focused content.
+        Nasbring is designed to provide educational and family-focused content.
         Users are expected to use the platform responsibly.
       </p>
 

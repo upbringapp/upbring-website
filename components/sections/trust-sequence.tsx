@@ -9,7 +9,7 @@ const trustStatements = [
 export function TrustSequence() {
   return (
     <section
-      aria-label="Upbring principles"
+      aria-label="Nasbring principles"
       className="border-y border-[var(--border)]"
     >
       <div className="page-container py-10 md:py-12">

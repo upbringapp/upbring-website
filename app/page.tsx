@@ -36,7 +36,7 @@ const structuredData = {
     {
       "@type": "WebSite",
       "@id": `${siteOrigin}/#website`,
-      name: "Upbring",
+      name: "Nasbring",
       url: `${siteOrigin}/`,
       publisher: {
         "@id": `${siteOrigin}/#organization`,

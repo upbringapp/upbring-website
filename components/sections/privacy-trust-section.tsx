@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const privacyPrinciples = [
-  "Upbring does not use marks, rankings, or comparisons.",
+  "Nasbring does not use marks, rankings, or comparisons.",
   "The waitlist currently collects an email address.",
   "Parents can access the full Privacy Policy.",
   "Privacy & Trust is treated as a first-class product area.",

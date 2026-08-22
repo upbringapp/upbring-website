@@ -15,9 +15,9 @@ type FormStatus = "default" | "loading" | "success" | "duplicate" | "failure";
 const statusMessages: Record<FormStatus, string> = {
   default: "",
   loading: "Joining the waitlist.",
-  success: "Welcome to Upbring! Thank you for joining our early community.",
+  success: "Welcome to Nasbring! Thank you for joining our early community.",
   duplicate:
-    "You're already part of the Upbring community. We'll let you know when we launch.",
+    "You're already part of the Nasbring community. We'll let you know when we launch.",
   failure: "Something went wrong. Please try again.",
 };
 
@@ -70,7 +70,7 @@ export function WaitlistForm() {
         if (result.status === "already_joined") {
           setStatus("duplicate");
           toast(
-            "❤️ You're already part of the Upbring community. We'll let you know when we launch.",
+            "❤️ You're already part of the Nasbring community. We'll let you know when we launch.",
             {
               duration: 4000,
             },
@@ -80,7 +80,7 @@ export function WaitlistForm() {
 
         setStatus("success");
         toast.success(
-          "🌱 Welcome to Upbring! Thank you for joining our early community.",
+          "🌱 Welcome to Nasbring! Thank you for joining our early community.",
           {
             duration: 5000,
           },

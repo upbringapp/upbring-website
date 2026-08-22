@@ -9,10 +9,10 @@ export function SiteFooter() {
       <PageContainer>
         <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_auto_auto] md:gap-14">
           <div className="max-w-sm">
-            <Link href="/" aria-label="Upbring home" className="inline-flex">
+            <Link href="/" aria-label="Nasbring home" className="inline-flex">
               <Image
                 src="/logo.jpg"
-                alt="Upbring"
+                alt="Nasbring"
                 width={1536}
                 height={1024}
                 className="h-12 w-auto"

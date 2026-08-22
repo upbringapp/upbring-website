@@ -28,7 +28,7 @@ export default function GlobalError({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable}`}>
-        <title>We couldn&apos;t open this page | Upbring</title>
+        <title>We couldn&apos;t open this page | Nasbring</title>
         <main className="page-container flex min-h-screen items-center py-20 md:py-28">
           <div className="editorial-width">
             <h1 className="text-4xl md:text-5xl">This page needs a moment.</h1>

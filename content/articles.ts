@@ -168,7 +168,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -280,7 +280,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -388,7 +388,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -512,7 +512,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -640,7 +640,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -776,7 +776,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -912,7 +912,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1052,7 +1052,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1196,7 +1196,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1344,7 +1344,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1496,7 +1496,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1656,7 +1656,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1816,7 +1816,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -1980,7 +1980,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -2152,7 +2152,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -2324,7 +2324,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -2373,7 +2373,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -2424,7 +2424,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -2475,7 +2475,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [
@@ -2527,7 +2527,7 @@ const articleRecords = [
     status: "draft",
     publishedAt: null,
     updatedAt: null,
-    author: "Upbring",
+    author: "Nasbring",
     category: "Editorial",
     readingTimeMinutes: 6,
     body: [

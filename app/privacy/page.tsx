@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/site-metadata";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Privacy Policy — Upbring",
+  title: "Privacy Policy — Nasbring",
   description:
-    "Read the Upbring Privacy Policy, including information about waitlist email collection and how information is used.",
+    "Read the Nasbring Privacy Policy, including information about waitlist email collection and how information is used.",
   path: "/privacy",
 });
 
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <h1 className="text-5xl font-bold mb-10">Privacy Policy</h1>
 
       <p className="mb-8">
-        Upbring respects your privacy. We only collect information you
+        Nasbring respects your privacy. We only collect information you
         voluntarily provide, such as your email address when joining our
         waitlist.
       </p>
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
       </h2>
 
       <p className="mb-8">
-        We use information to communicate updates and improve the Upbring
+        We use information to communicate updates and improve the Nasbring
         experience.
       </p>
 

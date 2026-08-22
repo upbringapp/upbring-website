@@ -73,16 +73,16 @@ const handleWaitlist = createWaitlistHandler({
 
     const resend = new Resend(configuration.resendApiKey);
     const { error } = await resend.emails.send({
-      from: "Upbring <hello@updates.upbringapp.com>",
+      from: "Nasbring <hello@updates.upbringapp.com>",
       to: [email],
-      subject: "Welcome to Upbring",
+      subject: "Welcome to Nasbring",
       text: `Hi there,
 
-Thank you for joining the Upbring waitlist.
+Thank you for joining the Nasbring waitlist.
 
 We're glad you're here.
 
-Upbring is being built for parents who want to stay close to their child's world—not through marks or comparisons, but through the small moments that often go unnoticed.
+Nasbring is being built for parents who want to stay close to their child's world—not through marks or comparisons, but through the small moments that often go unnoticed.
 
 Over the coming weeks, we'll occasionally share updates as we move closer to opening early access.
 
@@ -90,7 +90,7 @@ Until then, thank you for believing in what we're building.
 
 Warmly,
 
-Upbring`,
+Nasbring`,
     });
 
     return !error;

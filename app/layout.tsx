@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
   title: {
     default: homepageTitle,
-    template: "%s — Upbring",
+    template: "%s — Nasbring",
   },
   description: homepageDescription,
   icons: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: homepageTitle,
     description: homepageDescription,
     url: `${siteOrigin}/`,
-    siteName: "Upbring",
+    siteName: "Nasbring",
     locale: "en_US",
     type: "website",
     ...createSocialPreviewImageMetadata(),

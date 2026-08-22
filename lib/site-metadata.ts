@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 export const siteOrigin = "https://upbringapp.com";
 
 export const homepageTitle =
-  "Upbring — Beyond marks. Closer to who they are becoming.";
+  "Nasbring — Beyond marks. Closer to who they are becoming.";
 
 export const homepageDescription =
-  "Upbring is a quiet companion for parents, bringing together everyday learning, thoughtful questions, family conversations, and patterns noticed over time.";
+  "Nasbring is a quiet companion for parents, bringing together everyday learning, thoughtful questions, family conversations, and patterns noticed over time.";
 
 // Keep this unset until the final renamed social artwork is approved. This is
 // the single integration point for future Open Graph and Twitter/X imagery.
@@ -49,7 +49,7 @@ export function createPageMetadata({
       title,
       description,
       url,
-      siteName: "Upbring",
+      siteName: "Nasbring",
       locale: "en_US",
       type: "website",
       ...createSocialPreviewImageMetadata(),

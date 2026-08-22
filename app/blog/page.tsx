@@ -9,9 +9,9 @@ const hasPublishedArticles = publishedArticles.length > 0;
 
 export const metadata: Metadata = {
   ...createPageMetadata({
-    title: "Blog — Upbring",
+    title: "Blog — Nasbring",
     description: hasPublishedArticles
-      ? "Read published editorial articles from Upbring."
+      ? "Read published editorial articles from Nasbring."
       : "Editorial articles will appear here once they are ready for publication.",
     path: "/blog",
   }),
