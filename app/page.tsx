@@ -27,7 +27,7 @@ const structuredData = {
       "@id": `${siteOrigin}/#organization`,
       name: "Upbring",
       url: `${siteOrigin}/`,
-      logo: `${siteOrigin}/logo.jpg`,
+      logo: `${siteOrigin}/logo.png`,
       sameAs: [
         "https://instagram.com/officialupbring",
         "https://youtube.com/@officialupbring",

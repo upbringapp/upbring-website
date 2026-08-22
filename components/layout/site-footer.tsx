@@ -11,10 +11,10 @@ export function SiteFooter() {
           <div className="max-w-sm">
             <Link href="/" aria-label="Nasbring home" className="inline-flex">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Nasbring"
-                width={1536}
-                height={1024}
+                width={2172}
+                height={724}
                 className="h-12 w-auto"
               />
             </Link>

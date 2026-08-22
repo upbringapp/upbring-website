@@ -8,9 +8,7 @@ export const homepageTitle =
 export const homepageDescription =
   "Nasbring is a quiet companion for parents, bringing together everyday learning, thoughtful questions, family conversations, and patterns noticed over time.";
 
-// Keep this unset until the final renamed social artwork is approved. This is
-// the single integration point for future Open Graph and Twitter/X imagery.
-export const socialPreviewImagePath: string | undefined = undefined;
+export const socialPreviewImagePath = "/og-image.png";
 
 export function createSocialPreviewImageMetadata(
   imagePath: string | undefined = socialPreviewImagePath,
@@ -20,7 +18,14 @@ export function createSocialPreviewImageMetadata(
   }
 
   return {
-    images: [new URL(imagePath, siteOrigin).toString()],
+    images: [
+      {
+        url: new URL(imagePath, siteOrigin).toString(),
+        width: 1200,
+        height: 630,
+        alt: "Nasbring",
+      },
+    ],
   };
 }
 
