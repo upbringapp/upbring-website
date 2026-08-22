@@ -14,9 +14,9 @@ export default function PrivacyPage() {
       <h1 className="text-5xl font-bold mb-10">Privacy Policy</h1>
 
       <p className="mb-8">
-        Nasbring respects your privacy. We only collect information you
-        voluntarily provide, such as your email address when joining our
-        waitlist.
+        Nasbring is operated by Nurava Technologies Private Limited. Nasbring
+        respects your privacy. We only collect information you voluntarily
+        provide, such as your email address when joining our waitlist.
       </p>
 
       <h2 className="text-3xl font-semibold mt-10 mb-4">

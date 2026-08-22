@@ -57,7 +57,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 border-t border-[var(--border)] pt-6 text-sm text-[var(--text-tertiary)]">
-          © 2026 Upbring
+          © 2026 Nurava Technologies Private Limited
         </div>
       </PageContainer>
     </footer>

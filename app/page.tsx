@@ -25,7 +25,7 @@ const structuredData = {
     {
       "@type": "Organization",
       "@id": `${siteOrigin}/#organization`,
-      name: "Upbring",
+      name: "Nurava Technologies Private Limited",
       url: `${siteOrigin}/`,
       logo: `${siteOrigin}/logo.png`,
       sameAs: [

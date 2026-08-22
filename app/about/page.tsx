@@ -45,11 +45,7 @@ export default function AboutPage() {
       </p>
 
       <div className="mt-16 border-t pt-8">
-        <p className="font-medium">
-          Raising Curious Minds. Growing Strong Values.
-        </p>
-
-        <p className="mt-4">
+        <p>
           Contact us: hello@nasbring.com
         </p>
       </div>

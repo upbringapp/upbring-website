@@ -30,8 +30,8 @@ export default function TermsPage() {
       </h2>
 
       <p className="mb-8">
-        All content, branding and materials on Upbring are owned by Upbring
-        unless otherwise stated.
+        Nasbring is a product of Nurava Technologies Private Limited, which
+        owns its content, branding and materials unless otherwise stated.
       </p>
 
       <h2 className="text-3xl font-semibold mt-10 mb-4">
