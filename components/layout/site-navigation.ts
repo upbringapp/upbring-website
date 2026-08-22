@@ -13,8 +13,10 @@ export const footerNavigation = [
 ] as const;
 
 export const socialNavigation = [
-  { label: "Instagram", href: "https://instagram.com/officialupbring" },
-  { label: "YouTube", href: "https://youtube.com/@officialupbring" },
+  { label: "Instagram", href: "https://instagram.com/withnasbring" },
+  { label: "Facebook", href: "https://facebook.com/withnasbring" },
+  { label: "X", href: "https://x.com/withnasbring" },
+  { label: "YouTube", href: "https://youtube.com/@withnasbring" },
 ] as const;
 
 export function isCurrentPage(pathname: string, href: string) {

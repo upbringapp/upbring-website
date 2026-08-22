@@ -49,7 +49,7 @@ export default function TermsPage() {
 
       <p>
         For any questions regarding these terms, contact us at
-        hello@upbringapp.com
+        hello@nasbring.com
       </p>
     </main>
   );

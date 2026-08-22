@@ -11,7 +11,7 @@ import {
 } from "../lib/waitlist.ts";
 
 function jsonRequest(body, headers = {}) {
-  return new Request("https://upbringapp.com/api/waitlist", {
+  return new Request("https://nasbring.com/api/waitlist", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

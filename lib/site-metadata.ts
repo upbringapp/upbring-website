@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const siteOrigin = "https://upbringapp.com";
+export const siteOrigin = "https://nasbring.com";
 
 export const homepageTitle =
   "Nasbring — Beyond marks. Closer to who they are becoming.";

@@ -29,8 +29,10 @@ const structuredData = {
       url: `${siteOrigin}/`,
       logo: `${siteOrigin}/logo.png`,
       sameAs: [
-        "https://instagram.com/officialupbring",
-        "https://youtube.com/@officialupbring",
+        "https://instagram.com/withnasbring",
+        "https://facebook.com/withnasbring",
+        "https://x.com/withnasbring",
+        "https://youtube.com/@withnasbring",
       ],
     },
     {

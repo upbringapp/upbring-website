@@ -42,7 +42,7 @@ export default function PrivacyPage() {
       </h2>
 
       <p>
-        For privacy-related questions, contact us at hello@upbringapp.com
+        For privacy-related questions, contact us at hello@nasbring.com
       </p>
     </main>
   );

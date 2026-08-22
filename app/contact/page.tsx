@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/site-metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Contact — Nasbring",
   description:
-    "Contact Nasbring by email and find its official Instagram and YouTube profiles.",
+    "Contact Nasbring by email or phone and find its official social profiles.",
   path: "/contact",
 });
 
@@ -21,35 +21,64 @@ export default function ContactPage() {
       <div className="space-y-6 text-lg">
         <div>
           <h2 className="text-2xl font-semibold">Email</h2>
-          <p>hello@upbringapp.com</p>
+          <p>hello@nasbring.com</p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold">Website</h2>
-          <p>https://upbringapp.com</p>
+          <p>https://nasbring.com</p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold">Phone</h2>
+          <a href="tel:+917042337034">7042337034</a>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold">Instagram</h2>
           <a
-            href="https://instagram.com/officialupbring"
+            href="https://instagram.com/withnasbring"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600"
           >
-            @officialupbring
+            @WithNasbring
+          </a>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold">Facebook</h2>
+          <a
+            href="https://facebook.com/withnasbring"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            @WithNasbring
+          </a>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold">X</h2>
+          <a
+            href="https://x.com/withnasbring"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            @WithNasbring
           </a>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold">YouTube</h2>
           <a
-            href="https://youtube.com/@officialupbring"
+            href="https://youtube.com/@withnasbring"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600"
           >
-            @officialupbring
+            @WithNasbring
           </a>
         </div>
       </div>

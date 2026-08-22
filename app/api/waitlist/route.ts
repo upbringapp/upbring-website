@@ -73,7 +73,7 @@ const handleWaitlist = createWaitlistHandler({
 
     const resend = new Resend(configuration.resendApiKey);
     const { error } = await resend.emails.send({
-      from: "Nasbring <hello@updates.upbringapp.com>",
+      from: "Nasbring <hello@nasbring.com>",
       to: [email],
       subject: "Welcome to Nasbring",
       text: `Hi there,

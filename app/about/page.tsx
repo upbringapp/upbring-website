@@ -50,7 +50,7 @@ export default function AboutPage() {
         </p>
 
         <p className="mt-4">
-          Contact us: hello@upbringapp.com
+          Contact us: hello@nasbring.com
         </p>
       </div>
 
