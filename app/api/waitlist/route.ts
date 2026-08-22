@@ -78,19 +78,21 @@ const handleWaitlist = createWaitlistHandler({
       subject: "Welcome to Nasbring",
       text: `Hi there,
 
-Thank you for joining the Nasbring waitlist.
+Thank you for joining Nasbring.
 
-We're glad you're here.
+We’re building a quieter way for parents to stay close to their child’s world — beyond marks, rankings and comparisons.
 
-Nasbring is being built for parents who want to stay close to their child's world—not through marks or comparisons, but through the small moments that often go unnoticed.
+Nasbring helps turn everyday learning moments into things worth noticing, talking about and carrying forward.
 
-Over the coming weeks, we'll occasionally share updates as we move closer to opening early access.
+We’re still building carefully, and we’ll occasionally share meaningful updates as we move closer to opening early access.
 
-Until then, thank you for believing in what we're building.
+Thank you for being here early.
 
 Warmly,
 
-Nasbring`,
+Nasbring
+
+nasbring.com`,
     });
 
     return !error;
