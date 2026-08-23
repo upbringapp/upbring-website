@@ -15,7 +15,7 @@ export function SiteFooter() {
                 alt="Nasbring"
                 width={2172}
                 height={724}
-                className="h-12 w-auto"
+                className="h-[40px] w-auto md:h-[50px] lg:h-[60px]"
               />
             </Link>
             <p className="mt-5 text-sm text-[var(--text-secondary)]">
