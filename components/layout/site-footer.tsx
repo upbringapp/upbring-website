@@ -5,7 +5,7 @@ import { footerNavigation, socialNavigation } from "./site-navigation";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-[var(--border)] bg-white py-12 md:py-16">
+    <footer className="border-t border-[var(--border)] bg-white py-12 [color-scheme:only_light] dark:[color-scheme:dark] md:py-16">
       <PageContainer>
         <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_auto_auto] md:gap-14">
           <div className="max-w-sm">
