@@ -10,13 +10,19 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_auto_auto] md:gap-14">
           <div className="max-w-sm">
             <Link href="/" aria-label="Nasbring home" className="inline-flex">
-              <Image
-                src="/logo.png"
-                alt="Nasbring"
-                width={2172}
-                height={724}
-                className="h-[40px] w-auto md:h-[50px] lg:h-[60px]"
-              />
+              <picture className="inline-flex">
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcSet="/nasbring-wordmark-dark-background.png"
+                />
+                <Image
+                  src="/logo.png"
+                  alt="Nasbring"
+                  width={2172}
+                  height={724}
+                  className="h-[40px] w-auto md:h-[50px] lg:h-[60px]"
+                />
+              </picture>
             </Link>
             <p className="mt-5 text-sm text-[var(--text-secondary)]">
               A quiet companion for growing up.
