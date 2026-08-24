@@ -1,28 +1,19 @@
-import Image from "next/image";
 import Link from "next/link";
 import { PageContainer } from "./page-container";
 import { footerNavigation, socialNavigation } from "./site-navigation";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-[var(--border)] bg-white py-12 [color-scheme:only_light] dark:[color-scheme:dark] md:py-16">
+    <footer className="border-t border-[var(--border)] bg-white py-12 md:py-16">
       <PageContainer>
         <div className="grid gap-10 md:grid-cols-[minmax(0,1fr)_auto_auto] md:gap-14">
           <div className="max-w-sm">
-            <Link href="/" aria-label="Nasbring home" className="inline-flex">
-              <picture className="inline-flex">
-                <source
-                  media="(prefers-color-scheme: dark)"
-                  srcSet="/nasbring-wordmark-dark-background.png"
-                />
-                <Image
-                  src="/logo.png"
-                  alt="Nasbring"
-                  width={2172}
-                  height={724}
-                  className="h-[40px] w-auto md:h-[50px] lg:h-[60px]"
-                />
-              </picture>
+            <Link
+              href="/"
+              aria-label="Nasbring home"
+              className="inline-flex text-[32px] leading-none font-medium text-[#242A46] whitespace-nowrap md:text-[40px] lg:text-[48px]"
+            >
+              nasbring
             </Link>
             <p className="mt-5 text-sm text-[var(--text-secondary)]">
               A quiet companion for growing up.
