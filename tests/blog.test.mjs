@@ -6,6 +6,7 @@ import {
   articles,
   getPublishedArticleBySlug,
   getPublishedArticles,
+  getRelatedPublishedArticles,
   validateArticleRecords,
 } from "../content/articles.ts";
 import {
@@ -42,7 +43,7 @@ function articleFixture(overrides = {}) {
   };
 }
 
-test("production contains twenty traceable drafts and no public articles", () => {
+test("production contains twenty reviewed and published articles", () => {
   assert.deepEqual(
     articles.map((article) => article.slug),
     [
@@ -70,13 +71,13 @@ test("production contains twenty traceable drafts and no public articles", () =>
   );
 
   for (const article of articles) {
-    assert.equal(article.status, "draft");
-    assert.equal(article.approvalStatus, "requires-editorial-approval");
-    assert.equal(article.publishedAt, null);
+    assert.equal(article.status, "published");
+    assert.equal(article.approvalStatus, "approved");
+    assert.equal(article.publishedAt, "2026-09-01");
     assert.equal(article.socialImage, null);
   }
 
-  assert.deepEqual(getPublishedArticles(), []);
+  assert.equal(getPublishedArticles().length, 20);
 });
 
 test("only published approved articles are publicly selectable", () => {
@@ -166,6 +167,20 @@ test("metadata and JSON-LD share the canonical record", () => {
   assert.equal(structuredData.mainEntityOfPage["@id"], url);
   assert.equal(metadata.openGraph.title, structuredData.headline);
   assert.equal(metadata.openGraph.description, structuredData.description);
+  assert.deepEqual(metadata.robots, { index: true, follow: true });
+  assert.equal(structuredData.author["@type"], "Organization");
+  assert.equal(structuredData.publisher.name, "Nasbring");
+});
+
+test("published articles provide distinct internal reading links", () => {
+  const related = getRelatedPublishedArticles("noticing-without-concluding");
+
+  assert.equal(related.length, 3);
+  assert.equal(
+    related.some((article) => article.slug === "noticing-without-concluding"),
+    false,
+  );
+  assert.equal(new Set(related.map((article) => article.slug)).size, 3);
 });
 
 test("duplicate slugs fail validation", () => {

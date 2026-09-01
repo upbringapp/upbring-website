@@ -59,6 +59,10 @@ export function createArticleMetadata(article: ArticleRecord): Metadata {
       description: article.description,
       ...socialImageMetadata,
     },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 
@@ -74,8 +78,18 @@ export function createArticleStructuredData(article: ArticleRecord) {
     datePublished: article.publishedAt,
     ...(article.updatedAt ? { dateModified: article.updatedAt } : {}),
     author: {
-      "@type": "Person",
+      "@type": "Organization",
       name: article.author,
+      url: siteOrigin,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Nasbring",
+      url: siteOrigin,
+      logo: {
+        "@type": "ImageObject",
+        url: new URL("/logo.png", siteOrigin).toString(),
+      },
     },
     articleSection: article.category,
     mainEntityOfPage: {

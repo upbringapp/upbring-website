@@ -157,6 +157,24 @@ export function getPublishedArticleBySlug(
   );
 }
 
+export function getRelatedPublishedArticles(
+  slug: string,
+  limit = 3,
+  records: readonly ArticleRecord[] = articles,
+) {
+  const published = getPublishedArticles(records);
+  const currentIndex = published.findIndex((article) => article.slug === slug);
+
+  if (currentIndex === -1 || published.length < 2) {
+    return [];
+  }
+
+  return Array.from(
+    { length: Math.min(limit, published.length - 1) },
+    (_, offset) => published[(currentIndex + offset + 1) % published.length],
+  );
+}
+
 // Drafts may be prepared here, but public selectors expose only records with
 // both published status and explicit editorial approval.
 const articleRecords = [
@@ -165,8 +183,8 @@ const articleRecords = [
     title: "Noticing without concluding",
     description:
       "A reflection on noticing repeated moments over time without turning observations into fixed conclusions about a child.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -267,8 +285,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: within-patterns-over-time, within-pause, within-just-arjun, within-story-so-far; upbring-lite/docs/02_editorial_bible/25_patterns_over_time.md, 14_pause.md, and 26_his_story_so_far.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: within-patterns-over-time, within-pause, within-just-arjun, within-story-so-far; upbring-lite/docs/02_editorial_bible/25_patterns_over_time.md, 14_pause.md, and 26_his_story_so_far.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/noticing-without-concluding",
   },
@@ -277,8 +295,8 @@ const articleRecords = [
     title: "Learning beyond the notebook",
     description:
       "A reflection on how learning can continue through everyday observation, conversation, and shared family experiences without becoming more homework.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -375,8 +393,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: home-real-life-mein-dekho, home-dinner-table-conversation, canopy-family-rhythms, canopy-do-this-together; upbring-lite/docs/02_editorial_bible/03_real_life_mein_dekho.md, 06_dinner_table_conversation.md, and 16_one_thing_worth_doing_together.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: home-real-life-mein-dekho, home-dinner-table-conversation, canopy-family-rhythms, canopy-do-this-together; upbring-lite/docs/02_editorial_bible/03_real_life_mein_dekho.md, 06_dinner_table_conversation.md, and 16_one_thing_worth_doing_together.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/learning-beyond-the-notebook",
   },
@@ -385,8 +403,8 @@ const articleRecords = [
     title: "Conversation before correctness",
     description:
       "A reflection on continuing a child’s learning through open conversation without turning the exchange into a test or revision session.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -499,8 +517,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: home-parent-summary, home-dinner-table-conversation, home-worth-revisiting, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/04_parent_summary.md, 05_worth_revisiting.md, and 06_dinner_table_conversation.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: home-parent-summary, home-dinner-table-conversation, home-worth-revisiting, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/04_parent_summary.md, 05_worth_revisiting.md, and 06_dinner_table_conversation.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/conversation-before-correctness",
   },
@@ -509,8 +527,8 @@ const articleRecords = [
     title: "Making as a form of understanding",
     description:
       "A reflection on giving an idea a personal form through making without requiring a polished result, a correct answer, or another assignment.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -627,8 +645,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: canopy-create, canopy-do-this-together, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/17_create.md and 16_one_thing_worth_doing_together.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: canopy-create, canopy-do-this-together, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/17_create.md and 16_one_thing_worth_doing_together.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/making-as-a-form-of-understanding",
   },
@@ -637,8 +655,8 @@ const articleRecords = [
     title: "A weekly letter, not a report",
     description:
       "A reflection on how a weekly record can preserve context and continuity without turning a child’s week into scores, rankings, or conclusions.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -763,8 +781,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: canopy-weekly-letter, within-patterns-over-time, within-pause, home-parent-summary; upbring-lite/docs/02_editorial_bible/23_weekly_letter.md, 25_patterns_over_time.md, 04_parent_summary.md, and 14_pause.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: canopy-weekly-letter, within-patterns-over-time, within-pause, home-parent-summary; upbring-lite/docs/02_editorial_bible/23_weekly_letter.md, 25_patterns_over_time.md, 04_parent_summary.md, and 14_pause.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/a-weekly-letter-not-a-report",
   },
@@ -773,8 +791,8 @@ const articleRecords = [
     title: "Curiosity without an agenda",
     description:
       "A reflection on allowing a child’s curiosity to remain interesting without converting every question into research, instruction, or a task.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -899,8 +917,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: canopy-curiosities; upbring-lite/docs/02_editorial_bible/18_curiosities.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: canopy-curiosities; upbring-lite/docs/02_editorial_bible/18_curiosities.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/curiosity-without-an-agenda",
   },
@@ -909,8 +927,8 @@ const articleRecords = [
     title: "A question worth keeping",
     description:
       "A reflection on questions that remain valuable because they invite thought in more than one direction rather than requiring a predetermined answer.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1039,8 +1057,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: canopy-thinkers; upbring-lite/docs/02_editorial_bible/19_thinkers.md and 15_one_thing_worth_talking_about.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: canopy-thinkers; upbring-lite/docs/02_editorial_bible/19_thinkers.md and 15_one_thing_worth_talking_about.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/a-question-worth-keeping",
   },
@@ -1049,8 +1067,8 @@ const articleRecords = [
     title: "Small rituals, deep roots",
     description:
       "A reflection on repeated family moments that provide gentle continuity without becoming schedules, productivity routines, or structured enrichment.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1183,8 +1201,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: canopy-family-rhythms, canopy-dinner-table-conversation, canopy-do-this-together, canopy-one-thing-worth-talking-about; upbring-lite/docs/02_editorial_bible/06_dinner_table_conversation.md, 15_one_thing_worth_talking_about.md, and 16_one_thing_worth_doing_together.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: canopy-family-rhythms, canopy-dinner-table-conversation, canopy-do-this-together, canopy-one-thing-worth-talking-about; upbring-lite/docs/02_editorial_bible/06_dinner_table_conversation.md, 15_one_thing_worth_talking_about.md, and 16_one_thing_worth_doing_together.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/small-rituals-deep-roots",
   },
@@ -1193,8 +1211,8 @@ const articleRecords = [
     title: "Worth revisiting",
     description:
       "A reflection on returning to an idea after time has passed without treating the return as correction, remediation, or evidence of weakness.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1331,8 +1349,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: home-worth-revisiting, home-parent-summary; upbring-lite/docs/02_editorial_bible/05_worth_revisiting.md and 04_parent_summary.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: home-worth-revisiting, home-parent-summary; upbring-lite/docs/02_editorial_bible/05_worth_revisiting.md and 04_parent_summary.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/worth-revisiting",
   },
@@ -1341,8 +1359,8 @@ const articleRecords = [
     title: "Keeping the small moments",
     description:
       "A reflection on preserving ordinary family moments as fragments of an unfinished story without turning them into milestones, evidence, or conclusions.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1483,8 +1501,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: within-moments, within-story-so-far, within-just-arjun; upbring-lite/docs/02_editorial_bible/22_this_is_child.md and 26_his_story_so_far.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: within-moments, within-story-so-far, within-just-arjun; upbring-lite/docs/02_editorial_bible/22_this_is_child.md and 26_his_story_so_far.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/keeping-the-small-moments",
   },
@@ -1493,8 +1511,8 @@ const articleRecords = [
     title: "Before we decide what it means",
     description:
       "A reflection on allowing time between an observation and its explanation so that context can arrive without urgency.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1643,8 +1661,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: within-pause; upbring-lite/docs/02_editorial_bible/14_pause.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: within-pause; upbring-lite/docs/02_editorial_bible/14_pause.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/before-we-decide-what-it-means",
   },
@@ -1653,8 +1671,8 @@ const articleRecords = [
     title: "More than a pattern",
     description:
       "A reflection on keeping a child larger than any pattern, portrait, or summary adults may form from what they have noticed.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1803,8 +1821,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: within-just-arjun, within-story-so-far; upbring-lite/docs/02_editorial_bible/22_this_is_child.md and 26_his_story_so_far.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: within-just-arjun, within-story-so-far; upbring-lite/docs/02_editorial_bible/22_this_is_child.md and 26_his_story_so_far.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/more-than-a-pattern",
   },
@@ -1813,8 +1831,8 @@ const articleRecords = [
     title: "A story still being written",
     description:
       "A reflection on arranging fragments across time into a continuous account without forcing the child’s story towards closure.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -1967,8 +1985,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: within-story-so-far, within-moments; upbring-lite/docs/02_editorial_bible/26_his_story_so_far.md and 22_this_is_child.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: within-story-so-far, within-moments; upbring-lite/docs/02_editorial_bible/26_his_story_so_far.md and 22_this_is_child.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/a-story-still-being-written",
   },
@@ -1977,8 +1995,8 @@ const articleRecords = [
     title: "One thing worth talking about",
     description:
       "A reflection on choosing one worthwhile idea for family conversation while leaving everything else free from discussion.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2139,8 +2157,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: canopy-one-thing-worth-talking-about, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/15_one_thing_worth_talking_about.md and 06_dinner_table_conversation.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: canopy-one-thing-worth-talking-about, canopy-family-rhythms; upbring-lite/docs/02_editorial_bible/15_one_thing_worth_talking_about.md and 06_dinner_table_conversation.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/one-thing-worth-talking-about",
   },
@@ -2149,8 +2167,8 @@ const articleRecords = [
     title: "What a summary should leave out",
     description:
       "A reflection on selective summarisation that offers useful context without claiming to contain the whole lesson, week, or child.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2311,8 +2329,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "content/editorial.ts: home-parent-summary, canopy-weekly-letter, within-patterns-over-time; upbring-lite/docs/02_editorial_bible/04_parent_summary.md, 23_weekly_letter.md, and 25_patterns_over_time.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "content/editorial.ts: home-parent-summary, canopy-weekly-letter, within-patterns-over-time; upbring-lite/docs/02_editorial_bible/04_parent_summary.md, 23_weekly_letter.md, and 25_patterns_over_time.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/what-a-summary-should-leave-out",
   },
@@ -2321,8 +2339,8 @@ const articleRecords = [
     title: "A record without a verdict",
     description:
       "A reflection on describing what was studied clearly without turning a factual learning record into an assessment of the child.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2360,8 +2378,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "upbring-lite/docs/02_editorial_bible/01_todays_work.md; content/editorial.ts: approved Home explanatory records used as supporting contrast only; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "upbring-lite/docs/02_editorial_bible/01_todays_work.md; content/editorial.ts: approved Home explanatory records used as supporting contrast only; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/a-record-without-a-verdict",
   },
@@ -2370,8 +2388,8 @@ const articleRecords = [
     title: "The idea beneath the details",
     description:
       "A reflection on finding the central understanding within a lesson without rewriting the chapter or producing revision notes.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2411,8 +2429,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "upbring-lite/docs/02_editorial_bible/02_aaj_ka_saar.md and 07_the_real_idea.md; content/editorial.ts: home-aaj-kya-seekha; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "upbring-lite/docs/02_editorial_bible/02_aaj_ka_saar.md and 07_the_real_idea.md; content/editorial.ts: home-aaj-kya-seekha; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/the-idea-beneath-the-details",
   },
@@ -2421,8 +2439,8 @@ const articleRecords = [
     title: "When an idea needs another look",
     description:
       "A reflection on clarifying an incomplete or inaccurate idea without turning the learner into the subject of judgement.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2462,8 +2480,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "upbring-lite/docs/02_editorial_bible/08_common_misunderstanding.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "upbring-lite/docs/02_editorial_bible/08_common_misunderstanding.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/when-an-idea-needs-another-look",
   },
@@ -2472,8 +2490,8 @@ const articleRecords = [
     title: "Where an idea goes next",
     description:
       "A reflection on ideas reappearing across subjects, later learning, and wider contexts without becoming predictions about a child’s future.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2514,8 +2532,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "upbring-lite/docs/02_editorial_bible/09_beautiful_connection.md and 11_future_beyond_the_chapter.md; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "upbring-lite/docs/02_editorial_bible/09_beautiful_connection.md and 11_future_beyond_the_chapter.md; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/where-an-idea-goes-next",
   },
@@ -2524,8 +2542,8 @@ const articleRecords = [
     title: "What remains after the lesson",
     description:
       "A reflection on distinguishing completed work from an idea that has continued to appear over time without claiming mastery or fixed understanding.",
-    status: "draft",
-    publishedAt: null,
+    status: "published",
+    publishedAt: "2026-09-01",
     updatedAt: null,
     author: "Nasbring",
     category: "Editorial",
@@ -2566,8 +2584,8 @@ const articleRecords = [
     ],
     sourceType: "approved-editorial-library",
     sourceReference:
-      "upbring-lite/docs/02_editorial_bible/21_what_stayed_with_him.md; upbring-lite/docs/02_editorial_bible/25_patterns_over_time.md used as a supporting boundary only; full article body pending founder/editorial approval",
-    approvalStatus: "requires-editorial-approval",
+      "upbring-lite/docs/02_editorial_bible/21_what_stayed_with_him.md; upbring-lite/docs/02_editorial_bible/25_patterns_over_time.md used as a supporting boundary only; full article body reviewed for publication on 2026-09-01",
+    approvalStatus: "approved",
     socialImage: null,
     canonicalPath: "/blog/what-remains-after-the-lesson",
   },

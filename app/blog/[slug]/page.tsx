@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleBody } from "@/components/blog/article-body";
 import { ArticleHeader } from "@/components/blog/article-header";
 import {
   getPublishedArticleBySlug,
   getPublishedArticles,
+  getRelatedPublishedArticles,
 } from "@/content/articles";
 import {
   createArticleMetadata,
@@ -48,6 +50,7 @@ export default async function ArticlePage({
   }
 
   const structuredData = createArticleStructuredData(article);
+  const relatedArticles = getRelatedPublishedArticles(article.slug);
 
   return (
     <main className="page-container py-20 md:py-28">
@@ -61,6 +64,26 @@ export default async function ArticlePage({
         />
         <ArticleHeader article={article} />
         <ArticleBody article={article} />
+        <aside className="mt-16 border-t border-[var(--border)] pt-10">
+          <h2 className="text-2xl md:text-3xl">Continue reading</h2>
+          <div className="mt-6 space-y-4">
+            {relatedArticles.map((relatedArticle) => (
+              <p key={relatedArticle.slug}>
+                <Link
+                  className="text-lg text-[var(--text-primary)] underline decoration-[var(--border)] underline-offset-4"
+                  href={relatedArticle.canonicalPath}
+                >
+                  {relatedArticle.title}
+                </Link>
+              </p>
+            ))}
+          </div>
+          <p className="mt-8 text-sm text-[var(--text-tertiary)]">
+            <Link href="/blog">All Nasbring articles</Link>
+            {" · "}
+            <Link href="/">Explore Nasbring</Link>
+          </p>
+        </aside>
       </article>
     </main>
   );

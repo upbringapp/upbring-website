@@ -3,7 +3,7 @@ import { createArticleSitemapEntries } from "@/lib/blog";
 import { siteOrigin } from "@/lib/site-metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["/", "/about", "/contact", "/privacy", "/terms"];
+  const routes = ["/", "/about", "/blog", "/contact", "/privacy", "/terms"];
 
   return [
     ...routes.map((route) => ({
