@@ -4,7 +4,7 @@ type HomeOutputCardProps = {
   index: number;
   label: string;
   content: EditorialContentRecord;
-  variant?: "standard" | "conversation" | "revisiting";
+  variant?: "standard" | "revisiting";
 };
 
 export function HomeOutputCard({
@@ -14,11 +14,8 @@ export function HomeOutputCard({
   variant = "standard",
 }: HomeOutputCardProps) {
   const layoutClasses = {
-    standard:
-      "lg:col-start-1 lg:border-r lg:border-[var(--border)] lg:[&:nth-child(1)]:row-start-1 lg:[&:nth-child(2)]:row-start-2 lg:[&:nth-child(3)]:row-start-3",
-    conversation:
-      "min-h-48 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:min-h-0",
-    revisiting: "lg:col-start-2 lg:row-start-3",
+    standard: "",
+    revisiting: "lg:col-span-3",
   } as const;
 
   return (
@@ -35,7 +32,7 @@ export function HomeOutputCard({
         <h3 className="text-xl md:text-2xl">{label}</h3>
       </div>
 
-      <div className={`ml-8 mt-7 ${variant === "conversation" ? "border-l border-[var(--border)] pl-5" : ""}`}>
+      <div className="ml-8 mt-7">
         {content.approvalStatus === "approved" ? (
           <p className="max-w-xl whitespace-pre-line text-[var(--text-secondary)]">
             {content.exactText}

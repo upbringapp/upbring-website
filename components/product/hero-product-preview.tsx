@@ -2,7 +2,6 @@ const homeOutputs = [
   "Aaj Kya Seekha",
   "Parent Summary",
   "Real Life Mein Dekho",
-  "Dinner Table Conversation",
   "Worth Revisiting",
 ] as const;
 
