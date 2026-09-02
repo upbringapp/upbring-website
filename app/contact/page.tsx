@@ -30,11 +30,6 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold">Phone</h2>
-          <a href="tel:+917042337034">7042337034</a>
-        </div>
-
-        <div>
           <h2 className="text-2xl font-semibold">Instagram</h2>
           <a
             href="https://instagram.com/withnasbring"
