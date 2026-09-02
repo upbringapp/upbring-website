@@ -1,5 +1,14 @@
-import { CanopyEditorialCard } from "@/components/product/canopy-editorial-card";
+import {
+  CanopyEditorialCard,
+  FamilyRhythmsCard,
+} from "@/components/product/canopy-editorial-card";
 import { canopyContent } from "@/content/editorial";
+
+const familyRhythms = [
+  { label: "Dinner Table Conversation", content: canopyContent[5] },
+  { label: "Do This Together", content: canopyContent[6] },
+  { label: "One Thing Worth Talking About", content: canopyContent[7] },
+] as const;
 
 export function CanopySection() {
   return (
@@ -21,13 +30,13 @@ export function CanopySection() {
         <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
           For your family
         </p>
-        <div className="mt-5 grid items-start gap-5 lg:grid-cols-3">
-          <CanopyEditorialCard label="Weekly Letter" content={canopyContent[0]} variant="anchor" />
-          <CanopyEditorialCard label="Family Rhythms" content={canopyContent[1]} />
+        <div className="mt-5 grid items-start gap-5 lg:grid-cols-[minmax(18rem,0.72fr)_minmax(0,1.28fr)]">
+          <CanopyEditorialCard label="Weekly Letter" content={canopyContent[0]} />
+          <FamilyRhythmsCard experiences={familyRhythms} />
         </div>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-12 md:mt-14">
         <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[var(--text-secondary)]">
           For Arjun*
         </p>
@@ -48,25 +57,11 @@ export function CanopySection() {
       </div>
 
       {/*
-        Content-governance boundary: these three cards are the detail view of
-        the single Family Rhythms weekly edition above. A future publishing
-        integration must resolve one approved edition and replace indices 5-7
-        atomically, at most once per week. Never connect any other Canopy card
-        to that feed or rotate these records independently.
+        Content-governance boundary: Family Rhythms above is the sole Canopy
+        home for its three weekly experiences. A future publishing integration
+        must resolve one approved edition and replace indices 5-7 atomically,
+        at most once per week. Never render or rotate those records elsewhere.
       */}
-      <div className="mt-16 grid items-start gap-5 lg:grid-cols-2">
-        <CanopyEditorialCard
-          label="Dinner Table Conversation"
-          content={canopyContent[5]}
-          variant="conversation"
-        />
-        <CanopyEditorialCard label="Do This Together" content={canopyContent[6]} variant="activity" />
-        <CanopyEditorialCard
-          label="One Thing Worth Talking About"
-          content={canopyContent[7]}
-          variant="reflection"
-        />
-      </div>
     </section>
   );
 }
