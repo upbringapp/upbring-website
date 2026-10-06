@@ -1,0 +1,126 @@
+.experience {
+  --experience-canvas: #f7f5f0;
+  --experience-paper: #fbfaf7;
+  --experience-ink: #172039;
+  --experience-muted: #687078;
+  --experience-water: #8bb4be;
+  --experience-rule: #d6d3ca;
+  overflow: clip;
+  background: var(--experience-canvas);
+  color: var(--experience-ink);
+}
+
+.screen { width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-max-width)); min-height: min(860px, calc(100svh - 5rem)); margin-inline: auto; padding-block: clamp(5rem, 11vw, 10rem); }
+.opening { position: relative; display: grid; align-items: center; min-height: calc(100svh - 5rem); }
+.openingCopy { position: relative; z-index: 1; max-width: 48rem; animation: settle 900ms var(--transition-easing) both; }
+.eyebrow, .microLabel { margin: 0 0 1.25rem; color: var(--experience-muted); font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.opening h1 { max-width: 11ch; margin: 0; color: var(--experience-ink); font-size: clamp(3.25rem, 9vw, 7.75rem); line-height: .98; }
+.openingSubtitle { max-width: 35rem; margin: 2rem 0 0; color: var(--experience-muted); font-size: clamp(1rem, 2vw, 1.25rem); }
+.waterMark { position: absolute; right: clamp(-4rem, 3vw, 3rem); bottom: clamp(2rem, 8vw, 7rem); width: clamp(9rem, 24vw, 17rem); color: var(--experience-water); opacity: .38; animation: settle 1100ms 120ms var(--transition-easing) both; }
+.waterMark path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
+.home, .observation, .worth, .canopy, .ask, .within, .closing { border-top: 1px solid var(--experience-rule); }
+.sectionIntro { max-width: 52rem; }
+.sectionIntro h2, .observationCopy h2 { margin: 0; color: var(--experience-ink); font-size: clamp(2.25rem, 5vw, 4.75rem); }
+.sectionIntro > p:last-child { margin-top: 1.5rem; color: var(--experience-muted); font-size: 1.125rem; }
+.chapterPair { display: grid; gap: 1px; margin-top: clamp(3rem, 7vw, 6.5rem); border: 1px solid var(--experience-rule); background: var(--experience-rule); }
+.chapterCard { min-height: 25rem; padding: clamp(1.5rem, 4vw, 3.5rem); background: var(--experience-paper); }
+.chapterCard h3 { margin: 4rem 0 0; color: var(--experience-ink); font-size: clamp(1.6rem, 3vw, 2.5rem); }
+.chapterCard p:last-child, .observationCopy > p, .createCard > p:last-child, .askSections p, .withinStream p { max-width: 38rem; margin: 2rem 0 0; color: var(--experience-muted); white-space: pre-line; }
+.cardIndex { margin: 0; color: var(--experience-muted); font-size: .75rem; letter-spacing: .12em; }
+
+.relationship { display: grid; grid-template-columns: minmax(3rem, 8rem) minmax(0, 32rem); align-items: start; gap: 1.25rem; max-width: 42rem; margin: clamp(3rem, 7vw, 6rem) auto 0; color: var(--experience-muted); }
+.relationship > span { margin-top: .65rem; border-top: 1px solid currentColor; }
+.relationship strong { color: var(--experience-ink); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; }
+.relationship p { margin: .35rem 0 0; font-size: .875rem; }
+.relationship.thematic > span { border-top-style: dotted; }
+
+.observationGrid { display: grid; align-items: center; gap: 4rem; }
+.observationCopy h3 { margin: 3.5rem 0 0; font-size: 1.35rem; }
+.glass { width: min(100%, 19rem); margin-inline: auto; overflow: visible; }
+.glassOutline, .ice { fill: none; stroke: var(--experience-ink); stroke-width: 2; }
+.waterLine { fill: color-mix(in srgb, var(--experience-water) 35%, transparent); stroke: var(--experience-water); stroke-width: 1.5; }
+.drops path { fill: color-mix(in srgb, var(--experience-water) 34%, transparent); stroke: var(--experience-water); stroke-width: 1.5; }
+.dinnerCard, .createCard { padding: clamp(1.75rem, 4vw, 3.5rem); border: 1px solid var(--experience-rule); background: var(--experience-paper); }
+.dinnerCard h3, .createCard h3 { margin: 2rem 0 0; font-size: 1.3rem; }
+.dinnerCard blockquote { margin: 2rem 0 0; font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.5rem, 3vw, 2.4rem); line-height: 1.28; }
+.dinnerCard > p:last-child { margin: 3rem 0 0; color: var(--experience-muted); white-space: pre-line; }
+
+.conceptTree { margin-top: clamp(3rem, 7vw, 6rem); border-block: 1px solid var(--experience-rule); }
+.conceptTree summary { display: grid; gap: .75rem; padding: 2rem 0; cursor: pointer; }
+.conceptTree summary::marker { color: var(--experience-water); }
+.conceptTree summary span { font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.35rem, 3vw, 2.25rem); }
+.conceptTree summary small { color: var(--experience-muted); font-size: 1rem; }
+.conceptBody { padding: 1rem 0 0 clamp(1rem, 6vw, 6rem); }
+.conceptBody > section { max-width: 48rem; padding: 3rem 0; border-top: 1px solid var(--experience-rule); }
+.conceptBody h3, .askSections h3 { margin: 0; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; }
+.conceptBody p { color: var(--experience-muted); white-space: pre-line; }
+.conceptBody .relationship { margin-left: 0; }
+
+.choiceNote, .disclosure { color: var(--experience-muted); font-size: .875rem; }
+.choiceNote { margin-top: 2rem; }
+.canopyFlow { display: grid; gap: 2.5rem; margin-top: clamp(3rem, 7vw, 6rem); }
+.createCard h3 { font-size: clamp(1.75rem, 4vw, 3.25rem); }
+.canopyFlow .relationship { margin: 0; align-self: center; }
+.peekCard { max-width: 29rem; margin-left: auto; padding: 1.75rem; border-left: 1px solid var(--experience-rule); opacity: .78; }
+.peekCard h3 { font-size: 1.35rem; }
+.peekCard .microLabel { margin-top: 3rem; }
+.peekCard > p:last-child { color: var(--experience-muted); white-space: pre-line; }
+
+.askHero { display: grid; gap: 3rem; }
+.askHero h2 { max-width: 18ch; margin: 0; font-size: clamp(2.5rem, 6vw, 5.5rem); }
+.askSections { margin-top: clamp(4rem, 10vw, 8rem); }
+.askSections article { display: grid; gap: 1rem; padding: 2.5rem 0; border-top: 1px solid var(--experience-rule); }
+.askSections p { margin: 0; }
+
+.withinStream { display: grid; gap: clamp(4rem, 10vw, 9rem); margin-top: clamp(5rem, 12vw, 10rem); }
+.withinStream article { max-width: 54rem; }
+.withinStream article:nth-child(even) { margin-left: auto; }
+.withinStream h3 { margin: 0; font-size: clamp(1.75rem, 4vw, 3.5rem); }
+.withinStream blockquote { max-width: 40rem; margin: 2.5rem 0 0; font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.25rem, 2.6vw, 2rem); line-height: 1.4; }
+.withinStream small { display: block; margin-top: 1.5rem; color: var(--experience-muted); }
+.emptyState { padding: clamp(2rem, 6vw, 5rem); border: 1px solid var(--experience-rule); font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.2rem, 3vw, 2rem); }
+.mirror { width: 100%; }
+.mirrorStructure { margin-top: 3rem; border-top: 1px solid var(--experience-rule); }
+.mirrorStructure section { display: grid; gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid var(--experience-rule); }
+.mirrorStructure h4 { margin: 0; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+.mirrorStructure p { margin: 0; }
+.mirrorStructure span { color: var(--experience-rule); }
+.justChild > div { margin-top: 3.5rem; }
+.childDetails { display: grid; gap: 3rem; }
+.childDetails ul { display: flex; flex-wrap: wrap; gap: .7rem; padding: 0; list-style: none; }
+.childDetails li { padding: .5rem .85rem; border: 1px solid var(--experience-rule); border-radius: 999px; color: var(--experience-muted); font-size: .875rem; }
+.moments { padding-left: clamp(1.5rem, 6vw, 6rem); border-left: 1px solid var(--experience-water); }
+.letter { width: 100%; }
+.letterPaper { margin-top: 3rem; padding: clamp(2rem, 7vw, 6rem); background: var(--experience-paper); border: 1px solid var(--experience-rule); }
+.letterPaper h4 { font-size: clamp(1.35rem, 3vw, 2.25rem); }
+.letterPaper p, .story > div p { white-space: pre-line; }
+.story > div { margin-top: 3rem; padding-block: 3rem; border-block: 1px solid var(--experience-rule); }
+.closing { display: grid; align-content: center; min-height: 85svh; }
+.closing h2 { max-width: 22ch; margin: 0; font-size: clamp(2.3rem, 5.5vw, 5.25rem); white-space: pre-line; }
+
+@keyframes settle { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes reveal { from { opacity: .35; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes droplets { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+
+@supports (animation-timeline: view()) {
+  .reveal { animation: reveal linear both; animation-timeline: view(); animation-range: entry 5% cover 28%; }
+  .drops { animation: droplets linear both; animation-timeline: view(); animation-range: entry 20% cover 45%; }
+}
+
+@media (min-width: 48rem) {
+  .chapterPair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .askHero { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); }
+  .askSections article { grid-template-columns: minmax(10rem, .55fr) minmax(0, 1.45fr); }
+  .mirrorStructure section { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); }
+  .childDetails { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 64rem) {
+  .observationGrid { grid-template-columns: minmax(0, 1fr) minmax(15rem, .55fr); }
+  .dinnerCard { grid-column: 2; }
+  .canopyFlow { grid-template-columns: minmax(0, 1.1fr) minmax(10rem, .45fr) minmax(16rem, .7fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .openingCopy, .waterMark, .reveal, .drops { animation: none !important; opacity: 1; transform: none; }
+}
