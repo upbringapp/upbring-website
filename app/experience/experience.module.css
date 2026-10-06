@@ -1,5 +1,15 @@
-.experience {
+:global(body:has([data-experience-canvas])) {
   --experience-canvas: #f7f5f0;
+  background: var(--experience-canvas);
+}
+
+:global(body:has([data-experience-canvas]) > header),
+:global(body:has([data-experience-canvas]) > footer),
+:global(body:has([data-experience-canvas]) #mobile-navigation) {
+  background: var(--experience-canvas);
+}
+
+.experience {
   --experience-paper: #fbfaf7;
   --experience-ink: #172039;
   --experience-muted: #687078;
@@ -58,18 +68,19 @@
 
 .choiceNote, .disclosure { color: var(--experience-muted); font-size: .875rem; }
 .choiceNote { margin-top: 2rem; }
-.canopyFlow { display: grid; gap: 2.5rem; margin-top: clamp(3rem, 7vw, 6rem); }
+.canopyFlow { display: grid; gap: clamp(2.5rem, 5vw, 4rem); margin-top: clamp(3rem, 7vw, 6rem); }
+.canopyFlow > * { min-width: 0; }
 .createCard h3 { font-size: clamp(1.75rem, 4vw, 3.25rem); }
-.canopyFlow .relationship { margin: 0; align-self: center; }
-.peekCard { max-width: 29rem; margin-left: auto; padding: 1.75rem; border-left: 1px solid var(--experience-rule); opacity: .78; }
+.canopyFlow .relationship { margin: 0; padding-inline: clamp(.5rem, 1.5vw, 1rem); align-self: center; }
+.peekCard { width: 100%; max-width: 29rem; margin-left: auto; padding: clamp(2rem, 3vw, 3rem); border-left: 1px solid var(--experience-rule); opacity: .78; }
 .peekCard h3 { font-size: 1.35rem; }
 .peekCard .microLabel { margin-top: 3rem; }
-.peekCard > p:last-child { color: var(--experience-muted); white-space: pre-line; }
+.peekCard > div > p:last-child, .peekCard > p:last-child { color: var(--experience-muted); overflow-wrap: anywhere; white-space: pre-line; }
 
 .askHero { display: grid; gap: 3rem; }
 .askHero h2 { max-width: 18ch; margin: 0; font-size: clamp(2.5rem, 6vw, 5.5rem); }
 .askSections { margin-top: clamp(4rem, 10vw, 8rem); }
-.askSections article { display: grid; gap: 1rem; padding: 2.5rem 0; border-top: 1px solid var(--experience-rule); }
+.askSections article { display: grid; gap: 1rem; padding: 2.5rem clamp(.75rem, 2vw, 1.5rem); border-top: 1px solid var(--experience-rule); }
 .askSections p { margin: 0; }
 
 .withinStream { display: grid; gap: clamp(4rem, 10vw, 9rem); margin-top: clamp(5rem, 12vw, 10rem); }
@@ -81,7 +92,7 @@
 .emptyState { padding: clamp(2rem, 6vw, 5rem); border: 1px solid var(--experience-rule); font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.2rem, 3vw, 2rem); }
 .mirror { width: 100%; }
 .mirrorStructure { margin-top: 3rem; border-top: 1px solid var(--experience-rule); }
-.mirrorStructure section { display: grid; gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid var(--experience-rule); }
+.mirrorStructure section { display: grid; gap: 1rem; padding: 1.5rem clamp(.75rem, 2vw, 1.5rem); border-bottom: 1px solid var(--experience-rule); }
 .mirrorStructure h4 { margin: 0; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
 .mirrorStructure p { margin: 0; }
 .mirrorStructure span { color: var(--experience-rule); }
@@ -110,8 +121,8 @@
 @media (min-width: 48rem) {
   .chapterPair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .askHero { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); }
-  .askSections article { grid-template-columns: minmax(10rem, .55fr) minmax(0, 1.45fr); }
-  .mirrorStructure section { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); }
+  .askSections article { grid-template-columns: minmax(10rem, .55fr) minmax(0, 1.45fr); column-gap: clamp(2rem, 4vw, 4rem); }
+  .mirrorStructure section { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); column-gap: clamp(2rem, 4vw, 4rem); }
   .childDetails { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 

@@ -78,13 +78,23 @@ export const canopy = {
   heading: "Curiosity, given room to breathe.",
   rhythm: "A Story → A Question → A Doing",
   create: { label: "Create", title: "The Melt Test", body: "Put one ice cube on a steel plate and one on a wooden chopping board.\nWhich one turns to water first, and why does the steel feel colder if both are in the same room?" },
-  talk: { label: "One Thing Worth Talking About", topic: "Changing Your Mind", thoughtLabel: "A Thought to Carry", thought: "Being wrong isn't the problem.\nBeing unwilling to change is." },
+  talk: {
+    label: "One Thing Worth Talking About",
+    topic: "Changing Your Mind",
+    sections: [
+      { label: "Big Question", body: "Why is it so hard to say ‘I was wrong’ — even when we already know we are?" },
+      { label: "A Gentle Thought", body: "Sometimes changing our mind can feel like losing.\nWe may hold on to an idea because we have already defended it.\nMaybe the other person noticed something we had missed.\nBeing willing to see it doesn't make us weaker — it helps us grow." },
+      { label: "Another Door Opens", body: "Does holding on to a wrong idea sometimes take more effort than changing your mind?\nWhat happens when we are too afraid to admit we might be wrong?\nIs there something you believe differently about today than you did a few years ago?" },
+      { label: "Around the Table", body: "Has someone ever changed your mind without making you feel bad about being wrong?\nWhat did they do that made it easier to listen?\nIf you disagree with someone at home, what helps you keep the conversation respectful?" },
+    ],
+    thoughtLabel: "A Thought to Carry",
+    thought: "Being wrong isn't the problem.\nBeing unwilling to change is.",
+  },
   provenance: publicExample,
 };
 
 export const askTogether = {
   label: "Ask",
-  disclosure: "Founder-authored website demonstration",
   question: "If water vapour is invisible, how do we know it's there?",
   sections: [
     { label: "Gentle Thought", body: "Water vapour is invisible because its water molecules are spread out in the air.\nWe know it is there when it cools and turns into tiny water droplets we can see.\nThis is what happens when mist or fog forms.\nThe white cloud above hot water is also made of tiny droplets, not water vapour." },

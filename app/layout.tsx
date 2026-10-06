@@ -1,56 +1,55 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
+import { Inter, Poppins } from "next/font/google";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
+import {
+  createSocialPreviewImageMetadata,
+  homepageDescription,
+  homepageTitle,
+  siteOrigin,
+} from "@/lib/site-metadata";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  fallback: ["Arial", "sans-serif"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+  fallback: ["Arial", "sans-serif"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://upbringapp.com"),
-
-  title: "Upbring — A quiet companion for growing up",
-
-  description:
-    "Stories, learning and parenting for curious families. A quiet companion for growing up. Quietly understood.",
-
+  metadataBase: new URL(siteOrigin),
+  title: {
+    default: homepageTitle,
+    template: "%s — Nasbring",
+  },
+  description: homepageDescription,
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-
-
   openGraph: {
-    title: "Upbring — A quiet companion for growing up",
-    description:
-      "Helping families nurture curiosity, character and a lifelong love of learning.",
-    url: "https://upbringapp.com",
-    siteName: "Upbring",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Upbring",
-      },
-    ],
+    title: homepageTitle,
+    description: homepageDescription,
+    url: `${siteOrigin}/`,
+    siteName: "Nasbring",
     locale: "en_US",
     type: "website",
+    ...createSocialPreviewImageMetadata(),
   },
-
   twitter: {
-    card: "summary_large_image",
-    title: "Upbring | Raising Curious Minds",
-    description:
-"Stories, learning and parenting for curious families. A quiet companion for growing up. Quietly understood.",
+    card: "summary",
+    title: homepageTitle,
+    description: homepageDescription,
+    ...createSocialPreviewImageMetadata(),
   },
 };
 
@@ -61,27 +60,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-ZJEPH34628"
-  strategy="afterInteractive"
-/>
-
-<Script
-  id="google-analytics"
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{
-    __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZJEPH34628');
-    `,
-  }}
-/>
-
-        {children}
+      <body className={`${inter.variable} ${poppins.variable}`}>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        <SiteHeader />
+        <div id="main-content" tabIndex={-1}>
+          {children}
+        </div>
+        <SiteFooter />
       </body>
     </html>
   );
