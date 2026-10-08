@@ -1,13 +1,23 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "About Nasbring",
+  description:
+    "Learn about Nasbring's mission to help families nurture curiosity, character and a lifelong love of learning.",
+  path: "/about",
+});
+
 export default function AboutPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-20 text-gray-800">
 
       <h1 className="text-4xl font-bold mb-8">
-        About Upbring
+        About Nasbring
       </h1>
 
       <p className="text-lg leading-8 mb-8">
-        Upbring is built with a simple belief: curious minds and strong values
+        Nasbring is built with a simple belief: curious minds and strong values
         are the foundation of a meaningful life.
       </p>
 
@@ -35,12 +45,8 @@ export default function AboutPage() {
       </p>
 
       <div className="mt-16 border-t pt-8">
-        <p className="font-medium">
-          Raising Curious Minds. Growing Strong Values.
-        </p>
-
-        <p className="mt-4">
-          Contact us: hello@upbringapp.com
+        <p>
+          Contact us: hello@nasbring.com
         </p>
       </div>
 

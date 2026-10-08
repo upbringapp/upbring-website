@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Privacy Policy — Nasbring",
+  description: "Read the Nasbring Privacy Policy.",
+  path: "/privacy",
+});
+
 export default function PrivacyPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 text-gray-800">

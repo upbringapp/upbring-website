@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
+import { siteOrigin } from "@/lib/site-metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://upbringapp.com",
+      url: siteOrigin,
       lastModified: new Date(),
       priority: 1,
     },

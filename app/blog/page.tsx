@@ -1,13 +1,21 @@
-export const metadata = {
-  title: "Upbring Blog | Parenting, Learning and Character Development",
+import type { Metadata } from "next";
+import { siteOrigin } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Nasbring Journal",
+  },
   description:
     "Insights on parenting, curiosity, storytelling, growth mindset and character development for children.",
+  alternates: {
+    canonical: new URL("/blog", siteOrigin).toString(),
+  },
 };
 export default function Blog() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-5xl font-bold mb-8">
-        Upbring Blog
+        Nasbring Journal
       </h1>
 
       <p className="text-xl text-gray-600 mb-12">
