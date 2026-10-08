@@ -45,10 +45,18 @@
 .relationship.thematic > span { border-top-style: dotted; }
 
 .observationGrid { display: grid; align-items: center; gap: 4rem; }
-.observationCopy h3 { margin: 3.5rem 0 0; font-size: 1.35rem; }
+.lookCloser { display: inline-flex; min-height: 44px; align-items: center; margin-top: 1.25rem; padding: .5rem .1rem; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--experience-muted); font: inherit; font-size: .875rem; cursor: pointer; }
+.lookCloser:hover, .lookCloser[aria-pressed="true"] { color: var(--experience-ink); }
+.lookCloser:focus-visible { outline: 2px solid var(--experience-water); outline-offset: 4px; }
+.condensationExplanation:not(.condensationExplanationRevealed) { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.condensationExplanationRevealed { align-self: start; animation: explanationReveal 500ms var(--transition-easing) both; }
+.condensationExplanation h3 { margin: 0; font-size: 1.35rem; }
+.condensationExplanation p { max-width: 38rem; margin: 2rem 0 0; color: var(--experience-muted); white-space: pre-line; }
 .glass { width: min(100%, 19rem); margin-inline: auto; overflow: visible; }
 .glassOutline, .ice { fill: none; stroke: var(--experience-ink); stroke-width: 2; }
 .waterLine { fill: color-mix(in srgb, var(--experience-water) 35%, transparent); stroke: var(--experience-water); stroke-width: 1.5; }
+.drops { opacity: .16; transform: translateY(-6px); transition: opacity 700ms var(--transition-easing), transform 700ms var(--transition-easing); }
+.glassRevealed .drops { opacity: 1; transform: translateY(0); }
 .drops path { fill: color-mix(in srgb, var(--experience-water) 34%, transparent); stroke: var(--experience-water); stroke-width: 1.5; }
 .dinnerCard, .createCard { padding: clamp(1.75rem, 4vw, 3.5rem); border: 1px solid var(--experience-rule); background: var(--experience-paper); }
 .dinnerCard h3, .createCard h3 { margin: 2rem 0 0; font-size: 1.3rem; }
@@ -111,11 +119,10 @@
 
 @keyframes settle { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes reveal { from { opacity: .35; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes droplets { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes explanationReveal { from { opacity: 0; } to { opacity: 1; } }
 
 @supports (animation-timeline: view()) {
   .reveal { animation: reveal linear both; animation-timeline: view(); animation-range: entry 5% cover 28%; }
-  .drops { animation: droplets linear both; animation-timeline: view(); animation-range: entry 20% cover 45%; }
 }
 
 @media (min-width: 48rem) {
@@ -133,5 +140,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .openingCopy, .waterMark, .reveal, .drops { animation: none !important; opacity: 1; transform: none; }
+  .openingCopy, .waterMark, .reveal { animation: none !important; opacity: 1; transform: none; }
+  .condensationExplanationRevealed { animation: none; }
+  .drops { transition: none; }
 }

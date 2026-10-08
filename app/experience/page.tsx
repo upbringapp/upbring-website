@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { WaitlistForm } from "@/components/forms/waitlist-form";
 import { askTogether, canopy, closing, dinnerTable, home, opening, realLife, within, worthRevisiting } from "@/content/experience";
+import { ColdGlassObservation } from "./cold-glass-observation";
 import styles from "./experience.module.css";
 
 export const metadata: Metadata = {
@@ -12,10 +13,6 @@ function Relationship({ label, detail, thematic = false }: { label?: string; det
   return <div className={`${styles.relationship} ${thematic ? styles.thematic : ""}`} aria-hidden={label ? undefined : true}><span aria-hidden="true" />{label ? <div><strong>{label}</strong>{detail ? <p>{detail}</p> : null}</div> : null}</div>;
 }
 
-function ColdGlass() {
-  return <svg className={styles.glass} viewBox="0 0 260 330" role="img" aria-labelledby="glass-title glass-description"><title id="glass-title">A cold glass with condensation</title><desc id="glass-description">Droplets form on the outside of a glass filled with water and ice.</desc><path className={styles.glassOutline} d="M55 56h150l-15 237H70L55 56Z" /><path className={styles.waterLine} d="M66 136c39-8 89 8 128 0l-10 145H77L66 136Z" /><path className={styles.ice} d="m90 91 35-9 11 35-36 8-10-34Zm57 18 33-10 9 32-33 9-9-31Z" /><g className={styles.drops}><path d="M42 128c-8 12-12 18-12 24a12 12 0 0 0 24 0c0-6-4-12-12-24Z" /><path d="M220 162c-7 10-10 15-10 20a10 10 0 0 0 20 0c0-5-3-10-10-20Z" /><path d="M37 219c-5 8-8 12-8 16a8 8 0 0 0 16 0c0-4-3-8-8-16Z" /></g></svg>;
-}
-
 export default function ExperiencePage() {
   return (
     <main className={styles.experience} data-experience-canvas>
@@ -23,7 +20,7 @@ export default function ExperiencePage() {
 
       <section className={`${styles.screen} ${styles.home}`} aria-labelledby="experience-home"><h2 id="experience-home" className={styles.eyebrow}>{home.label}</h2><div className={styles.chapterPair}>{[home.aajKyaSeekha, home.parentSummary].map((item, index) => <article className={`${styles.chapterCard} ${styles.reveal}`} key={item.title}><p className={styles.cardIndex} aria-hidden="true">0{index + 1}</p><h3>{item.title}</h3><p>{item.body}</p></article>)}</div><Relationship label="Reappears" detail="The first explanation is not always correct." /></section>
 
-      <section className={`${styles.screen} ${styles.observation}`} aria-labelledby="real-life-heading"><div className={styles.observationGrid}><article className={styles.observationCopy}><p className={styles.eyebrow}>{realLife.label}</p><h2 id="real-life-heading">{realLife.heading}</h2><p>{realLife.body}</p><h3>{realLife.explanationHeading}</h3><p>{realLife.explanation}</p></article><ColdGlass /><article className={`${styles.dinnerCard} ${styles.reveal}`}><p className={styles.eyebrow}>{dinnerTable.label}</p><h3>{dinnerTable.heading}</h3><blockquote>{dinnerTable.question}</blockquote><p>{dinnerTable.footer}</p></article></div><Relationship label="Reappears" detail="The same question, once while looking and once while talking." /></section>
+      <section className={`${styles.screen} ${styles.observation}`} aria-labelledby="real-life-heading"><div className={styles.observationGrid}><ColdGlassObservation label={realLife.label} heading={realLife.heading} body={realLife.body} explanationHeading={realLife.explanationHeading} explanation={realLife.explanation} /><article className={`${styles.dinnerCard} ${styles.reveal}`}><p className={styles.eyebrow}>{dinnerTable.label}</p><h3>{dinnerTable.heading}</h3><blockquote>{dinnerTable.question}</blockquote><p>{dinnerTable.footer}</p></article></div><Relationship label="Reappears" detail="The same question, once while looking and once while talking." /></section>
 
       <section className={`${styles.screen} ${styles.worth}`} aria-labelledby="worth-heading"><div className={styles.sectionIntro}><p className={styles.eyebrow}>{worthRevisiting.label}</p><h2 id="worth-heading">{worthRevisiting.heading}</h2><p>{worthRevisiting.subline}</p></div><details className={`${styles.conceptTree} ${styles.reveal}`} open><summary><span>{worthRevisiting.title}</span><small>{worthRevisiting.teaser}</small></summary><div className={styles.conceptBody}>{worthRevisiting.sections.map((section) => <section key={section.label}><h3>{section.label}</h3><p>{section.body}</p>{section.label === "The real idea" ? <Relationship label="Go deeper" detail="From droplets on glass to dew on grass." /> : null}</section>)}</div></details></section>
 
