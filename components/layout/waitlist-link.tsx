@@ -14,14 +14,34 @@ export function WaitlistLink({ onClick, ...props }: WaitlistLinkProps) {
   function handleClick(event: MouseEvent<HTMLAnchorElement>) {
     onClick?.(event);
 
+    const isPrimaryClick =
+      event.button === 0 &&
+      !event.metaKey &&
+      !event.ctrlKey &&
+      !event.shiftKey &&
+      !event.altKey;
+
+    if (!event.defaultPrevented && pathname === "/" && isPrimaryClick) {
+      const emailInput = document.querySelector<HTMLInputElement>(
+        '#waitlist-form input[type="email"]',
+      );
+
+      if (emailInput) {
+        event.preventDefault();
+        window.history.pushState(null, "", "#waitlist");
+        emailInput.focus({ preventScroll: true });
+        emailInput.scrollIntoView({
+          behavior: "auto",
+          block: "center",
+        });
+        return;
+      }
+    }
+
     if (
       event.defaultPrevented ||
       pathname !== "/experience" ||
-      event.button !== 0 ||
-      event.metaKey ||
-      event.ctrlKey ||
-      event.shiftKey ||
-      event.altKey ||
+      !isPrimaryClick ||
       window.matchMedia("(prefers-reduced-motion: reduce)").matches
     ) {
       return;
