@@ -26,6 +26,11 @@
 .eyebrow, .microLabel { margin: 0 0 1.25rem; color: var(--experience-muted); font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
 .opening h1 { max-width: 11ch; margin: 0; color: var(--experience-ink); font-size: clamp(3.25rem, 9vw, 7.75rem); line-height: .98; }
 .openingSubtitle { max-width: 35rem; margin: 2rem 0 0; color: var(--experience-muted); font-size: clamp(1rem, 2vw, 1.25rem); }
+.heroWaitlist { display: grid; justify-items: start; gap: .65rem; margin-top: clamp(2rem, 4vw, 3rem); }
+.heroWaitlist p { margin: 0; color: var(--experience-muted); font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.heroWaitlistButton { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: .7rem 1.4rem; border: 0; border-radius: 999px; background: #34483f; color: #fff; font-size: .875rem; text-decoration: none; }
+.heroWaitlistButton:hover { background: color-mix(in srgb, #34483f 88%, black); }
+.heroWaitlistButton:focus-visible { outline: 2px solid var(--experience-water); outline-offset: 4px; }
 .waterMark { position: absolute; right: clamp(-4rem, 3vw, 3rem); bottom: clamp(2rem, 8vw, 7rem); width: clamp(9rem, 24vw, 17rem); color: var(--experience-water); opacity: .38; animation: settle 1100ms 120ms var(--transition-easing) both; }
 .waterMark path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
 .home, .observation, .worth, .canopy, .ask, .within, .closing { border-top: 1px solid var(--experience-rule); }
@@ -35,7 +40,10 @@
 .chapterPair { display: grid; gap: 1px; margin-top: clamp(3rem, 7vw, 6.5rem); border: 1px solid var(--experience-rule); background: var(--experience-rule); }
 .chapterCard { min-height: 25rem; padding: clamp(1.5rem, 4vw, 3.5rem); background: var(--experience-paper); }
 .chapterCard h3 { margin: 4rem 0 0; color: var(--experience-ink); font-size: clamp(1.6rem, 3vw, 2.5rem); }
+.chapterCard .microLabel { margin: 2rem 0 -2.75rem; }
 .chapterCard p:last-child, .observationCopy > p, .createCard > p:last-child, .askSections p, .withinStream p { max-width: 38rem; margin: 2rem 0 0; color: var(--experience-muted); white-space: pre-line; }
+.editorialParagraphs { display: grid; gap: 1rem; max-width: 38rem; margin-top: 2rem; color: var(--experience-muted); }
+.editorialParagraphs p { margin: 0; }
 .cardIndex { margin: 0; color: var(--experience-muted); font-size: .75rem; letter-spacing: .12em; }
 
 .relationship { display: grid; grid-template-columns: minmax(3rem, 8rem) minmax(0, 32rem); align-items: start; gap: 1.25rem; max-width: 42rem; margin: clamp(3rem, 7vw, 6rem) auto 0; color: var(--experience-muted); }
@@ -71,6 +79,7 @@
 .conceptBody { padding: 1rem 0 0 clamp(1rem, 6vw, 6rem); }
 .conceptBody > section { max-width: 48rem; padding: 3rem 0; border-top: 1px solid var(--experience-rule); }
 .conceptBody h3, .askSections h3 { margin: 0; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; }
+.conceptBody h4 { margin: 1.25rem 0 0; font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
 .conceptBody p { color: var(--experience-muted); white-space: pre-line; }
 .conceptBody .relationship { margin-left: 0; }
 
@@ -84,6 +93,21 @@
 .peekCard h3 { font-size: 1.35rem; }
 .peekCard .microLabel { margin-top: 3rem; }
 .peekCard > div > p:last-child, .peekCard > p:last-child { color: var(--experience-muted); overflow-wrap: anywhere; white-space: pre-line; }
+.activityGrid { display: grid; gap: 1px; margin-top: clamp(3rem, 7vw, 6rem); border: 1px solid var(--experience-rule); background: var(--experience-rule); }
+.activityCard { min-width: 0; background: var(--experience-paper); }
+.activityCard summary { display: flex; min-height: 12rem; align-items: flex-start; justify-content: space-between; gap: 1.5rem; padding: clamp(1.75rem, 4vw, 3.5rem); cursor: pointer; list-style: none; }
+.activityCard summary::-webkit-details-marker { display: none; }
+.activityCard summary:focus-visible { outline: 2px solid var(--experience-water); outline-offset: -4px; }
+.activitySummaryCopy { display: grid; gap: .75rem; }
+.activitySummaryCopy .eyebrow { margin: 0 0 .5rem; }
+.activitySummaryCopy strong { font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.5rem, 3vw, 2.25rem); }
+.activitySummaryCopy > span:last-child, .activityToggle, .activityBody > p { color: var(--experience-muted); }
+.activityToggle { flex: 0 0 auto; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
+.activityCard[open] .activityToggle { font-size: 0; }
+.activityCard[open] .activityToggle::after { content: "Close"; font-size: .75rem; }
+.activityBody { padding: 0 clamp(1.75rem, 4vw, 3.5rem) clamp(2rem, 5vw, 4rem); }
+.activityBody blockquote { max-width: 36rem; margin: 0; font-family: var(--font-poppins), Arial, sans-serif; font-size: clamp(1.25rem, 2.7vw, 2rem); line-height: 1.4; }
+.activityBody > p { max-width: 34rem; margin: 2rem 0 0; }
 
 .askHero { display: grid; gap: 3rem; }
 .askHero h2 { max-width: 18ch; margin: 0; font-size: clamp(2.5rem, 6vw, 5.5rem); }
@@ -127,6 +151,8 @@
 
 @media (min-width: 48rem) {
   .chapterPair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .chapterLead { grid-column: 1 / -1; min-height: 18rem; }
+  .activityGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .askHero { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); }
   .askSections article { grid-template-columns: minmax(10rem, .55fr) minmax(0, 1.45fr); column-gap: clamp(2rem, 4vw, 4rem); }
   .mirrorStructure section { grid-template-columns: minmax(11rem, .55fr) minmax(0, 1.45fr); column-gap: clamp(2rem, 4vw, 4rem); }

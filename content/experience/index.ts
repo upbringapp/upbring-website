@@ -30,31 +30,50 @@ export const opening = {
 
 export const home = {
   label: "Home",
+  aajKaSaar: {
+    title: "Aaj Ka Saar",
+    body: "The ice cube, the tea steam, and the cold water in your glass are the exact same water—just wearing three different suits.",
+    provenance: sciencePreview,
+  },
   aajKyaSeekha: {
     title: "Aaj Kya Seekha",
-    body: "Water is a shape-shifter, but it never stops being water.\nIt can be ice, liquid water or invisible water vapour.\nHeating and cooling can change water from one state to another.\nYou see this in melting ice, drying puddles and forming droplets.",
+    paragraphs: [
+      "Water is a shape-shifter, but it never stops being water.",
+      "When it gets cold enough, its tiny particles settle into a fixed arrangement, turning liquid water into hard ice.",
+      "At room temperature, it flows freely as liquid water.",
+      "When liquid water warms, some of it can escape from the surface into the air as invisible water vapour. This change is called evaporation.",
+      "It can change its shape, how freely it moves, and the form we see—but through every change, it remains water.",
+    ],
     provenance: sciencePreview,
   },
   parentSummary: {
-    title: "Parent Summary",
-    body: "Water is changing around us all the time.\nWet clothes drying, ice melting and droplets forming on a cold glass are all signs of this.\nThese everyday moments help us understand how water changes from one state to another.\nSometimes, looking closely is enough to turn an ordinary moment into science.",
+    label: "2-Minute Parent Summary",
+    title: "The Steel Glass Isn't Leaking",
+    paragraphs: [
+      "When you take a chilled steel glass of water out of the fridge, beads of water soon appear on the outside.",
+      "Most people think: Paani glass ke andar se chhan ke bahar aa raha hai.",
+      "It isn't. Water cannot pass through solid steel.",
+      "The air around us carries invisible water vapour. When this vapour touches the ice-cold glass, it cools and turns into tiny liquid water droplets on the surface.",
+      "The water outside didn't escape from the glass. It came from the air around you.",
+    ],
     provenance: sciencePreview,
   },
 };
 
 export const realLife = {
   label: "Real Life Mein Dekho",
-  heading: "Try this:",
-  body: "Fill a glass with cold water and a few ice cubes.\nLeave it untouched for five minutes and look closely at the outside.\nWhere did those droplets come from?",
-  explanationHeading: "What’s happening?",
-  explanation: "The droplets did not come through the glass.\nWater vapour in the air touched the cold glass and cooled down.\nIt changed from gas into tiny drops of liquid water.\nThis change is called condensation.",
+  heading: "The Mirror After a Bath",
+  paragraphs: [
+    "After a warm bath, look at the bathroom mirror. Tiny droplets may have gathered across its surface.",
+    "Draw a smiley face through the mist with your finger. A mirror that looked clear a moment ago has become a little canvas for water.",
+  ],
   provenance: sciencePreview,
 };
 
 export const dinnerTable = {
-  label: "Dinner Table Conversation",
+  label: "DINNER TABLE CONVERSATION",
   heading: "Aaj raat poochiye:",
-  question: "Where do you think the water on the outside of a cold glass comes from?",
+  question: "If clouds are made of water, why don't they fall out of the sky?",
   footer: "Not to test them.\nJust to wander together.",
   provenance: sciencePreview,
 };
@@ -66,9 +85,49 @@ export const worthRevisiting = {
   title: "The Water Wasn't Seeping Through the Glass",
   teaser: "The obvious explanation felt right. But was it right?",
   sections: [
-    { label: "The real idea", body: "The water on the glass didn't come from inside it.\nWater vapour in the air cooled against the cold glass and became tiny drops of water.\nYou see the same thing when dew forms on cool grass in the morning.\nThis change from gas to liquid is called condensation." },
-    { label: "Common misunderstanding", body: "It looks like the water has somehow come through the glass.\nBut the glass isn't leaking, and the water inside hasn't escaped.\nThe droplets actually came from water vapour already present in the air.\nCooling made that invisible vapour become liquid water." },
-    { label: "Future beyond the chapter", body: "Condensation is one small step toward understanding how weather works.\nHigh up in the sky, water vapour cools and condenses into tiny water droplets.\nThese droplets gather to form clouds, which are part of the water cycle.\nSo the drops on a cold glass are connected to something much bigger: rain and weather." },
+    {
+      label: "The Real Idea",
+      title: "The Glass That Started Sweating",
+      paragraphs: [
+        "Water vapour is completely invisible, and it floats around our rooms all day. When water vapour in the air touches a cold surface and cools enough, it turns back into tiny, visible liquid water droplets.",
+      ],
+    },
+    {
+      label: "Common Misunderstanding",
+      paragraphs: [
+        "“Glass andar se leak ho raha hai!”",
+        "Looks convincing. Sounds logical. But water cannot walk through steel—those drops came straight out of thin air.",
+      ],
+    },
+    {
+      label: "Beautiful Connection",
+      title: "The Park Grass Wears Jewels",
+      paragraphs: [
+        "Step onto the grass early in the morning, and your slippers might get wet—even when it hasn't rained for days.",
+        "As the grass cools overnight, water vapour in the air can turn into tiny droplets on its blades, leaving them sparkling with dew.",
+        "The glass on your table and the grass beneath your feet share the same little water trick.",
+      ],
+    },
+    {
+      label: "Parent Lens",
+      title: "Hand Them the Tissue First",
+      paragraphs: [
+        "When those water beads appear, resist the urge to announce, “Dekho, this is called condensation.”",
+        "Hand your child a dry tissue and ask:",
+        "“Ek baar poora sukha do. Ab thodi der dekho—paani wapas kahan se aaya?”",
+        "Let the drops return.",
+        "A little wonder can teach more than a quick answer.",
+      ],
+    },
+    {
+      label: "Future Beyond the Chapter",
+      paragraphs: [
+        "The tiny sweat drops on your cold glass have a giant cousin in the sky: clouds.",
+        "High above us, water vapour cools and turns into billions of tiny water droplets or ice crystals, building clouds that can grow into monsoon rain clouds.",
+        "As these droplets and ice crystals grow, some become large enough to fall as rain.",
+        "From a little glass on your table to the monsoon sky above—water has a much bigger story to tell.",
+      ],
+    },
   ],
   provenance: sciencePreview,
 };
@@ -90,6 +149,22 @@ export const canopy = {
     thoughtLabel: "A Thought to Carry",
     thought: "Being wrong isn't the problem.\nBeing unwilling to change is.",
   },
+  activities: [
+    {
+      label: "FOR YOUR FAMILY",
+      title: "Reverse Spark",
+      tagline: "Turn the tables tonight.",
+      prompt: "What did you love doing when I was your age?",
+      closing: "Ask at dinner. Every grown-up has a story waiting to unfold.",
+    },
+    {
+      label: "FOR CHILD",
+      title: "Open Canvas",
+      tagline: "No rules. No wrong answers.",
+      prompt: "When people compare you to a cousin or classmate, write down 3 things you bring to this world that a marksheet or report card will never be able to measure.",
+      closing: "Put it on paper—there’s no wrong way to wonder.",
+    },
+  ],
   provenance: publicExample,
 };
 
