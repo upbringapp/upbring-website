@@ -4,7 +4,6 @@ import { useState } from "react";
 import styles from "./experience.module.css";
 
 type ColdGlassObservationProps = {
-  label: string;
   heading: string;
   body: string;
   explanationHeading: string;
@@ -12,29 +11,29 @@ type ColdGlassObservationProps = {
 };
 
 export function ColdGlassObservation({
-  label,
   heading,
   body,
   explanationHeading,
   explanation,
 }: ColdGlassObservationProps) {
   const [revealed, setRevealed] = useState(false);
+  const explanationId = "cold-glass-explanation";
 
   return (
-    <>
-      <article className={styles.observationCopy}>
-        <p className={styles.eyebrow}>{label}</p>
-        <h2 id="real-life-heading">{heading}</h2>
+    <article className={styles.coldGlassObservation}>
+      <div className={styles.observationCopy}>
+        <h3>{heading}</h3>
         <p>{body}</p>
         <button
           type="button"
           className={styles.lookCloser}
-          aria-pressed={revealed}
+          aria-expanded={revealed}
+          aria-controls={explanationId}
           onClick={() => setRevealed((current) => !current)}
         >
           {revealed ? "Close" : "Look closer"}
         </button>
-      </article>
+      </div>
 
       <svg
         className={`${styles.glass} ${revealed ? styles.glassRevealed : ""}`}
@@ -56,18 +55,26 @@ export function ColdGlassObservation({
           d="m90 91 35-9 11 35-36 8-10-34Zm57 18 33-10 9 32-33 9-9-31Z"
         />
         <g className={styles.drops}>
-          <path d="M42 128c-8 12-12 18-12 24a12 12 0 0 0 24 0c0-6-4-12-12-24Z" />
-          <path d="M220 162c-7 10-10 15-10 20a10 10 0 0 0 20 0c0-5-3-10-10-20Z" />
-          <path d="M37 219c-5 8-8 12-8 16a8 8 0 0 0 16 0c0-4-3-8-8-16Z" />
+          <circle cx="56" cy="101" r="2.5" />
+          <circle cx="57.7" cy="124" r="1.8" />
+          <circle cx="204" cy="94" r="2.6" />
+          <circle cx="201.8" cy="121" r="2" />
+          <circle cx="59.5" cy="160" r="2.8" />
+          <circle cx="199.3" cy="166" r="2.5" />
+          <circle cx="62" cy="188" r="2.2" />
+          <circle cx="197" cy="210" r="2.5" />
+          <circle cx="64.7" cy="240" r="2.6" />
+          <circle cx="193.8" cy="251" r="2" />
         </g>
       </svg>
 
       <div
+        id={explanationId}
         className={`${styles.condensationExplanation} ${revealed ? styles.condensationExplanationRevealed : ""}`}
       >
         <h3>{explanationHeading}</h3>
         <p>{explanation}</p>
       </div>
-    </>
+    </article>
   );
 }

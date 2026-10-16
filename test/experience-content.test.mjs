@@ -7,6 +7,14 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const content = readFileSync(join(root, "content/experience/index.ts"), "utf8");
 const page = readFileSync(join(root, "app/experience/page.tsx"), "utf8");
+const coldGlass = readFileSync(
+  join(root, "app/experience/cold-glass-observation.tsx"),
+  "utf8",
+);
+const experienceStyles = readFileSync(
+  join(root, "app/experience/experience.module.css"),
+  "utf8",
+);
 const header = readFileSync(join(root, "components/layout/site-header.tsx"), "utf8");
 const mobileNavigation = readFileSync(
   join(root, "components/layout/mobile-navigation.tsx"),
@@ -87,6 +95,20 @@ test("Real Life and Dinner Table preserve their approved content", () => {
   ]);
 });
 
+test("Look closer restores the reversible cold-glass observation accessibly", () => {
+  assert.match(page, /<ColdGlassObservation/);
+  assert.match(page, /home\.parentSummary\.paragraphs\.slice\(3\)\.join/);
+  assert.match(coldGlass, /useState\(false\)/);
+  assert.match(coldGlass, /revealed \? "Close" : "Look closer"/);
+  assert.match(coldGlass, /aria-expanded=\{revealed\}/);
+  assert.match(coldGlass, /aria-controls=\{explanationId\}/);
+  assert.match(coldGlass, /setRevealed\(\(current\) => !current\)/);
+  assert.match(coldGlass, /styles\.glassRevealed/);
+  assert.match(coldGlass, /id=\{explanationId\}/);
+  assert.match(experienceStyles, /@media \(prefers-reduced-motion: reduce\)/);
+  assert.match(experienceStyles, /\.drops \{ transition: none; \}/);
+});
+
 test("Canopy contains the two fixed cards with their approved audiences", () => {
   const canopy = content.slice(
     content.indexOf("activities: ["),
@@ -119,7 +141,21 @@ test("Start Quietly is placed in the hero and removed from navigation", () => {
     "opening.subtitle",
     "Join the waitlist",
     "Start Quietly",
+    'aria-hidden="true">→</span>',
   ]);
   assert.doesNotMatch(header, /Start quietly|Start Quietly/);
   assert.doesNotMatch(mobileNavigation, /Start quietly|Start Quietly/);
+});
+
+test("Patterns Over Time uses unequal illustrative examples without family data", () => {
+  expectInOrder(content, [
+    'title: "Patterns Over Time"',
+    'caption: "Themes that keep returning.\\nNot scores. Directions. Arcs."',
+    'examples: ["Sky & Space", "Living World"]',
+    'disclosure: "An example, not a record of your family."',
+  ]);
+  assert.doesNotMatch(content, /Patterns aren't found in a single moment/);
+  assert.match(page, /within\.patterns\.examples\.map/);
+  assert.match(experienceStyles, /\.patternExample:first-child span \{ width: min\(44%, 8rem\); \}/);
+  assert.doesNotMatch(page, /score|count|percentage|frequency/i);
 });

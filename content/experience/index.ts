@@ -183,7 +183,12 @@ export const askTogether = {
 
 export const within = {
   label: "Within",
-  patterns: { title: "Patterns Over Time", caption: "Themes that keep returning.\nNot scores. Directions. Arcs.", empty: "Patterns aren't found in a single moment. They appear gently over time." },
+  patterns: {
+    title: "Patterns Over Time",
+    caption: "Themes that keep returning.\nNot scores. Directions. Arcs.",
+    examples: ["Sky & Space", "Living World"],
+    disclosure: "An example, not a record of your family.",
+  },
   pause: { title: "Pause", caption: "A moment to notice yourself too.\nNot advice. Just quiet invitations.", prompt: "Did you knock on their bedroom door and wait for a reply before turning the handle and walking in today?", footer: "No answers required." },
   mirror: {
     title: "Mirror",
