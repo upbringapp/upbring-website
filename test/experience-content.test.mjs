@@ -130,18 +130,27 @@ test("Canopy contains the two fixed cards with their approved audiences", () => 
   ]);
 });
 
-test("Start Quietly is placed in the hero and removed from navigation", () => {
+test("Approved homepage hero copy preserves the existing waitlist handoff", () => {
   const opening = page.slice(
     page.indexOf("styles.opening"),
     page.indexOf("styles.home"),
   );
 
   expectInOrder(opening, [
+    "opening.eyebrow",
     "opening.title",
     "opening.subtitle",
-    "Join the waitlist",
-    "Start Quietly",
+    "<WaitlistLink",
+    "opening.cta",
     'aria-hidden="true">→</span>',
+    "opening.microcopy",
+  ]);
+  expectInOrder(content, [
+    'eyebrow: "A COMPANION APP FOR CURIOUS FAMILIES · iOS & ANDROID"',
+    'title: "Less marksheet stress. More meaningful conversations."',
+    'subtitle: "Nasbring turns your child’s daily syllabus into real-world observations and dinner-table wonderings, while helping you stay close to who they are becoming."',
+    'cta: "Join the Waitlist"',
+    'microcopy: "Invites rolling out soon. No spam, just thoughtful parenting."',
   ]);
   assert.doesNotMatch(header, /Start quietly|Start Quietly/);
   assert.doesNotMatch(mobileNavigation, /Start quietly|Start Quietly/);

@@ -22,12 +22,13 @@
 
 .screen { width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-max-width)); min-height: min(860px, calc(100svh - 5rem)); margin-inline: auto; padding-block: clamp(5rem, 11vw, 10rem); }
 .opening { position: relative; display: grid; align-items: center; min-height: calc(100svh - 5rem); }
-.openingCopy { position: relative; z-index: 1; max-width: 48rem; animation: settle 900ms var(--transition-easing) both; }
+.openingCopy { position: relative; z-index: 1; max-width: 56rem; animation: settle 900ms var(--transition-easing) both; }
 .eyebrow, .microLabel { margin: 0 0 1.25rem; color: var(--experience-muted); font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
-.opening h1 { max-width: 11ch; margin: 0; color: var(--experience-ink); font-size: clamp(3.25rem, 9vw, 7.75rem); line-height: .98; }
-.openingSubtitle { max-width: 35rem; margin: 2rem 0 0; color: var(--experience-muted); font-size: clamp(1rem, 2vw, 1.25rem); }
+.openingEyebrow { text-transform: none; }
+.opening h1 { max-width: 20ch; margin: 0; color: var(--experience-ink); font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: .98; }
+.openingSubtitle { max-width: 40rem; margin: 2rem 0 0; color: var(--experience-muted); font-size: clamp(1rem, 2vw, 1.25rem); }
 .heroWaitlist { display: grid; justify-items: start; gap: .65rem; margin-top: clamp(2rem, 4vw, 3rem); }
-.heroWaitlist p { margin: 0; color: var(--experience-muted); font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.heroMicrocopy { max-width: 34rem; margin: 0; color: var(--experience-muted); font-size: .875rem; }
 .heroWaitlistButton { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; gap: .85rem; padding: .78rem 1.5rem .78rem 1.6rem; border: 0; border-radius: 999px; background: #34483f; color: #fff; font-size: .875rem; font-weight: 600; letter-spacing: .01em; text-decoration: none; }
 .heroWaitlistButton:hover { background: color-mix(in srgb, #34483f 90%, black); }
 .heroWaitlistButton:active { background: color-mix(in srgb, #34483f 82%, black); }
@@ -35,6 +36,9 @@
 .heroWaitlistArrow { font-size: 1.05rem; font-weight: 400; line-height: 1; }
 .waterMark { position: absolute; right: clamp(-4rem, 3vw, 3rem); bottom: clamp(2rem, 8vw, 7rem); width: clamp(9rem, 24vw, 17rem); color: var(--experience-water); opacity: .38; animation: settle 1100ms 120ms var(--transition-easing) both; }
 .waterMark path { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
+@media (max-width: 47.99rem) {
+  .opening .waterMark { width: 6rem; right: 0; bottom: 1rem; }
+}
 .home, .observation, .worth, .canopy, .ask, .within, .closing { border-top: 1px solid var(--experience-rule); }
 .sectionIntro { max-width: 52rem; }
 .sectionIntro h2, .observationCopy h2 { margin: 0; color: var(--experience-ink); font-size: clamp(2.25rem, 5vw, 4.75rem); }

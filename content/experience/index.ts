@@ -23,8 +23,11 @@ const publicExample = {
 } as const satisfies ExperienceProvenance;
 
 export const opening = {
-  title: "One idea from one school day.",
-  subtitle: "Class 6 Science · A Journey through States of Water.",
+  eyebrow: "A COMPANION APP FOR CURIOUS FAMILIES · iOS & ANDROID",
+  title: "Less marksheet stress. More meaningful conversations.",
+  subtitle: "Nasbring turns your child’s daily syllabus into real-world observations and dinner-table wonderings, while helping you stay close to who they are becoming.",
+  cta: "Join the Waitlist",
+  microcopy: "Invites rolling out soon. No spam, just thoughtful parenting.",
   provenance: sciencePreview,
 };
 
