@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <h1 className="text-5xl font-bold mb-10">Privacy Policy</h1>
 
       <p className="mb-8">
-        Upbring respects your privacy. We only collect information you
+        Nasbring respects your privacy. We only collect information you
         voluntarily provide, such as your email address when joining our
         waitlist.
       </p>
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
       </h2>
 
       <p className="mb-8">
-        We use information to communicate updates and improve the Upbring
+        We use information to communicate updates and improve the Nasbring
         experience.
       </p>
 
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
       </h2>
 
       <p>
-        For privacy-related questions, contact us at hello@upbringapp.com
+        For privacy-related questions, contact us at hello@nasbring.com
       </p>
     </main>
   );

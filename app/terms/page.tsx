@@ -13,7 +13,7 @@ export default function TermsPage() {
       <h1 className="text-5xl font-bold mb-10">Terms of Service</h1>
 
       <p className="mb-8">
-        By using Upbring, you agree to these terms and conditions.
+        By using Nasbring, you agree to these terms and conditions.
       </p>
 
       <h2 className="text-3xl font-semibold mt-10 mb-4">
@@ -21,7 +21,7 @@ export default function TermsPage() {
       </h2>
 
       <p className="mb-8">
-        Upbring is designed to provide educational and family-focused content.
+        Nasbring is designed to provide educational and family-focused content.
         Users are expected to use the platform responsibly.
       </p>
 
@@ -30,7 +30,7 @@ export default function TermsPage() {
       </h2>
 
       <p className="mb-8">
-        All content, branding and materials on Upbring are owned by Upbring
+        All content, branding and materials on Nasbring are owned by Nasbring
         unless otherwise stated.
       </p>
 
@@ -49,7 +49,7 @@ export default function TermsPage() {
 
       <p>
         For any questions regarding these terms, contact us at
-        hello@upbringapp.com
+        hello@nasbring.com
       </p>
     </main>
   );
